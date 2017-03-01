@@ -1,4 +1,4 @@
-# DeepSearchAPI
+# DeepAPISearcher
 
 ## 작업환경
 
