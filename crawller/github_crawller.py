@@ -1,38 +1,139 @@
+"""
+from github
+"""
+import time
+import os
+import sys
+import random
+import requests
 from bs4 import BeautifulSoup as bs
 
-import requests, time, os, random
-
-def get_repo_list_a_tags(link):
+def get_repo_list(link):
     """
-    return repo a tag in repo list
+    return repo list
     """
 
     req = requests.get(link)
     soup = bs(req.text, 'html.parser')
 
-    repo_list = soup.find('ul', {'class': 'js-repo-list'})
-    repo_list_li = repo_list.find_all('h3')
+    return soup.find('ul', {'class': 'js-repo-list'})
 
-    return [repo.find('a') for repo in repo_list_li]
+def get_repo_urls(repo_ul_tag):
+    """
+    retrun repo urls
+    """
+
+    repo_titles = repo_ul_tag.find_all('h3')
+
+    def get_url(title):
+        """
+        return github url + repo title
+        """
+        a_tag = title.find('a')
+        return "https://github.com/" + a_tag.text
+
+    return map(get_url, repo_titles)
+
+def get_star_value(stargazers):
+    """
+    parse stargazers for star value
+    """
+
+    stargazers = str(stargazers)
+
+    SVG = "</svg>"
+    svg_end = stargazers.index(SVG) + len(SVG)
+
+    stargazers = stargazers[svg_end:]
+
+    A_TAG = "</a>"
+    a_start = stargazers.index(A_TAG)
+
+    stargazers = stargazers[:a_start]
+
+    stargazers = stargazers.strip()
+
+    stargazers = stargazers.replace(',', '')
+
+    return int(stargazers)
+
+def get_start_star(repo_ul_tag):
+    """
+    return first start value
+    """
+
+    stargazers = repo_ul_tag.find_all('a', {'aria-label': 'Stargazers'})
+
+    return get_star_value(stargazers[0])
+
+def get_end_star(repo_ul_tag):
+    """
+    return last start value
+    """
+
+    stargazers = repo_ul_tag.find_all('a', {'aria-label': 'Stargazers'})
+
+    return get_star_value(stargazers[-1])
 
 if __name__ == "__main__":
 
-    url = 'https://github.com/search?q=language%3AJava+stars%3A%3E%3D1&ref=searchresults&type=Repositories&utf8=%E2%9C%93&p='
-    crawll_count = 10
-    # crawll_count = 383177
-    page_count = int(crawll_count / 10) + 1 + (1 if (crawll_count % 10) > 0 else 0)
-    sleep_time_max_count = 10
+    URL = "https://github.com/search?\
+    o=desc&p={0}&q=language%3AJava+stars%3A1..{1}&\
+    ref=searchresults&s=stars&type=Repositories&utf8=%E2%9C%93"
+    CRAWLL_COUNT = 11
+    SLEEP_TIME_MAX_COUNT = 10
+    END_PAGE = 100
 
-    for i in range(1, page_count):
-        url_query = url + str(i)
-        repo_list_a_tags = get_repo_list_a_tags(url_query)
+    count = 0
+    start_star = 30000
 
-        for repo_list_a_tag in repo_list_a_tags:
-            repo_url = "/" + repo_list_a_tag.text
-            print (repo_url)
+    while start_star >= 1:
+        page = 1
+        print("start star : ", start_star)
 
-            print (os.system('cd project_data; git clone https://github.com' + repo_url + ".git"))
-            sleep_time = random.randrange(0, sleep_time_max_count)
+        while page <= END_PAGE:
+            print("page : ", page)
+            URL_QUERY = URL.format(page, start_star)
+            repo_list = get_repo_list(URL_QUERY)
 
-            time.sleep(sleep_time)
-            # print(os.wait())
+            error_count = 0
+            while repo_list is None:
+                error_count += 1
+                print("repo list is None\nError count : ", error_count)
+                time.sleep(SLEEP_TIME_MAX_COUNT)
+                repo_list = get_repo_list(URL_QUERY)
+
+            repo_urls = get_repo_urls(repo_list)
+
+            for repo_url in repo_urls:
+                print("repo url : ", repo_url)
+                os.system('cd project_data; git clone ' + repo_url + ".git")
+
+                count += 1
+                print("count : ", count)
+
+                if count == CRAWLL_COUNT:
+                    print("Success!\nmax count!")
+                    print("set count : ", CRAWLL_COUNT)
+                    print("current count : ", count)
+                    print("===program end===")
+                    sys.exit(1)
+
+                sleep_time = random.randrange(1, SLEEP_TIME_MAX_COUNT)
+                time.sleep(sleep_time)
+
+            if page == 1:
+                start_star = get_start_star(repo_list)
+                print("current start star : ", start_star)
+            elif page == END_PAGE:
+                end_star = get_end_star(repo_list)
+                print("end star : ", end_star)
+
+                if start_star == end_star:
+                    start_star -= 1
+                else:
+                    start_star = end_star
+
+                print("next start star : ", start_star)
+
+            page += 1
