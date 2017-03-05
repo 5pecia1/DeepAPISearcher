@@ -106,4 +106,5 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/visualstudiocode
 
 # crawller data
-crawller/data*/
+crawller/data/
+crawller/project_data/
