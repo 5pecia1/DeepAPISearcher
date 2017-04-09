@@ -1,7 +1,9 @@
 package sol_5pecia1.parser.methodinformation;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import com.github.javaparser.ast.Node;
-import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.comments.JavadocComment;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
@@ -24,10 +26,10 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
  *
  */
 public class ThesisSequenceVisitorImplements extends VoidVisitorAdapter<Void>{
-	private NodeList<Node> nodeList = new NodeList<>();
+	private LinkedList<Node> nodeList = new LinkedList<>();
 	private JavadocComment comment = null;
 	
-	public NodeList<Node> getNodeListSequenceAboutThesis() {
+	public List<Node> getNodeListSequenceAboutThesis() {
 		return nodeList;
 	}
 	
