@@ -34,7 +34,7 @@ class DataPreProcessing(object):
         self.__tokenization()
         return self.data_set
 
-    def make_seq2seq_data_set(self):
+    def make_data_set_seq2seq(self):
         self.__tokenization()
         self.__padding()
         return self.data_set
