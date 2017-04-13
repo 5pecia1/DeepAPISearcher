@@ -1,5 +1,6 @@
 package sol_5pecia1;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
@@ -22,6 +23,8 @@ public class UseCopyLargeInIOUtils extends StartFunction{
 			FileInputStream in;
 			in = new FileInputStream(UseCopyLargeInIOUtils.SOURCE_PATH + IOUTILS_PATH);
 			CompilationUnit cu = JavaParser.parse(in);
+			System.out.println(new File(UseCopyLargeInIOUtils.SOURCE_PATH + IOUTILS_PATH));
+			System.out.println(cu.getPackageDeclaration().get().getNameAsString());
 			MethodVisitor methodVisitor = new MethodVisitor();
 			methodVisitor.visit(cu, null);
 			node = methodVisitor.getNode();

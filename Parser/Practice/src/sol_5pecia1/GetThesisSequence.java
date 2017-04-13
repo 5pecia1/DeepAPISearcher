@@ -12,9 +12,7 @@ public class GetThesisSequence extends UseCopyLargeInIOUtils{
 	MethodDeclaration start() {
 		MethodDeclaration declaration = super.start();
 		
-		ThesisMethodParser methodParser = new ThesisMethodParser();
-		methodParser.visit(declaration, new JavaParserTypeSolver(new File(SOURCE_PATH)));
-		
+		ThesisMethodParser methodParser = new ThesisMethodParser(declaration, new JavaParserTypeSolver(new File(SOURCE_PATH)));
 		System.out.println("result : ");
 		System.out.println(methodParser.getAPISequence());
 		return null;

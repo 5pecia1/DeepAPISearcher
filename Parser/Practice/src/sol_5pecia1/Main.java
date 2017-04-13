@@ -6,7 +6,8 @@ import java.util.List;
 public class Main {
 	private static List<StartFunction> startFunctinos = Arrays.asList(
 //			new GetSequence(),
-			new GetThesisSequence()
+//			new GetThesisSequence()
+			new UseIOUtils()
 			);
 	
 	public static void main(String[] args) {
