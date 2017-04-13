@@ -10,7 +10,7 @@ import sol_5pecia1.parser.methodinformation.ThesisSequenceVisitorImplements;
  * @author sol
  *
  */
-public class GetSequence extends UseIOUtils{
+public class GetSequence extends UseCopyLargeInIOUtils{
 	@Override
 	MethodDeclaration start() {
 		MethodDeclaration node = super.start();

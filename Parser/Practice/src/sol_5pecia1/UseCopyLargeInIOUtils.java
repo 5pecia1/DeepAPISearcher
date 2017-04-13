@@ -10,7 +10,7 @@ import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
-public class UseIOUtils extends StartFunction{
+public class UseCopyLargeInIOUtils extends StartFunction{
 	protected static String SOURCE_PATH = "..\\commons-io-2.5-src-for-test\\src\\main\\java";
 
 	protected static String  IOUTILS_PATH = "\\org\\apache\\commons\\io\\IOUtils.java";
@@ -20,7 +20,7 @@ public class UseIOUtils extends StartFunction{
 		MethodDeclaration node = null;
 		try {
 			FileInputStream in;
-			in = new FileInputStream(UseIOUtils.SOURCE_PATH + IOUTILS_PATH);
+			in = new FileInputStream(UseCopyLargeInIOUtils.SOURCE_PATH + IOUTILS_PATH);
 			CompilationUnit cu = JavaParser.parse(in);
 			MethodVisitor methodVisitor = new MethodVisitor();
 			methodVisitor.visit(cu, null);

@@ -28,7 +28,6 @@ public class ThesisMethodParser {
 		visit(node, sourceClassSolver, null);
 	}
 
-	//TODO rename all variable
 	//TODO 내부 메서드 값 처리하기.
 	public void visit(MethodDeclaration node, JavaParserTypeSolver sourceSolver,
 			JavaParserTypeSolver classSolver) {

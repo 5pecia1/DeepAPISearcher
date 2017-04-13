@@ -7,7 +7,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeS
 
 import sol_5pecia1.parser.ThesisMethodParser;
 
-public class GetThesisSequence extends UseIOUtils{
+public class GetThesisSequence extends UseCopyLargeInIOUtils{
 	@Override
 	MethodDeclaration start() {
 		MethodDeclaration declaration = super.start();
