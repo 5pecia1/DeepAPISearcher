@@ -13,6 +13,12 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSol
 import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
+/**
+ * 해당 클래스의 내용을 논문 형식으로 parsing한다.
+ * 
+ * @author sol
+ *
+ */
 public class ThesisClassParser {
 	private final File javaPath;
 	private final File javaPackagePath;
