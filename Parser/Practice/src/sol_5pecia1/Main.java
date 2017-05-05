@@ -7,7 +7,8 @@ public class Main {
 	private static List<StartFunction> startFunctinos = Arrays.asList(
 //			new GetSequence(),
 //			new GetThesisSequence()
-			new UseIOUtils()
+//			new UseIOUtils()
+			new UseFileLIstSearcher()
 			);
 	
 	public static void main(String[] args) {

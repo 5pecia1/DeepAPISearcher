@@ -56,17 +56,17 @@ public class ThesisMethodParser {
 //	}
 	
 	public ThesisMethodParser(MethodDeclaration node, CombinedTypeSolver combinedTypeSolver) {
-		System.out.println("==log start");
-		System.out.println(node);
+//		System.out.println("==log start");
+//		System.out.println(node);
 		
 		thesisSequenceVisitorImplements.visit(node, null);
 
 		apiSequence = parsingApi(combinedTypeSolver);
 		apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
 		annotation = parsingAnnotation();
-		System.out.println("apiSequence : " + apiSequence);
-		System.out.println("annotation : " + annotation);
-		System.out.println("==log end");
+//		System.out.println("apiSequence : " + apiSequence);
+//		System.out.println("annotation : " + annotation);
+//		System.out.println("==log end");
 	}
 
 	private String parsingApi(CombinedTypeSolver combinedTypeSolver) {
