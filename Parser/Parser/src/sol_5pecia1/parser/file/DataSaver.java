@@ -74,6 +74,7 @@ public class DataSaver {
 			System.out.println("===============\ncount : " + count+ "\n==============");
 			if (!"".equals(saveLine.toString())) {
 				try {
+					currentWriter.write(savedLine.toString());
 					currentWriter.flush();
 					System.out.println("===============\nwrite data\n==============");
 					System.out.println("===============\npage : " + splitCouont + "\n==============");
