@@ -80,7 +80,7 @@ if __name__ == "__main__":
     URL = "https://github.com/search?\
     o=desc&p={0}&q=language%3AJava+stars%3A1..{1}&\
     ref=searchresults&s=stars&type=Repositories&utf8=%E2%9C%93"
-    CRAWLL_COUNT = 11
+    CRAWLL_COUNT = 500000
     SLEEP_TIME_MAX_COUNT = 10
     END_PAGE = 100
 
