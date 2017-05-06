@@ -1,0 +1,1616 @@
+Indicates if this BOM's bytes equals another
+ByteOrderMark.length-ByteOrderMark.get
+Return the hashcode for this BOM
+Object.getClass-Object.hashCode
+Provide a String representation of the BOM
+StringBuilder.new-Object.getClass-Object.getSimpleName-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-Integer.toHexString-String.toUpperCase-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Constructs a sorted map from canonical charset names to charset objects required of every implementation of the Java platform
+TreeMap<String, Charset>.new-Charset.name-Charset.put-Charset.name-Charset.put-Charset.name-Charset.put-Charset.name-Charset.put-Charset.name-Charset.put-Charset.name-Charset.put-Collections.unmodifiableSortedMap
+Returns the given Charset or the default Charset if the given Charset is null
+Charset.defaultCharset
+Returns a Charset for the named charset
+Charset.forName-Charset.defaultCharset
+Sort an array of files
+Arrays.sort
+Sort a List of files
+Collections.sort
+String representation of this file comparator
+Object.getClass-Object.getSimpleName
+Compare the two files using delegate comparators
+File.compare
+String representation of this file comparator
+StringBuilder.new-AbstractFileComparator.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Compare the two files using the  method
+File.compareTo
+Compare the two files using the  method
+DirectoryFileComparator.getType-DirectoryFileComparator.getType
+Convert type to numeric value
+File.isDirectory
+Compare the extensions of two files the specified case sensitivity
+File.getName-FilenameUtils.getExtension-File.getName-FilenameUtils.getExtension-IOCase.checkCompareTo
+String representation of this file comparator
+AbstractFileComparator.toString
+Compare the last the last modified date/time of two files
+File.lastModified-File.lastModified
+Compare the names of two files with the specified case sensitivity
+File.getName-File.getName-IOCase.checkCompareTo
+String representation of this file comparator
+AbstractFileComparator.toString
+Compare the paths of two files the specified case sensitivity
+File.getPath-File.getPath-IOCase.checkCompareTo
+String representation of this file comparator
+AbstractFileComparator.toString
+Compare using the delegate Comparator, but reversing the result
+File.compare
+String representation of this file comparator
+AbstractFileComparator.toString-File.toString
+Compare the length of two files
+File.isDirectory-File.length-File.exists-FileUtils.sizeOfDirectory-File.isDirectory-File.length-File.exists-FileUtils.sizeOfDirectory
+String representation of this file comparator
+AbstractFileComparator.toString
+Copy bytes from a byte[] to an OutputStream
+OutputStream.write
+Copy and convert bytes from a byte[] to chars on a Writer
+ByteArrayInputStream.new-CopyUtils.copy
+Copy and convert bytes from a byte[] to chars on a Writer, using the specified encoding
+ByteArrayInputStream.new-CopyUtils.copy
+Copy bytes from an InputStream to an OutputStream
+InputStream.read-OutputStream.write
+Copy chars from a Reader to a Writer
+Reader.read-Writer.write
+Copy and convert bytes from an InputStream to chars on a Writer
+Charset.defaultCharset-InputStreamReader.new-CopyUtils.copy
+Copy and convert bytes from an InputStream to chars on a Writer, using the specified encoding
+InputStreamReader.new-CopyUtils.copy
+Serialize chars from a Reader to bytes on an OutputStream, and flush the OutputStream
+Charset.defaultCharset-OutputStreamWriter.new-CopyUtils.copy-OutputStreamWriter.flush
+Serialize chars from a Reader to bytes on an OutputStream, and flush the OutputStream
+OutputStreamWriter.new-CopyUtils.copy-OutputStreamWriter.flush
+Serialize chars from a String to bytes on an OutputStream, and flush the OutputStream
+StringReader.new-Charset.defaultCharset-OutputStreamWriter.new-CopyUtils.copy-OutputStreamWriter.flush
+Serialize chars from a String to bytes on an OutputStream, and flush the OutputStream
+StringReader.new-OutputStreamWriter.new-CopyUtils.copy-OutputStreamWriter.flush
+Copy chars from a String to a Writer
+Writer.write
+Internal method that walks the directory hierarchy in a depth-first manner
+NullPointerException.new-DirectoryWalker.handleCancelled-DirectoryWalker.handleStart-DirectoryWalker.walk-DirectoryWalker.handleEnd
+Main recursive method to examine the directory hierarchy
+DirectoryWalker.checkIfCancelled-DirectoryWalker.handleDirectory-DirectoryWalker.handleDirectoryStart-DirectoryWalker.checkIfCancelled-File.listFiles-File.listFiles-DirectoryWalker.filterDirectoryContents-File.isDirectory-DirectoryWalker.checkIfCancelled-DirectoryWalker.handleFile-DirectoryWalker.checkIfCancelled-DirectoryWalker.walk-DirectoryWalker.handleRestricted-DirectoryWalker.handleDirectoryEnd-DirectoryWalker.checkIfCancelled
+Checks whether the walk has been cancelled by calling , throwing a CancelException if it has
+DirectoryWalker.handleIsCancelled-CancelException.new
+Converts a "float" value between endian systems
+Float.floatToIntBits-EndianUtils.swapInteger-Float.intBitsToFloat
+Converts a "double" value between endian systems
+Double.doubleToLongBits-EndianUtils.swapLong-Double.longBitsToDouble
+Reads a "long" value from a byte array at a given offset
+EndianUtils.readSwappedInteger-EndianUtils.readSwappedInteger
+Writes a "float" value to a byte array at a given offset
+Float.floatToIntBits-EndianUtils.writeSwappedInteger
+Reads a "float" value from a byte array at a given offset
+EndianUtils.readSwappedInteger-Float.intBitsToFloat
+Writes a "double" value to a byte array at a given offset
+Double.doubleToLongBits-EndianUtils.writeSwappedLong
+Reads a "double" value from a byte array at a given offset
+EndianUtils.readSwappedLong-Double.longBitsToDouble
+Writes a "short" value to an OutputStream
+OutputStream.write-OutputStream.write
+Reads a "short" value from an InputStream
+EndianUtils.read-EndianUtils.read
+Reads a unsigned short (16-bit) from an InputStream
+EndianUtils.read-EndianUtils.read
+Writes a "int" value to an OutputStream
+OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write
+Reads a "int" value from an InputStream
+EndianUtils.read-EndianUtils.read-EndianUtils.read-EndianUtils.read
+Reads a unsigned integer (32-bit) from an InputStream
+EndianUtils.read-EndianUtils.read-EndianUtils.read-EndianUtils.read
+Writes a "long" value to an OutputStream
+OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write-OutputStream.write
+Reads a "long" value from an InputStream
+EndianUtils.read-EndianUtils.readSwappedLong
+Writes a "float" value to an OutputStream
+Float.floatToIntBits-EndianUtils.writeSwappedInteger
+Reads a "float" value from an InputStream
+EndianUtils.readSwappedInteger-Float.intBitsToFloat
+Writes a "double" value to an OutputStream
+Double.doubleToLongBits-EndianUtils.writeSwappedLong
+Reads a "double" value from an InputStream
+EndianUtils.readSwappedLong-Double.longBitsToDouble
+Reads the next byte from the input stream
+InputStream.read-EOFException.new
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Retrieve the number of files currently being tracked, and therefore awaiting deletion
+FileCleaningTracker.getTrackCount
+Call this method to cause the file cleaner thread to terminate when there are no more objects being tracked for deletion
+FileCleaningTracker.exitWhenFinished
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+NullPointerException.new-File.getPath-FileCleaningTracker.addTracker
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+FileCleaningTracker.track
+Track the specified file, using the provided marker, deleting the file when the marker instance is garbage collected
+NullPointerException.new-FileCleaningTracker.addTracker
+Adds a tracker to the list of trackers
+IllegalStateException.new-Reaper.new-Thread.start-Tracker.new-Tracker.add
+Retrieve the number of files currently being tracked, and therefore awaiting deletion
+Tracker.size
+Call this method to cause the file cleaner thread to terminate when there are no more objects being tracked for deletion
+Thread.interrupt
+Run the reaper thread that will delete files as their associated marker objects are reclaimed by the garbage collector
+Tracker.size-Object.remove-Tracker.remove-Tracker.delete-Tracker.getPath-String.add-Tracker.clear
+Deletes the file associated with this tracker instance
+File.new-FileDeleteStrategy.deleteQuietly
+Deletes the file object, which may be a file or a directory
+File.exists-FileDeleteStrategy.doDelete
+Deletes the file object, which may be a file or a directory
+File.exists-FileDeleteStrategy.doDelete-IOException.new
+Actually deletes the file object, which may be a file or a directory
+File.delete
+Deletes the file object
+FileUtils.forceDelete
+Checks to see if the File should be accepted by this filter
+File.getParentFile-File.getName-AbstractFileFilter.accept
+Checks to see if the File should be accepted by this filter
+File.new-AbstractFileFilter.accept
+Provide a String representaion of this file filter
+Object.getClass-Object.getSimpleName
+Checks to see if the last modification of the file matches cutoff favorably
+FileUtils.isFileNewer
+Provide a String representaion of this file filter
+AbstractFileFilter.toString
+Provide a String representaion of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-IOFileFilter.get-Object.toString-StringBuilder.append-IOFileFilter.size-StringBuilder.append-StringBuilder.toString
+Checks to see if the file can be read
+File.canRead
+Checks to see if the file can be written to
+File.canWrite
+Checks the filter
+AbstractFileFilter.accept-FileFilter.accept
+Checks the filter
+AbstractFileFilter.accept-FilenameFilter.accept
+Provide a String representaion of this file filter
+FilenameFilter.toString-FileFilter.toString-AbstractFileFilter.toString
+Checks to see if the file is a directory
+File.isDirectory
+Checks to see if the file is empty
+File.isDirectory-File.length-File.listFiles
+Checks to see if the file is a file
+File.isFile
+ Applies an  to the provided {@link File} objects
+IllegalArgumentException.new-ArrayList<File>.new-IllegalArgumentException.new-IOFileFilter.accept-File.add-File.size-File.toArray
+ Applies an  to the provided {@link File} objects
+FileFilterUtils.filterList-File.size-File.toArray
+ Applies an  to the provided {@link File} objects
+ArrayList<File>.new-FileFilterUtils.filter
+ Applies an  to the provided {@link File} objects
+FileFilterUtils.filter-Arrays.asList
+ Applies an  to the provided {@link File} objects
+FileFilterUtils.filter-Arrays.asList-HashSet<File>.new
+ Applies an  to the provided {@link File} objects
+HashSet<File>.new-FileFilterUtils.filter
+ Applies an  to the provided {@link File} objects and appends the accepted files to the other supplied collection
+IllegalArgumentException.new-IllegalArgumentException.new-IOFileFilter.accept-T.add
+Returns a filter that returns true if the filename starts with the specified text
+PrefixFileFilter.new
+Returns a filter that returns true if the filename starts with the specified text
+PrefixFileFilter.new
+Returns a filter that returns true if the filename ends with the specified text
+SuffixFileFilter.new
+Returns a filter that returns true if the filename ends with the specified text
+SuffixFileFilter.new
+Returns a filter that returns true if the filename matches the specified text
+NameFileFilter.new
+Returns a filter that returns true if the filename matches the specified text
+NameFileFilter.new
+Returns a filter that ANDs the two specified filters
+AndFileFilter.new
+Returns a filter that ORs the two specified filters
+OrFileFilter.new
+Returns a filter that ANDs the specified filters
+FileFilterUtils.toList-AndFileFilter.new
+Returns a filter that ORs the specified filters
+FileFilterUtils.toList-OrFileFilter.new
+Create a List of file filters
+IllegalArgumentException.new-ArrayList<IOFileFilter>.new-IllegalArgumentException.new-IOFileFilter.add
+Returns a filter that NOTs the specified filter
+NotFileFilter.new
+Returns an IOFileFilter that wraps the FileFilter instance
+DelegateFileFilter.new
+Returns an IOFileFilter that wraps the FilenameFilter instance
+DelegateFileFilter.new
+Returns a filter that returns true if the file was last modified after the specified cutoff time
+AgeFileFilter.new
+Returns a filter that filters files based on a cutoff time
+AgeFileFilter.new
+Returns a filter that returns true if the file was last modified after the specified cutoff date
+AgeFileFilter.new
+Returns a filter that filters files based on a cutoff date
+AgeFileFilter.new
+Returns a filter that returns true if the file was last modified after the specified reference file
+AgeFileFilter.new
+Returns a filter that filters files based on a cutoff reference file
+AgeFileFilter.new
+Returns a filter that returns true if the file is bigger than a certain size
+SizeFileFilter.new
+Returns a filter that filters based on file size
+SizeFileFilter.new
+Returns a filter that accepts files whose size is &gt;= minimum size and &lt;= maximum size
+SizeFileFilter.new-SizeFileFilter.new-AndFileFilter.new
+Returns a filter that accepts files that begin with the provided magic number
+MagicNumberFileFilter.new
+Returns a filter that accepts files that contains the provided magic number at a specified offset within the file
+MagicNumberFileFilter.new
+Returns a filter that accepts files that begin with the provided magic number
+MagicNumberFileFilter.new
+Returns a filter that accepts files that contains the provided magic number at a specified offset within the file
+MagicNumberFileFilter.new
+Decorates a filter to make it ignore CVS directories
+FileFilterUtils.and
+Decorates a filter to make it ignore SVN directories
+FileFilterUtils.and
+Decorates a filter so that it only applies to directories and not to files
+AndFileFilter.new
+Decorates a filter so that it only applies to files and not to directories
+AndFileFilter.new
+Checks to see if the file is hidden
+File.isHidden
+ Accepts the provided file if the file contains the file filter's magic number at the specified offset
+File.isFile-File.canRead-IOUtils.closeQuietly-RandomAccessFile.new-RandomAccessFile.seek-RandomAccessFile.read-Arrays.equals
+Returns a String representation of the file filter, which includes the magic number bytes and byte offset
+AbstractFileFilter.toString-StringBuilder.new-StringBuilder.append-Charset.defaultCharset-String.new-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Checks to see if the filename matches
+File.getName-IOCase.checkEquals
+Checks to see if the filename matches
+IOCase.checkEquals
+Provide a String representaion of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Returns the logical NOT of the underlying filter's return value for the same File
+IOFileFilter.accept
+Returns the logical NOT of the underlying filter's return value for the same arguments
+IOFileFilter.accept
+Provide a String representaion of this file filter
+AbstractFileFilter.toString-IOFileFilter.toString
+Provide a String representaion of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-IOFileFilter.get-Object.toString-StringBuilder.append-IOFileFilter.size-StringBuilder.append-StringBuilder.toString
+Checks to see if the filename starts with the prefix
+File.getName-IOCase.checkStartsWith
+Checks to see if the filename starts with the prefix
+IOCase.checkStartsWith
+Provide a String representaion of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Checks to see if the filename matches one of the regular expressions
+Pattern.matcher-Matcher.matches
+Checks to see if the size of the file is favorable
+File.length
+Provide a String representaion of this file filter
+AbstractFileFilter.toString
+Checks to see if the filename ends with the suffix
+File.getName-IOCase.checkEndsWith
+Checks to see if the filename ends with the suffix
+IOCase.checkEndsWith
+Provide a String representaion of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Checks to see if the filename matches one of the wildcards
+FilenameUtils.wildcardMatch
+Checks to see if the filename matches one of the wildcards
+File.getName-FilenameUtils.wildcardMatch
+Provide a String representation of this file filter
+StringBuilder.new-AbstractFileFilter.toString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Checks to see if the filename matches one of the wildcards
+File.new-File.isDirectory-FilenameUtils.wildcardMatch
+Checks to see if the filename matches one of the wildcards
+File.isDirectory-File.getName-FilenameUtils.wildcardMatch
+Normalizes a path, removing double and single dot path steps
+FilenameUtils.doNormalize
+Normalizes a path, removing double and single dot path steps
+FilenameUtils.doNormalize
+Normalizes a path, removing double and single dot path steps, and removing any final directory separator
+FilenameUtils.doNormalize
+Normalizes a path, removing double and single dot path steps, and removing any final directory separator
+FilenameUtils.doNormalize
+Internal method to perform the normalization
+FilenameUtils.failIfNullBytePresent-String.length-FilenameUtils.getPrefixLength-String.length-String.getChars-System.arraycopy-System.arraycopy-System.arraycopy-System.arraycopy-String.new-String.new-String.new
+Concatenates a filename to a base path using normal command line style rules
+FilenameUtils.getPrefixLength-FilenameUtils.normalize-String.length-FilenameUtils.normalize-String.charAt-FilenameUtils.isSeparator-FilenameUtils.normalize-FilenameUtils.normalize
+Determines whether the  directory contains the {@code child} element (a file or directory)
+IllegalArgumentException.new-IOCase.checkEquals-IOCase.checkStartsWith
+Converts all separators to the Unix separator of forward slash
+String.indexOf-String.replace
+Converts all separators to the Windows separator of backslash
+String.indexOf-String.replace
+Converts all separators to the system separator
+FilenameUtils.isSystemWindows-FilenameUtils.separatorsToUnix-FilenameUtils.separatorsToWindows
+Returns the length of the filename prefix, such as C:/ or ~/
+String.length-String.charAt-String.indexOf-String.indexOf-Math.min-String.charAt-FilenameUtils.isSeparator-FilenameUtils.isSeparator-FilenameUtils.isSeparator-String.indexOf-String.indexOf-Math.min-Character.toUpperCase-String.charAt-FilenameUtils.isSeparator-FilenameUtils.isSeparator
+Returns the index of the last directory separator character
+String.lastIndexOf-String.lastIndexOf-Math.max
+Returns the index of the last extension separator character, which is a dot
+String.lastIndexOf-FilenameUtils.indexOfLastSeparator
+Gets the prefix from a full filename, such as C:/ or ~/
+FilenameUtils.getPrefixLength-String.length-FilenameUtils.failIfNullBytePresent-String.substring-FilenameUtils.failIfNullBytePresent
+Gets the path from a full filename, which excludes the prefix
+FilenameUtils.doGetPath
+Gets the path from a full filename, which excludes the prefix, and also excluding the final directory separator
+FilenameUtils.doGetPath
+Does the work of getting the path
+FilenameUtils.getPrefixLength-FilenameUtils.indexOfLastSeparator-String.length-String.substring-FilenameUtils.failIfNullBytePresent
+Gets the full path from a full filename, which is the prefix + path
+FilenameUtils.doGetFullPath
+Gets the full path from a full filename, which is the prefix + path, and also excluding the final directory separator
+FilenameUtils.doGetFullPath
+Does the work of getting the path
+FilenameUtils.getPrefixLength-String.length-FilenameUtils.getPrefix-FilenameUtils.indexOfLastSeparator-String.substring-String.substring
+Gets the name minus the path from a full filename
+FilenameUtils.failIfNullBytePresent-FilenameUtils.indexOfLastSeparator-String.substring
+Check the input for null bytes, a sign of unsanitized data being passed to to file level functions
+String.length-String.charAt-IllegalArgumentException.new
+Gets the base name, minus the full path and extension, from a full filename
+FilenameUtils.getName-FilenameUtils.removeExtension
+Gets the extension of a filename
+FilenameUtils.indexOfExtension-String.substring
+Removes the extension from a filename
+FilenameUtils.failIfNullBytePresent-FilenameUtils.indexOfExtension-String.substring
+Checks whether two filenames are equal exactly
+FilenameUtils.equals
+Checks whether two filenames are equal using the case rules of the system
+FilenameUtils.equals
+Checks whether two filenames are equal after both have been normalized
+FilenameUtils.equals
+Checks whether two filenames are equal after both have been normalized and using the case rules of the system
+FilenameUtils.equals
+Checks whether two filenames are equal, optionally normalizing and providing control over the case-sensitivity
+FilenameUtils.normalize-FilenameUtils.normalize-NullPointerException.new-IOCase.checkEquals
+Checks whether the extension of the filename is that specified
+FilenameUtils.failIfNullBytePresent-String.isEmpty-FilenameUtils.indexOfExtension-FilenameUtils.getExtension-String.equals
+Checks whether the extension of the filename is one of those specified
+FilenameUtils.failIfNullBytePresent-FilenameUtils.indexOfExtension-FilenameUtils.getExtension-String.equals
+Checks whether the extension of the filename is one of those specified
+FilenameUtils.failIfNullBytePresent-String.isEmpty-FilenameUtils.indexOfExtension-FilenameUtils.getExtension-String.equals
+Checks a filename to see if it matches the specified wildcard matcher, always testing case-sensitive
+FilenameUtils.wildcardMatch
+Checks a filename to see if it matches the specified wildcard matcher using the case rules of the system
+FilenameUtils.wildcardMatch
+Checks a filename to see if it matches the specified wildcard matcher allowing control over case-sensitivity
+FilenameUtils.splitOnTokens-Stack<int[]>.new-Stack<int[].size-Stack<int[].pop-String.equals-String.equals-IOCase.checkRegionMatches-IOCase.checkIndexOf-IOCase.checkIndexOf-Stack<int[].push-String.length-String.length-String.length-String.length-Stack<int[].size
+Splits a string into a number of tokens
+String.indexOf-String.indexOf-String.toCharArray-ArrayList<String>.new-StringBuilder.new-StringBuilder.append-StringBuilder.length-StringBuilder.toString-String.add-StringBuilder.setLength-String.add-String.add-StringBuilder.length-StringBuilder.toString-String.add-String.size-String.toArray
+Returns the free space on a drive or volume by invoking the command line
+FileSystemUtils.freeSpaceOS
+Returns the free space on a drive or volume in kilobytes by invoking the command line
+FileSystemUtils.freeSpaceKb
+Returns the free space on a drive or volume in kilobytes by invoking the command line
+FileSystemUtils.freeSpaceOS
+Returns the disk size of the volume which holds the working directory
+FileSystemUtils.freeSpaceKb
+Returns the disk size of the volume which holds the working directory
+File.new-File.getAbsolutePath-FileSystemUtils.freeSpaceKb
+Returns the free space on a drive or volume in a cross-platform manner
+IllegalArgumentException.new-FileSystemUtils.freeSpaceWindows-FileSystemUtils.freeSpaceWindows-FileSystemUtils.freeSpaceUnix-FileSystemUtils.freeSpaceUnix-IllegalStateException.new-IllegalStateException.new
+Find free space on the Windows platform using the 'dir' command
+FilenameUtils.normalize-String.length-String.charAt-FileSystemUtils.performCommand-String.size-String.get-String.length-FileSystemUtils.parseDir-IOException.new
+Find free space on the *nix platform using the 'df' command
+String.isEmpty-IllegalArgumentException.new-String.length-FileSystemUtils.performCommand-String.size-IOException.new-String.get-StringTokenizer.new-StringTokenizer.countTokens-StringTokenizer.nextToken-StringTokenizer.countTokens-String.size-IOException.new-String.get-StringTokenizer.new-StringTokenizer.nextToken-StringTokenizer.nextToken-StringTokenizer.nextToken-FileSystemUtils.parseBytes
+Parses the bytes from a string
+IOException.new-Long.parseLong-IOException.new
+Performs the os command
+ArrayList<String>.new-Arrays.asList-IOException.new-IOUtils.closeQuietly-IOUtils.closeQuietly-IOUtils.closeQuietly-IOUtils.closeQuietly-Process.destroy-ThreadMonitor.start-FileSystemUtils.openProcess-Process.getInputStream-Process.getOutputStream-Process.getErrorStream-Charset.defaultCharset-InputStreamReader.new-BufferedReader.new-BufferedReader.readLine-String.size-String.toLowerCase-String.trim-String.add-BufferedReader.readLine-Process.waitFor-ThreadMonitor.stop-Process.exitValue-Process.exitValue-Arrays.asList-IOException.new-String.isEmpty-Arrays.asList-IOException.new
+Opens the process to the operating system
+Runtime.getRuntime-Runtime.exec
+Construct a file from the set of name elements
+NullPointerException.new-NullPointerException.new-File.new
+Construct a file from the set of name elements
+NullPointerException.new-File.new-File.new
+Returns the path to the system temporary directory
+System.getProperty
+Returns a  representing the system temporary directory
+FileUtils.getTempDirectoryPath-File.new
+Returns the path to the user's home directory
+System.getProperty
+Returns a  representing the user's home directory
+FileUtils.getUserDirectoryPath-File.new
+Opens a  for the specified file, providing better error messages than simply calling new FileInputStream(file)
+File.exists-FileNotFoundException.new-File.isDirectory-IOException.new-File.canRead-IOException.new-FileInputStream.new
+Opens a  for the specified file, checking and creating the parent directory if it does not exist
+FileUtils.openOutputStream
+Opens a  for the specified file, checking and creating the parent directory if it does not exist
+File.exists-File.getParentFile-File.mkdirs-File.isDirectory-IOException.new-File.isDirectory-IOException.new-File.canWrite-IOException.new-FileOutputStream.new
+Implements the same behaviour as the "touch" utility on Unix
+File.exists-FileUtils.openOutputStream-IOUtils.closeQuietly-System.currentTimeMillis-File.setLastModified-IOException.new
+Converts a Collection containing java
+File.size-File.toArray
+Finds files within a given directory (and optionally its subdirectories)
+File.listFiles-File.isDirectory-File.add-File.add-FileUtils.innerListFiles
+Finds files within a given directory (and optionally its subdirectories)
+FileUtils.validateListFilesParameters-FileUtils.setUpEffectiveFileFilter-FileUtils.setUpEffectiveDirFilter-java.util.LinkedList<File>.new-FileFilterUtils.or-FileUtils.innerListFiles
+Validates the given arguments
+File.isDirectory-IllegalArgumentException.new-NullPointerException.new
+Returns a filter that accepts files in addition to the  objects accepted by the given filter
+FileFilterUtils.notFileFilter-FileFilterUtils.and
+Returns a filter that accepts directories in addition to the  objects accepted by the given filter
+FileFilterUtils.and
+Finds files within a given directory (and optionally its subdirectories)
+FileUtils.validateListFilesParameters-FileUtils.setUpEffectiveFileFilter-FileUtils.setUpEffectiveDirFilter-java.util.LinkedList<File>.new-File.isDirectory-File.add-FileFilterUtils.or-FileUtils.innerListFiles
+Allows iteration over the files in given directory (and optionally its subdirectories)
+FileUtils.listFiles-File.iterator
+Allows iteration over the files in given directory (and optionally its subdirectories)
+FileUtils.listFilesAndDirs-File.iterator
+Finds files within a given directory (and optionally its subdirectories) which match an array of extensions
+FileUtils.toSuffixes-SuffixFileFilter.new-FileUtils.listFiles
+Allows iteration over the files in a given directory (and optionally its subdirectories) which match an array of extensions
+FileUtils.listFiles-File.iterator
+Compares the contents of two files to determine if they are equal or not
+File.exists-File.exists-File.isDirectory-File.isDirectory-IOException.new-File.length-File.length-File.getCanonicalFile-File.getCanonicalFile-File.equals-IOUtils.closeQuietly-IOUtils.closeQuietly-FileInputStream.new-FileInputStream.new-IOUtils.contentEquals
+Compares the contents of two files to determine if they are equal or not
+File.exists-File.exists-File.isDirectory-File.isDirectory-IOException.new-File.getCanonicalFile-File.getCanonicalFile-File.equals-IOUtils.closeQuietly-IOUtils.closeQuietly-FileInputStream.new-InputStreamReader.new-FileInputStream.new-InputStreamReader.new-FileInputStream.new-Charset.defaultCharset-InputStreamReader.new-FileInputStream.new-Charset.defaultCharset-InputStreamReader.new-IOUtils.contentEqualsIgnoreEOL
+Convert from a URL to a File
+URL.getProtocol-String.equalsIgnoreCase-URL.getFile-String.replace-FileUtils.decodeUrl-File.new
+Decodes the specified URL as per RFC 3986, i
+String.indexOf-String.length-StringBuilder.new-ByteBuffer.allocate-String.charAt-ByteBuffer.position-ByteBuffer.flip-Charset.decode-CharBuffer.toString-StringBuilder.append-ByteBuffer.clear-String.substring-Integer.parseInt-ByteBuffer.put-String.charAt-String.charAt-StringBuilder.append-StringBuilder.toString
+Converts each of an array of URL to a File
+URL.getProtocol-String.equals-IllegalArgumentException.new-FileUtils.toFile
+Converts each of an array of File to a URL
+File.toURI-URI.toURL
+Copies a file to a directory preserving the file date
+FileUtils.copyFileToDirectory
+Copies a file to a directory optionally preserving the file date
+NullPointerException.new-File.exists-File.isDirectory-IllegalArgumentException.new-File.getName-File.new-FileUtils.copyFile
+Copies a file to a new location preserving the file date
+FileUtils.copyFile
+Copies a file to a new location
+FileUtils.checkFileRequirements-File.isDirectory-IOException.new-File.getCanonicalPath-File.getCanonicalPath-String.equals-IOException.new-File.getParentFile-File.mkdirs-File.isDirectory-IOException.new-File.exists-File.canWrite-IOException.new-FileUtils.doCopyFile
+Copy bytes from a File to an OutputStream
+FileInputStream.new-FileInputStream.close-IOUtils.copyLarge
+Internal copy file method
+File.exists-File.isDirectory-IOException.new-IOUtils.closeQuietly-FileInputStream.new-FileOutputStream.new-FileInputStream.getChannel-FileOutputStream.getChannel-FileChannel.size-FileChannel.transferFrom-File.length-File.length-IOException.new-File.lastModified-File.setLastModified
+Copies a directory to within another directory preserving the file dates
+NullPointerException.new-File.exists-File.isDirectory-IllegalArgumentException.new-NullPointerException.new-File.exists-File.isDirectory-IllegalArgumentException.new-File.getName-File.new-FileUtils.copyDirectory
+Copies a whole directory to a new location preserving the file dates
+FileUtils.copyDirectory
+Copies a whole directory to a new location
+FileUtils.copyDirectory
+Copies a filtered directory to a new location preserving the file dates
+FileUtils.copyDirectory
+Copies a filtered directory to a new location
+FileUtils.checkFileRequirements-File.isDirectory-IOException.new-File.getCanonicalPath-File.getCanonicalPath-String.equals-IOException.new-File.getCanonicalPath-File.getCanonicalPath-String.startsWith-File.listFiles-File.listFiles-ArrayList<String>.new-File.getName-File.new-File.getCanonicalPath-String.add-FileUtils.doCopyDirectory
+Internal copy directory method
+File.listFiles-File.listFiles-IOException.new-File.exists-File.mkdirs-File.isDirectory-IOException.new-File.isDirectory-IOException.new-File.canWrite-IOException.new-File.getName-File.new-File.getCanonicalPath-String.contains-File.isDirectory-FileUtils.doCopyFile-FileUtils.doCopyDirectory-File.lastModified-File.setLastModified
+Copies bytes from the URL source to a file destination
+URL.openStream-FileUtils.copyInputStreamToFile
+Copies bytes from the URL source to a file destination
+URL.openConnection-URLConnection.setConnectTimeout-URLConnection.setReadTimeout-URLConnection.getInputStream-FileUtils.copyInputStreamToFile
+Copies bytes from an  source to a file destination
+IOUtils.closeQuietly-FileUtils.copyToFile
+Copies bytes from an  source to a file destination
+FileUtils.openOutputStream-IOUtils.closeQuietly-IOUtils.copy-FileOutputStream.close
+Deletes a directory recursively
+File.exists-FileUtils.isSymlink-FileUtils.cleanDirectory-File.delete-IOException.new
+Deletes a file, never throwing an exception
+File.isDirectory-FileUtils.cleanDirectory-File.delete
+Determines whether the  directory contains the {@code child} element (a file or directory)
+IllegalArgumentException.new-File.isDirectory-IllegalArgumentException.new-File.exists-File.exists-File.getCanonicalPath-File.getCanonicalPath-FilenameUtils.directoryContains
+Cleans a directory without deleting it
+FileUtils.verifiedListFiles-FileUtils.forceDelete
+Waits for NFS to propagate a file creation, imposing a timeout
+System.currentTimeMillis-Thread.currentThread-Thread.interrupt-File.exists-System.currentTimeMillis-Math.min-Thread.sleep
+Reads the contents of a file into a String
+IOUtils.closeQuietly-FileUtils.openInputStream-Charsets.toCharset-IOUtils.toString
+Reads the contents of a file into a String
+Charsets.toCharset-FileUtils.readFileToString
+Reads the contents of a file into a String using the default encoding for the VM
+Charset.defaultCharset-FileUtils.readFileToString
+Reads the contents of a file into a byte array
+IOUtils.closeQuietly-FileUtils.openInputStream-IOUtils.toByteArray
+Reads the contents of a file line by line to a List of Strings
+IOUtils.closeQuietly-FileUtils.openInputStream-Charsets.toCharset-IOUtils.readLines
+Reads the contents of a file line by line to a List of Strings
+Charsets.toCharset-FileUtils.readLines
+Reads the contents of a file line by line to a List of Strings using the default encoding for the VM
+Charset.defaultCharset-FileUtils.readLines
+Returns an Iterator for the lines in a File
+IOUtils.closeQuietly-IOUtils.closeQuietly-FileUtils.openInputStream-IOUtils.lineIterator
+Returns an Iterator for the lines in a File using the default encoding for the VM
+FileUtils.lineIterator
+Writes a String to a file creating the file if it does not exist
+FileUtils.writeStringToFile
+Writes a String to a file creating the file if it does not exist
+FileUtils.writeStringToFile
+Writes a String to a file creating the file if it does not exist
+IOUtils.closeQuietly-FileUtils.openOutputStream-IOUtils.write-OutputStream.close
+Writes a String to a file creating the file if it does not exist
+Charsets.toCharset-FileUtils.writeStringToFile
+Writes a String to a file creating the file if it does not exist using the default encoding for the VM
+Charset.defaultCharset-FileUtils.writeStringToFile
+Writes a String to a file creating the file if it does not exist using the default encoding for the VM
+Charset.defaultCharset-FileUtils.writeStringToFile
+Writes a CharSequence to a file creating the file if it does not exist using the default encoding for the VM
+Charset.defaultCharset-FileUtils.write
+Writes a CharSequence to a file creating the file if it does not exist using the default encoding for the VM
+Charset.defaultCharset-FileUtils.write
+Writes a CharSequence to a file creating the file if it does not exist
+FileUtils.write
+Writes a CharSequence to a file creating the file if it does not exist
+FileUtils.write
+Writes a CharSequence to a file creating the file if it does not exist
+CharSequence.toString-FileUtils.writeStringToFile
+Writes a CharSequence to a file creating the file if it does not exist
+Charsets.toCharset-FileUtils.write
+Writes a byte array to a file creating the file if it does not exist
+FileUtils.writeByteArrayToFile
+Writes a byte array to a file creating the file if it does not exist
+FileUtils.writeByteArrayToFile
+Writes  bytes from the specified byte array starting at offset {@code off} to a file, creating the file if it does not exist
+FileUtils.writeByteArrayToFile
+Writes  bytes from the specified byte array starting at offset {@code off} to a file, creating the file if it does not exist
+IOUtils.closeQuietly-FileUtils.openOutputStream-OutputStream.write-OutputStream.close
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line, optionally appending
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line
+IOUtils.closeQuietly-FileUtils.openOutputStream-BufferedOutputStream.new-IOUtils.writeLines-BufferedOutputStream.flush-FileOutputStream.close
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Writes the toString() value of each item in a collection to the specified File line by line
+FileUtils.writeLines
+Deletes a file
+File.isDirectory-File.exists-File.delete-FileNotFoundException.new-IOException.new-FileUtils.deleteDirectory
+Schedules a file to be deleted when JVM exits
+File.isDirectory-File.deleteOnExit-FileUtils.deleteDirectoryOnExit
+Schedules a directory recursively for deletion on JVM exit
+File.exists-File.deleteOnExit-FileUtils.isSymlink-FileUtils.cleanDirectoryOnExit
+Cleans a directory without deleting it
+FileUtils.verifiedListFiles-FileUtils.forceDeleteOnExit
+Makes a directory, including any necessary but nonexistent parent directories
+File.exists-File.mkdirs-File.isDirectory-IOException.new-File.isDirectory-IOException.new
+Makes any necessary but nonexistent parent directories for a given File
+File.getParentFile-FileUtils.forceMkdir
+Returns the size of the specified file or directory
+File.exists-IllegalArgumentException.new-File.isDirectory-File.length-FileUtils.sizeOfDirectory0
+Returns the size of the specified file or directory
+File.exists-IllegalArgumentException.new-File.isDirectory-File.length-BigInteger.valueOf-FileUtils.sizeOfDirectoryBig0
+Counts the size of a directory recursively (sum of the length of all files)
+FileUtils.checkDirectory-FileUtils.sizeOfDirectory0
+Counts the size of a directory recursively (sum of the length of all files)
+FileUtils.checkDirectory-FileUtils.sizeOfDirectoryBig0
+Checks that the given  exists and is a directory
+File.exists-IllegalArgumentException.new-File.isDirectory-IllegalArgumentException.new
+Tests if the specified File is newer than the reference File
+IllegalArgumentException.new-File.exists-IllegalArgumentException.new-File.lastModified-FileUtils.isFileNewer
+Tests if the specified File is newer than the specified Date
+IllegalArgumentException.new-Date.getTime-FileUtils.isFileNewer
+Tests if the specified File is newer than the specified time reference
+IllegalArgumentException.new-File.exists-File.lastModified
+Tests if the specified File is older than the reference File
+IllegalArgumentException.new-File.exists-IllegalArgumentException.new-File.lastModified-FileUtils.isFileOlder
+Tests if the specified File is older than the specified Date
+IllegalArgumentException.new-Date.getTime-FileUtils.isFileOlder
+Tests if the specified File is older than the specified time reference
+IllegalArgumentException.new-File.exists-File.lastModified
+Computes the checksum of a file using the CRC32 checksum routine
+CRC32.new-FileUtils.checksum-CRC32.getValue
+Computes the checksum of a file using the specified checksum object
+File.isDirectory-IllegalArgumentException.new-IOUtils.closeQuietly-FileInputStream.new-CheckedInputStream.new-NullOutputStream.new-IOUtils.copy
+Moves a directory
+NullPointerException.new-NullPointerException.new-File.exists-FileNotFoundException.new-File.isDirectory-IOException.new-File.exists-FileExistsException.new-File.renameTo-File.getCanonicalPath-File.getCanonicalPath-String.startsWith-IOException.new-FileUtils.copyDirectory-FileUtils.deleteDirectory-File.exists-IOException.new
+Moves a directory to another directory
+NullPointerException.new-NullPointerException.new-File.exists-File.mkdirs-File.exists-FileNotFoundException.new-File.isDirectory-IOException.new-File.getName-File.new-FileUtils.moveDirectory
+Moves a file
+NullPointerException.new-NullPointerException.new-File.exists-FileNotFoundException.new-File.isDirectory-IOException.new-File.exists-FileExistsException.new-File.isDirectory-IOException.new-File.renameTo-FileUtils.copyFile-File.delete-FileUtils.deleteQuietly-IOException.new
+Moves a file to a directory
+NullPointerException.new-NullPointerException.new-File.exists-File.mkdirs-File.exists-FileNotFoundException.new-File.isDirectory-IOException.new-File.getName-File.new-FileUtils.moveFile
+Moves a file or directory to the destination directory
+NullPointerException.new-NullPointerException.new-File.exists-FileNotFoundException.new-File.isDirectory-FileUtils.moveFileToDirectory-FileUtils.moveDirectoryToDirectory
+Determines whether the specified file is a Symbolic Link rather than an actual file
+Java7Support.isAtLeastJava7-Java7Support.isSymLink-NullPointerException.new-FilenameUtils.isSystemWindows-File.getParent-File.getParentFile-File.getCanonicalFile-File.getName-File.new-File.getAbsoluteFile-File.getCanonicalFile-File.equals-FileUtils.isBrokenSymlink
+Determines if the specified file is possibly a broken symbolic link
+File.exists-File.getCanonicalFile-File.getParentFile-File.exists-File.equals-FileFilter.new-File.listFiles
+Dump a long value into a StringBuilder
+StringBuilder.append
+Dump a byte value into a StringBuilder
+StringBuilder.append
+Closes the underlying input stream and replaces the reference to it with a  instance
+InputStream.close-ClosedInputStream.new
+Automatically closes the stream if the end of stream was reached
+AutoCloseInputStream.close
+Ensures that the stream is closed before it gets garbage-collected
+AutoCloseInputStream.close-ProxyInputStream.finalize
+Indicates whether the stream contains one of the specified BOMs
+BOMInputStream.getBOM
+Indicates whether the stream contains the specified BOM
+ByteOrderMark.contains-IllegalArgumentException.new-BOMInputStream.getBOM-ByteOrderMark.equals
+Return the BOM (Byte Order Mark)
+ByteOrderMark.get-ByteOrderMark.length-InputStream.read-BOMInputStream.find-ByteOrderMark.length-ByteOrderMark.length
+Return the BOM charset Name - 
+BOMInputStream.getBOM-ByteOrderMark.getCharsetName
+This method reads and either preserves or skips the first bytes in the stream
+BOMInputStream.getBOM
+Find a BOM with the specified bytes
+BOMInputStream.matches
+Check if the bytes match a BOM
+ByteOrderMark.get-ByteOrderMark.length
+Invokes the delegate's read() method, detecting and optionally skipping BOM
+BOMInputStream.readFirstBytes-InputStream.read
+Invokes the delegate's read(byte[], int, int) method, detecting and optionally skipping BOM
+BOMInputStream.readFirstBytes-InputStream.read
+Invokes the delegate's read(byte[]) method, detecting and optionally skipping BOM
+BOMInputStream.read
+Invokes the delegate's mark(int) method
+InputStream.mark
+Invokes the delegate's reset() method
+InputStream.reset
+Invokes the delegate's skip(long) method, detecting and optionallyskipping BOM
+BOMInputStream.readFirstBytes-InputStream.skip
+Invokes the delegate's read() method if the current position is less than the limit
+InputStream.read
+Invokes the delegate's read(byte[]) method
+BoundedInputStream.read
+Invokes the delegate's read(byte[], int, int) method
+Math.min-InputStream.read
+Invokes the delegate's skip(long) method
+Math.min-InputStream.skip
+Invokes the delegate's toString() method
+InputStream.toString
+Invokes the delegate's close() method if  is {@code true}
+InputStream.close
+Invokes the delegate's reset() method
+InputStream.reset
+Invokes the delegate's mark(int) method
+InputStream.mark
+Invokes the delegate's markSupported() method
+InputStream.markSupported
+Resets the target to the latest mark, @see java
+Reader.reset
+marks the target stream, @see java
+Reader.mark
+Reads a single character, @see java
+Reader.read
+Reads into an array, @see java
+BoundedReader.read
+Fills the byte output buffer from the input char buffer
+ByteBuffer.compact-CharsetEncoder.encode-CoderResult.isError-CoderResult.throwException-ByteBuffer.flip
+Return an estimate of the number of bytes remaining in the byte stream
+ByteBuffer.remaining-CharBuffer.remaining
+Read a single character
+CharSequence.length-CharSequence.charAt
+Read the sepcified number of characters into the array
+CharSequence.length-NullPointerException.new-IndexOutOfBoundsException.new-CharSequenceReader.read
+Skip the specified number of characters
+IllegalArgumentException.new-CharSequence.length-CharSequence.length-Math.min
+Return a String representation of the underlying character sequence
+CharSequence.toString
+Resolve a class specified by the descriptor using the specified ClassLoader or the super ClassLoader
+ObjectInputStream.resolveClass-ObjectStreamClass.getName-Class.forName
+Create a proxy class that implements the specified interfaces using the specified ClassLoader or the super ClassLoader
+Class.forName-ObjectInputStream.resolveProxyClass-Proxy.getProxyClass
+Replaces the underlying input stream with a  sentinel
+ClosedInputStream.new
+Skips the stream over the specified number of bytes, adding the skipped amount to the count
+ProxyInputStream.skip
+The number of bytes that have passed through this stream
+CountingInputStream.getByteCount-ArithmeticException.new
+Set the byte count back to 0
+CountingInputStream.resetByteCount-ArithmeticException.new
+Bind the specified stream to the current thread
+InputStream.get-InputStream.set
+Closes stream associated with current thread
+InputStream.get-InputStream.close
+Read byte from stream associated with current thread
+InputStream.get-InputStream.read
+Mark the current position
+UnsupportedOperationException.new
+Read a byte
+IOException.new-NullInputStream.doEndOfFile-NullInputStream.processByte
+Read some bytes into the specified array
+NullInputStream.read
+Read the specified number bytes into an array
+IOException.new-NullInputStream.doEndOfFile-NullInputStream.processBytes
+Reset the stream to the point when mark was last called
+UnsupportedOperationException.new-IOException.new-IOException.new
+Skip a specified number of bytes
+IOException.new-NullInputStream.doEndOfFile
+Handle End of File
+EOFException.new
+Mark the current position
+UnsupportedOperationException.new
+Read a character
+IOException.new-NullReader.doEndOfFile-NullReader.processChar
+Read some characters into the specified array
+NullReader.read
+Read the specified number characters into an array
+IOException.new-NullReader.doEndOfFile-NullReader.processChars
+Reset the stream to the point when mark was last called
+UnsupportedOperationException.new-IOException.new-IOException.new
+Skip a specified number of characters
+IOException.new-NullReader.doEndOfFile
+Handle End of File
+EOFException.new
+Invokes the delegate's read() method
+ProxyInputStream.handleIOException-ProxyInputStream.beforeRead-InputStream.read-ProxyInputStream.afterRead
+Invokes the delegate's read(byte[]) method
+ProxyInputStream.handleIOException-ProxyInputStream.beforeRead-InputStream.read-ProxyInputStream.afterRead
+Invokes the delegate's read(byte[], int, int) method
+ProxyInputStream.handleIOException-ProxyInputStream.beforeRead-InputStream.read-ProxyInputStream.afterRead
+Invokes the delegate's skip(long) method
+ProxyInputStream.handleIOException-InputStream.skip
+Invokes the delegate's available() method
+ProxyInputStream.handleIOException-FilterInputStream.available
+Invokes the delegate's close() method
+ProxyInputStream.handleIOException-InputStream.close
+Invokes the delegate's mark(int) method
+InputStream.mark
+Invokes the delegate's reset() method
+ProxyInputStream.handleIOException-InputStream.reset
+Invokes the delegate's markSupported() method
+InputStream.markSupported
+Invokes the delegate's read() method
+ProxyReader.handleIOException-ProxyReader.beforeRead-Reader.read-ProxyReader.afterRead
+Invokes the delegate's read(char[]) method
+ProxyReader.handleIOException-ProxyReader.beforeRead-Reader.read-ProxyReader.afterRead
+Invokes the delegate's read(char[], int, int) method
+ProxyReader.handleIOException-ProxyReader.beforeRead-Reader.read-ProxyReader.afterRead
+Invokes the delegate's read(CharBuffer) method
+ProxyReader.handleIOException-CharBuffer.length-ProxyReader.beforeRead-Reader.read-ProxyReader.afterRead
+Invokes the delegate's skip(long) method
+ProxyReader.handleIOException-Reader.skip
+Invokes the delegate's ready() method
+ProxyReader.handleIOException-Reader.ready
+Invokes the delegate's close() method
+ProxyReader.handleIOException-Reader.close
+Invokes the delegate's mark(int) method
+ProxyReader.handleIOException-Reader.mark
+Invokes the delegate's reset() method
+ProxyReader.handleIOException-Reader.reset
+Invokes the delegate's markSupported() method
+Reader.markSupported
+Fills the internal char buffer from the reader
+CoderResult.isUnderflow-CharBuffer.compact-CharBuffer.position-CharBuffer.array-CharBuffer.remaining-Reader.read-CharBuffer.position-CharBuffer.flip-ByteBuffer.compact-CharsetEncoder.encode-ByteBuffer.flip
+Read the specified number of bytes into an array
+NullPointerException.new-IndexOutOfBoundsException.new-ByteBuffer.hasRemaining-ReaderInputStream.fillBuffer-ByteBuffer.hasRemaining-ByteBuffer.remaining-Math.min-ByteBuffer.get
+Read the specified number of bytes into an array
+ReaderInputStream.read
+Read a single byte
+ByteBuffer.hasRemaining-ByteBuffer.get-ReaderInputStream.fillBuffer-ByteBuffer.hasRemaining
+Close the stream
+Reader.close
+Returns the lines of the file from bottom to top
+FilePart.readLine-FilePart.rollOver-FilePart.readLine-String.equals-ReversedLinesFileReader.readLine
+Closes underlying resources
+RandomAccessFile.close
+Reads a line
+ReversedLinesFileReader.FilePart.createLeftOver-ReversedLinesFileReader.FilePart.getNewLineMatchByteCount-IllegalStateException.new-System.arraycopy-String.new-ReversedLinesFileReader.FilePart.createLeftOver-String.new
+Creates the buffer containing any left over bytes
+System.arraycopy
+Invokes the delegate's read() method
+InputStream.read
+Reads a character delegating to 
+SwappedDataInputStream.readShort
+Delegates to 
+EndianUtils.readSwappedDouble
+Delegates to 
+EndianUtils.readSwappedFloat
+Invokes the delegate's read(byte[] data, int, int) method
+SwappedDataInputStream.readFully
+Invokes the delegate's read(byte[] data, int, int) method
+ProxyInputStream.read-EOFException.new
+Delegates to 
+EndianUtils.readSwappedInteger
+Not currently supported - throws 
+UnsupportedOperationException.new
+Delegates to 
+EndianUtils.readSwappedLong
+Delegates to 
+EndianUtils.readSwappedShort
+Invokes the delegate's read() method
+InputStream.read
+Delegates to 
+EndianUtils.readSwappedUnsignedShort
+Not currently supported - throws 
+UnsupportedOperationException.new
+Invokes the delegate's skip(int) method
+InputStream.skip
+Tests if the given exception was caused by this stream
+TaggedIOException.isTaggedWith
+Re-throws the original exception thrown by this stream
+TaggedIOException.throwCauseIfTaggedWith
+Tags any IOExceptions thrown, wrapping and re-throwing
+TaggedIOException.new
+Creates and starts a Tailer for the given file
+Tailer.create
+Creates and starts a Tailer for the given file
+Tailer.create
+Creates and starts a Tailer for the given file
+Tailer.new-Thread.new-Thread.setDaemon-Thread.start
+Creates and starts a Tailer for the given file with default buffer size
+Tailer.create
+Creates and starts a Tailer for the given file with default buffer size
+Tailer.create
+Creates and starts a Tailer for the given file, starting at the beginning of the file with the default delay of 1
+Tailer.create
+Follows changes in the file, calling the TailerListener's handle method for each new line
+Thread.currentThread-Thread.interrupt-Tailer.stop-Tailer.stop-IOUtils.closeQuietly-Tailer.getRun-TailerListener.fileNotFound-RandomAccessFile.new-File.length-File.lastModified-RandomAccessFile.seek-Thread.sleep-Tailer.getRun-FileUtils.isFileNewer-File.length-RandomAccessFile.seek-Tailer.readLines-File.lastModified-Tailer.readLines-File.lastModified-TailerListener.fileRotated-TailerListener.fileNotFound-RandomAccessFile.new-TailerListener.handle-Tailer.readLines-IOUtils.closeQuietly-IOUtils.closeQuietly-Thread.sleep-Tailer.getRun-RandomAccessFile.new-RandomAccessFile.seek
+Read new lines
+ByteArrayOutputStream.new-RandomAccessFile.getFilePointer-Tailer.getRun-RandomAccessFile.read-ByteArrayOutputStream.toByteArray-String.new-TailerListener.handle-ByteArrayOutputStream.reset-ByteArrayOutputStream.write-ByteArrayOutputStream.toByteArray-String.new-TailerListener.handle-ByteArrayOutputStream.reset-ByteArrayOutputStream.write-RandomAccessFile.getFilePointer-IOUtils.closeQuietly-RandomAccessFile.seek-TailerListenerAdapter.endOfFileReached
+Closes the proxied input stream and, if so configured, the associated output stream
+OutputStream.close-ProxyInputStream.close
+Reads a single byte from the proxied input stream and writes it to the associated output stream
+ProxyInputStream.read-OutputStream.write
+Reads bytes from the proxied input stream and writes the read bytes to the associated output stream
+ProxyInputStream.read-OutputStream.write
+Reads bytes from the proxied input stream and writes the read bytes to the associated output stream
+ProxyInputStream.read-OutputStream.write
+Closes the stream
+InputStream.close-InputStream.close
+Closes the stream
+InputStream.close-InputStream.close
+Invokes the underlying reader's read(char[], int, int) method
+Reader.read
+Closes the XmlStreamReader stream
+Reader.close
+Process the raw stream
+BOMInputStream.getBOMCharsetName-BOMInputStream.getBOMCharsetName-XmlStreamReader.getXmlProlog-XmlStreamReader.doLenientDetection-XmlStreamReader.calculateRawEncoding
+Process a HTTP stream
+BOMInputStream.getBOMCharsetName-BOMInputStream.getBOMCharsetName-XmlStreamReader.getXmlProlog-XmlStreamReader.doLenientDetection-XmlStreamReader.calculateHttpEncoding
+Do lenient detection
+String.startsWith-String.length-String.substring-XmlStreamReaderException.getBomEncoding-XmlStreamReaderException.getXmlGuessEncoding-XmlStreamReaderException.getXmlEncoding-XmlStreamReader.calculateHttpEncoding-XmlStreamReaderException.getXmlEncoding-XmlStreamReaderException.getContentTypeEncoding
+Calculate the raw encoding
+String.equals-String.equals-String.equals-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-MessageFormat.format-XmlStreamReaderException.new
+Calculate the HTTP encoding
+XmlStreamReader.getContentTypeMime-XmlStreamReader.getContentTypeEncoding-XmlStreamReader.isAppXml-XmlStreamReader.isTextXml-MessageFormat.format-XmlStreamReaderException.new-XmlStreamReader.calculateRawEncoding-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.startsWith-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.equals-MessageFormat.format-XmlStreamReaderException.new-String.equals-String.startsWith-MessageFormat.format-XmlStreamReaderException.new
+Returns MIME type or NULL if httpContentType is NULL
+String.indexOf-String.substring-String.trim
+Returns charset parameter value, NULL if not present, NULL if httpContentType is NULL
+String.indexOf-String.substring-Pattern.matcher-Matcher.find-Matcher.group-String.toUpperCase
+Returns the encoding declared in the <?xml encoding=
+InputStream.mark-InputStream.read-InputStream.read-String.new-String.indexOf-IOException.new-IOException.new-InputStream.reset-String.substring-StringReader.new-BufferedReader.new-StringBuffer.new-BufferedReader.readLine-StringBuffer.append-BufferedReader.readLine-Pattern.matcher-Matcher.find-Matcher.group-String.toUpperCase-String.length-String.substring
+Indicates if the MIME type belongs to the APPLICATION XML family
+String.equals-String.equals-String.equals-String.startsWith-String.endsWith
+Indicates if the MIME type belongs to the TEXT XML family
+String.equals-String.equals-String.startsWith-String.endsWith
+Factory method to create an IOCase from a name
+IOCase.values-IOCase.getName-ioCase.getName().equals-IllegalArgumentException.new
+Replaces the enumeration from the stream with a real one
+forName.forName
+Compares two strings using the case-sensitivity rule
+NullPointerException.new-str1.compareToIgnoreCase-str1.compareTo
+Compares two strings using the case-sensitivity rule
+NullPointerException.new-str1.equalsIgnoreCase-str1.equals
+Checks if one string starts with another using the case-sensitivity rule
+start.length-str.regionMatches
+Checks if one string ends with another using the case-sensitivity rule
+end.length-str.length-str.regionMatches
+Checks if one string contains another starting at a specific index using the case-sensitivity rule
+str.length-search.length-checkRegionMatches.checkRegionMatches
+Checks if one string contains another at a specific index using the case-sensitivity rule
+search.length-str.regionMatches
+Closes a URLConnection
+HttpURLConnection.disconnect
+Closes an Reader unconditionally
+IOUtils.closeQuietly
+Closes an Writer unconditionally
+IOUtils.closeQuietly
+Closes an InputStream unconditionally
+IOUtils.closeQuietly
+Closes an OutputStream unconditionally
+IOUtils.closeQuietly
+Closes a Closeable unconditionally
+Closeable.close
+Closes a Closeable unconditionally
+IOUtils.closeQuietly
+Closes a Socket unconditionally
+Socket.close
+Closes a Selector unconditionally
+Selector.close
+Closes a ServerSocket unconditionally
+ServerSocket.close
+Fetches entire contents of an InputStream and represent same data as result InputStream
+ByteArrayOutputStream.toBufferedInputStream
+Fetches entire contents of an InputStream and represent same data as result InputStream
+ByteArrayOutputStream.toBufferedInputStream
+Returns the given reader if it is a , otherwise creates a BufferedReader from the given reader
+BufferedReader.new
+Returns the given reader if it is a , otherwise creates a BufferedReader from the given reader
+BufferedReader.new
+Returns the given reader if it is already a , otherwise creates a BufferedReader from the given reader
+BufferedReader.new
+Returns the given reader if it is already a , otherwise creates a BufferedReader from the given reader
+BufferedReader.new
+Returns the given Writer if it is already a , otherwise creates a BufferedWriter from the given Writer
+BufferedWriter.new
+Returns the given Writer if it is already a , otherwise creates a BufferedWriter from the given Writer
+BufferedWriter.new
+Returns the given OutputStream if it is already a , otherwise creates a BufferedOutputStream from the given OutputStream
+NullPointerException.new-BufferedOutputStream.new
+Returns the given OutputStream if it is already a , otherwise creates a BufferedOutputStream from the given OutputStream
+NullPointerException.new-BufferedOutputStream.new
+Returns the given InputStream if it is already a , otherwise creates a BufferedInputStream from the given InputStream
+NullPointerException.new-BufferedInputStream.new
+Returns the given InputStream if it is already a , otherwise creates a BufferedInputStream from the given InputStream
+NullPointerException.new-BufferedInputStream.new
+Gets the contents of an InputStream as a byte[]
+ByteArrayOutputStream.new-IOUtils.copy-ByteArrayOutputStream.toByteArray
+Gets contents of an InputStream as a byte[]
+IllegalArgumentException.new-IOUtils.toByteArray
+Gets the contents of an InputStream as a byte[]
+IllegalArgumentException.new-InputStream.read-IOException.new
+Gets the contents of a Reader as a byte[] using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.toByteArray
+Gets the contents of a Reader as a byte[] using the specified character encoding
+ByteArrayOutputStream.new-IOUtils.copy-ByteArrayOutputStream.toByteArray
+Gets the contents of a Reader as a byte[] using the specified character encoding
+Charsets.toCharset-IOUtils.toByteArray
+Gets the contents of a String as a byte[] using the default character encoding of the platform
+Charset.defaultCharset-String.getBytes
+Gets the contents of a URI as a byte[]
+URI.toURL-IOUtils.toByteArray
+Gets the contents of a URL as a byte[]
+URL.openConnection-IOUtils.close-IOUtils.toByteArray
+Gets the contents of a URLConnection as a byte[]
+URLConnection.getInputStream-InputStream.close-IOUtils.toByteArray
+Gets the contents of an InputStream as a character array using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.toCharArray
+Gets the contents of an InputStream as a character array using the specified character encoding
+CharArrayWriter.new-IOUtils.copy-CharArrayWriter.toCharArray
+Gets the contents of an InputStream as a character array using the specified character encoding
+Charsets.toCharset-IOUtils.toCharArray
+Gets the contents of a Reader as a character array
+CharArrayWriter.new-IOUtils.copy-CharArrayWriter.toCharArray
+Gets the contents of an InputStream as a String using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.toString
+Gets the contents of an InputStream as a String using the specified character encoding
+StringBuilderWriter.new-IOUtils.copy-StringBuilderWriter.toString
+Gets the contents of an InputStream as a String using the specified character encoding
+Charsets.toCharset-IOUtils.toString
+Gets the contents of a Reader as a String
+StringBuilderWriter.new-IOUtils.copy-StringBuilderWriter.toString
+Gets the contents at the given URI
+Charset.defaultCharset-IOUtils.toString
+Gets the contents at the given URI
+URI.toURL-Charsets.toCharset-IOUtils.toString
+Gets the contents at the given URI
+Charsets.toCharset-IOUtils.toString
+Gets the contents at the given URL
+Charset.defaultCharset-IOUtils.toString
+Gets the contents at the given URL
+URL.openStream-InputStream.close-IOUtils.toString
+Gets the contents at the given URL
+Charsets.toCharset-IOUtils.toString
+Gets the contents of a byte[] as a String using the default character encoding of the platform
+Charset.defaultCharset-String.new
+Gets the contents of a byte[] as a String using the specified character encoding
+Charsets.toCharset-String.new
+Gets the contents of an InputStream as a list of Strings, one entry per line, using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.readLines
+Gets the contents of an InputStream as a list of Strings, one entry per line, using the specified character encoding
+Charsets.toCharset-InputStreamReader.new-IOUtils.readLines
+Gets the contents of an InputStream as a list of Strings, one entry per line, using the specified character encoding
+Charsets.toCharset-IOUtils.readLines
+Gets the contents of a Reader as a list of Strings, one entry per line
+IOUtils.toBufferedReader-ArrayList<String>.new-BufferedReader.readLine-String.add-BufferedReader.readLine
+Returns an Iterator for the lines in a Reader
+LineIterator.new
+Returns an Iterator for the lines in an InputStream, using the character encoding specified (or default encoding if null)
+Charsets.toCharset-InputStreamReader.new-LineIterator.new
+Returns an Iterator for the lines in an InputStream, using the character encoding specified (or default encoding if null)
+Charsets.toCharset-IOUtils.lineIterator
+Converts the specified CharSequence to an input stream, encoded as bytes using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.toInputStream
+Converts the specified CharSequence to an input stream, encoded as bytes using the specified character encoding
+CharSequence.toString-IOUtils.toInputStream
+Converts the specified CharSequence to an input stream, encoded as bytes using the specified character encoding
+Charsets.toCharset-IOUtils.toInputStream
+Converts the specified string to an input stream, encoded as bytes using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.toInputStream
+Converts the specified string to an input stream, encoded as bytes using the specified character encoding
+Charsets.toCharset-String.getBytes-ByteArrayInputStream.new
+Converts the specified string to an input stream, encoded as bytes using the specified character encoding
+Charsets.toCharset-String.getBytes-ByteArrayInputStream.new
+Writes bytes from a byte[] to an OutputStream
+OutputStream.write
+Writes bytes from a byte[] to an OutputStream using chunked writes
+Math.min-OutputStream.write
+Writes bytes from a byte[] to chars on a Writer using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.write
+Writes bytes from a byte[] to chars on a Writer using the specified character encoding
+Charsets.toCharset-String.new-Writer.write
+Writes bytes from a byte[] to chars on a Writer using the specified character encoding
+Charsets.toCharset-IOUtils.write
+Writes chars from a char[] to a Writer using chunked writes
+Math.min-Writer.write
+Writes chars from a char[] to bytes on an OutputStream
+Charset.defaultCharset-IOUtils.write
+Writes chars from a char[] to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-String.new-String.getBytes-OutputStream.write
+Writes chars from a char[] to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-IOUtils.write
+Writes chars from a CharSequence to a Writer
+CharSequence.toString-IOUtils.write
+Writes chars from a CharSequence to bytes on an OutputStream using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.write
+Writes chars from a CharSequence to bytes on an OutputStream using the specified character encoding
+CharSequence.toString-IOUtils.write
+Writes chars from a CharSequence to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-IOUtils.write
+Writes chars from a String to a Writer
+Writer.write
+Writes chars from a String to bytes on an OutputStream using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.write
+Writes chars from a String to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-String.getBytes-OutputStream.write
+Writes chars from a String to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-IOUtils.write
+Writes chars from a StringBuffer to a Writer
+StringBuffer.toString-Writer.write
+Writes chars from a StringBuffer to bytes on an OutputStream using the default character encoding of the platform
+IOUtils.write
+Writes chars from a StringBuffer to bytes on an OutputStream using the specified character encoding
+Charsets.toCharset-StringBuffer.toString-String.getBytes-OutputStream.write
+Writes the toString() value of each item in a collection to an OutputStream line by line, using the default character encoding of the platform and the specified line ending
+Charset.defaultCharset-IOUtils.writeLines
+Writes the toString() value of each item in a collection to an OutputStream line by line, using the specified character encoding and the specified line ending
+Charsets.toCharset-Object.toString-String.getBytes-OutputStream.write-String.getBytes-OutputStream.write
+Writes the toString() value of each item in a collection to an OutputStream line by line, using the specified character encoding and the specified line ending
+Charsets.toCharset-IOUtils.writeLines
+Writes the toString() value of each item in a collection to a Writer line by line, using the specified line ending
+Object.toString-Writer.write-Writer.write
+Copies bytes from an InputStream to an OutputStream
+IOUtils.copyLarge
+Copies bytes from an InputStream to an OutputStream using an internal buffer of the given size
+IOUtils.copyLarge
+Copies bytes from a large (over 2GB) InputStream to an OutputStream
+IOUtils.copy
+Copies bytes from a large (over 2GB) InputStream to an OutputStream
+InputStream.read-OutputStream.write
+Copies some or all bytes from a large (over 2GB) InputStream to an OutputStream, optionally skipping input bytes
+IOUtils.copyLarge
+Copies some or all bytes from a large (over 2GB) InputStream to an OutputStream, optionally skipping input bytes
+IOUtils.skipFully-InputStream.read-OutputStream.write-Math.min
+Copies bytes from an InputStream to chars on a Writer using the default character encoding of the platform
+Charset.defaultCharset-IOUtils.copy
+Copies bytes from an InputStream to chars on a Writer using the specified character encoding
+Charsets.toCharset-InputStreamReader.new-IOUtils.copy
+Copies bytes from an InputStream to chars on a Writer using the specified character encoding
+Charsets.toCharset-IOUtils.copy
+Copies chars from a Reader to a Writer
+IOUtils.copyLarge
+Copies chars from a large (over 2GB) Reader to a Writer
+IOUtils.copyLarge
+Copies chars from a large (over 2GB) Reader to a Writer
+Reader.read-Writer.write
+Copies some or all chars from a large (over 2GB) InputStream to an OutputStream, optionally skipping input chars
+IOUtils.copyLarge
+Copies some or all chars from a large (over 2GB) InputStream to an OutputStream, optionally skipping input chars
+IOUtils.skipFully-Reader.read-Writer.write-Math.min
+Copies chars from a Reader to bytes on an OutputStream using the default character encoding of the platform, and calling flush
+Charset.defaultCharset-IOUtils.copy
+Copies chars from a Reader to bytes on an OutputStream using the specified character encoding, and calling flush
+Charsets.toCharset-OutputStreamWriter.new-IOUtils.copy-OutputStreamWriter.flush
+Copies chars from a Reader to bytes on an OutputStream using the specified character encoding, and calling flush
+Charsets.toCharset-IOUtils.copy
+Compares the contents of two Streams to determine if they are equal or not
+BufferedInputStream.new-BufferedInputStream.new-InputStream.read-InputStream.read-InputStream.read-InputStream.read
+Compares the contents of two Readers to determine if they are equal or not
+IOUtils.toBufferedReader-IOUtils.toBufferedReader-Reader.read-Reader.read-Reader.read-Reader.read
+Compares the contents of two Readers to determine if they are equal or not, ignoring EOL characters
+IOUtils.toBufferedReader-IOUtils.toBufferedReader-BufferedReader.readLine-BufferedReader.readLine-String.equals-BufferedReader.readLine-BufferedReader.readLine-String.equals
+Skips bytes from an input byte stream
+IllegalArgumentException.new-Math.min-InputStream.read
+Skips bytes from a ReadableByteChannel
+IllegalArgumentException.new-Math.min-ByteBuffer.allocate-ByteBuffer.position-Math.min-ByteBuffer.limit-ReadableByteChannel.read
+Skips characters from an input character stream
+IllegalArgumentException.new-Math.min-Reader.read
+Skips the requested number of bytes or fail if there are not enough left
+IllegalArgumentException.new-IOUtils.skip-EOFException.new
+Skips the requested number of bytes or fail if there are not enough left
+IllegalArgumentException.new-IOUtils.skip-EOFException.new
+Skips the requested number of characters or fail if there are not enough left
+IOUtils.skip-EOFException.new
+Reads characters from an input character stream
+IllegalArgumentException.new-Reader.read
+Reads characters from an input character stream
+IOUtils.read
+Reads bytes from an input stream
+IllegalArgumentException.new-InputStream.read
+Reads bytes from an input stream
+IOUtils.read
+Reads bytes from a ReadableByteChannel
+ByteBuffer.remaining-ByteBuffer.remaining-ReadableByteChannel.read-ByteBuffer.remaining
+Reads the requested number of characters or fail if there are not enough left
+IOUtils.read-EOFException.new
+Reads the requested number of characters or fail if there are not enough left
+IOUtils.readFully
+Reads the requested number of bytes or fail if there are not enough left
+IOUtils.read-EOFException.new
+Reads the requested number of bytes or fail if there are not enough left
+IOUtils.readFully
+Reads the requested number of bytes or fail if there are not enough left
+IOUtils.readFully
+Reads the requested number of bytes or fail if there are not enough left
+ByteBuffer.remaining-IOUtils.read-EOFException.new
+Indicates whether the Reader has more lines
+LineIterator.close-IllegalStateException.new-BufferedReader.readLine-LineIterator.isValidLine
+Returns the next line in the wrapped Reader
+LineIterator.nextLine
+Returns the next line in the wrapped Reader
+LineIterator.hasNext-NoSuchElementException.new
+Closes the underlying Reader quietly
+IOUtils.closeQuietly
+Unsupported
+UnsupportedOperationException.new
+Closes the iterator, handling null and ignoring exceptions
+LineIterator.close
+Add a file system observer to this monitor
+FileAlterationObserver.add
+Remove a file system observer from this monitor
+FileAlterationObserver.remove
+Start monitoring
+IllegalStateException.new-FileAlterationObserver.initialize-Thread.new-ThreadFactory.newThread-Thread.start
+Stop monitoring
+FileAlterationMonitor.stop
+Stop monitoring
+IllegalStateException.new-Thread.currentThread-Thread.interrupt-Thread.join-FileAlterationObserver.destroy
+Run
+FileAlterationObserver.checkAndNotify-Thread.sleep
+Return the directory being observed
+FileEntry.getFile
+Add a file system listener
+FileAlterationListener.add
+Remove a file system listener
+FileAlterationListener.remove
+Initialize the observer
+FileEntry.getFile-FileEntry.refresh-FileEntry.getFile-FileAlterationObserver.doListFiles-FileEntry.setChildren
+Check whether the file and its chlidren have been created, modified or deleted
+FileAlterationListener.onStart-FileEntry.getFile-File.exists-FileEntry.isExists-FileEntry.getChildren-FileAlterationObserver.checkAndNotify-FileEntry.getChildren-FileAlterationObserver.listFiles-FileAlterationObserver.checkAndNotify-FileAlterationListener.onStop
+Compare two file lists for files which have been created, modified or deleted
+FileEntry.getFile-File.compare-FileAlterationObserver.createFileEntry-FileAlterationObserver.doCreate-FileEntry.getFile-File.compare-FileEntry.getChildren-FileAlterationObserver.checkAndNotify-FileAlterationObserver.doDelete-FileAlterationObserver.doMatch-FileEntry.getChildren-FileAlterationObserver.listFiles-FileAlterationObserver.checkAndNotify-FileAlterationObserver.createFileEntry-FileAlterationObserver.doCreate-FileEntry.setChildren
+Create a new file entry for the specified file
+FileEntry.newChildInstance-FileEntry.refresh-FileAlterationObserver.doListFiles-FileEntry.setChildren
+Fire directory/file created events to the registered listeners
+FileEntry.isDirectory-FileEntry.getFile-FileAlterationListener.onFileCreate-FileEntry.getFile-FileAlterationListener.onDirectoryCreate-FileEntry.getChildren-FileAlterationObserver.doCreate
+Fire directory/file change events to the registered listeners
+FileEntry.refresh-FileEntry.isDirectory-FileAlterationListener.onFileChange-FileAlterationListener.onDirectoryChange
+Fire directory/file delete events to the registered listeners
+FileEntry.isDirectory-FileEntry.getFile-FileAlterationListener.onFileDelete-FileEntry.getFile-FileAlterationListener.onDirectoryDelete
+Provide a String representation of this observer
+StringBuilder.new-Object.getClass-Object.getSimpleName-StringBuilder.append-StringBuilder.append-FileAlterationObserver.getDirectory-File.getPath-StringBuilder.append-StringBuilder.append-StringBuilder.append-FileFilter.toString-StringBuilder.append-StringBuilder.append-FileAlterationListener.size-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Refresh the attributes from the , indicating whether the file has changed
+File.getName-File.exists-File.isDirectory-File.lastModified-File.length
+Create a new child instance
+FileEntry.new
+Write a character to the underlying appendable
+T.append
+Makes a new buffer available either by allocating a new one or re-cycling an existing one
+List<byte[].size-Math.max-List<byte[].add-List<byte[].get
+Write the bytes to byte array
+IndexOutOfBoundsException.new-Math.min-System.arraycopy-ByteArrayOutputStream.needNewBuffer
+Write a byte to byte array
+ByteArrayOutputStream.needNewBuffer
+Writes the entire contents of the specified input stream to this byte stream
+InputStream.read-ByteArrayOutputStream.needNewBuffer-InputStream.read
+Writes the entire contents of this byte stream to the specified output stream
+Math.min-OutputStream.write
+Fetches entire contents of an InputStream and represent same data as result InputStream
+ByteArrayOutputStream.toBufferedInputStream
+Fetches entire contents of an InputStream and represent same data as result InputStream
+ByteArrayOutputStream.new-ByteArrayOutputStream.write-ByteArrayOutputStream.toInputStream
+Gets the current contents of this byte stream as a Input Stream
+ClosedInputStream.new-List<byte[].size-ArrayList<ByteArrayInputStream>.new-Math.min-ByteArrayInputStream.new-ByteArrayInputStream.add-Collections.enumeration-SequenceInputStream.new
+Gets the curent contents of this byte stream as a byte array
+Math.min-System.arraycopy
+Gets the curent contents of this byte stream as a string using the platform default charset
+ByteArrayOutputStream.toByteArray-Charset.defaultCharset-String.new
+Gets the curent contents of this byte stream as a string using the specified encoding
+ByteArrayOutputStream.toByteArray-String.new
+Gets the curent contents of this byte stream as a string using the specified encoding
+ByteArrayOutputStream.toByteArray-String.new
+Throws an  to indicate that the stream is closed
+IOException.new
+Replaces the underlying output stream with a  sentinel
+ClosedOutputStream.new
+The number of bytes that have passed through this stream
+CountingOutputStream.getByteCount-ArithmeticException.new
+Set the byte count back to 0
+CountingOutputStream.resetByteCount-ArithmeticException.new
+Switches the underlying output stream from a memory based stream to one that is backed by disk
+File.createTempFile-FileOutputStream.new-FileOutputStream.close-ByteArrayOutputStream.writeTo
+Determines whether or not the data for this output stream has been retained in memory
+ThresholdingOutputStream.isThresholdExceeded
+Returns the data for this output stream as an array of bytes, assuming that the data has been retained in memory
+ByteArrayOutputStream.toByteArray
+Writes the data from this output stream to the specified output stream, after it has been closed
+IOException.new-DeferredFileOutputStream.isInMemory-FileInputStream.new-IOUtils.closeQuietly-IOUtils.copy-ByteArrayOutputStream.writeTo
+Binds the specified stream to the current thread
+OutputStream.get-OutputStream.set
+Closes stream associated with current thread
+OutputStream.get-OutputStream.close
+Flushes stream associated with current thread
+OutputStream.get-OutputStream.flush
+Writes byte to stream associated with current thread
+OutputStream.get-OutputStream.write
+Initialise the wrapped file writer
+NullPointerException.new-NullPointerException.new-File.exists-IOUtils.closeQuietly-IOUtils.closeQuietly-FileUtils.deleteQuietly-IOUtils.closeQuietly-IOUtils.closeQuietly-FileUtils.deleteQuietly-FileOutputStream.new-OutputStreamWriter.new-OutputStreamWriter.new-OutputStreamWriter.new
+Write a character
+Writer.write
+Write the characters from an array
+Writer.write
+Write the specified characters from an array
+Writer.write
+Write the characters from a string
+Writer.write
+Write the specified characters from a string
+Writer.write
+Flush the stream
+Writer.flush
+Close the stream
+Writer.close
+Tests that we can write to the lock directory
+File.exists-File.getAbsolutePath-IOException.new-File.canWrite-File.getAbsolutePath-IOException.new
+Creates the lock file
+File.createNewFile-File.getAbsolutePath-IOException.new-File.deleteOnExit
+Initialise the wrapped file writer
+File.exists-IOUtils.closeQuietly-IOUtils.closeQuietly-FileUtils.deleteQuietly-FileUtils.deleteQuietly-IOUtils.closeQuietly-IOUtils.closeQuietly-FileUtils.deleteQuietly-FileUtils.deleteQuietly-File.getAbsolutePath-FileOutputStream.new-Charsets.toCharset-OutputStreamWriter.new
+Closes the file writer and deletes the lockfile (if possible)
+File.delete-Writer.close
+Write a character
+Writer.write
+Write the characters from an array
+Writer.write
+Write the specified characters from an array
+Writer.write
+Write the characters from a string
+Writer.write
+Write the specified characters from a string
+Writer.write
+Flush the stream
+Writer.flush
+Invokes the delegate's write(int) method
+ProxyOutputStream.handleIOException-ProxyOutputStream.beforeWrite-OutputStream.write-ProxyOutputStream.afterWrite
+Invokes the delegate's write(byte[]) method
+ProxyOutputStream.handleIOException-ProxyOutputStream.beforeWrite-OutputStream.write-ProxyOutputStream.afterWrite
+Invokes the delegate's write(byte[]) method
+ProxyOutputStream.handleIOException-ProxyOutputStream.beforeWrite-OutputStream.write-ProxyOutputStream.afterWrite
+Invokes the delegate's flush() method
+ProxyOutputStream.handleIOException-OutputStream.flush
+Invokes the delegate's close() method
+ProxyOutputStream.handleIOException-OutputStream.close
+Invokes the delegate's append(char) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.append-ProxyWriter.afterWrite
+Invokes the delegate's append(CharSequence, int, int) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.append-ProxyWriter.afterWrite
+Invokes the delegate's append(CharSequence) method
+ProxyWriter.handleIOException-CharSequence.length-ProxyWriter.beforeWrite-Writer.append-ProxyWriter.afterWrite
+Invokes the delegate's write(int) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.write-ProxyWriter.afterWrite
+Invokes the delegate's write(char[]) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.write-ProxyWriter.afterWrite
+Invokes the delegate's write(char[], int, int) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.write-ProxyWriter.afterWrite
+Invokes the delegate's write(String) method
+ProxyWriter.handleIOException-String.length-ProxyWriter.beforeWrite-Writer.write-ProxyWriter.afterWrite
+Invokes the delegate's write(String) method
+ProxyWriter.handleIOException-ProxyWriter.beforeWrite-Writer.write-ProxyWriter.afterWrite
+Invokes the delegate's flush() method
+ProxyWriter.handleIOException-Writer.flush
+Invokes the delegate's close() method
+ProxyWriter.handleIOException-Writer.close
+Appends a single character to this Writer
+StringBuilder.append
+Appends a character sequence to this Writer
+StringBuilder.append
+Appends a portion of a character sequence to the 
+StringBuilder.append
+Writes a String to the 
+StringBuilder.append
+Writes a portion of a character array to the 
+StringBuilder.append
+Returns 
+StringBuilder.toString
+Tests if the given exception was caused by this stream
+TaggedIOException.isTaggedWith
+Re-throws the original exception thrown by this stream
+TaggedIOException.throwCauseIfTaggedWith
+Tags any IOExceptions thrown, wrapping and re-throwing
+TaggedIOException.new
+Write the bytes to both streams
+ProxyOutputStream.write-OutputStream.write
+Write the specified bytes to both streams
+ProxyOutputStream.write-OutputStream.write
+Write a byte to both streams
+ProxyOutputStream.write-OutputStream.write
+Flushes both streams
+ProxyOutputStream.flush-OutputStream.flush
+Closes both output streams
+OutputStream.close-ProxyOutputStream.close
+Writes the specified byte to this output stream
+ThresholdingOutputStream.checkThreshold-ThresholdingOutputStream.getStream-OutputStream.write
+Writes b
+ThresholdingOutputStream.checkThreshold-ThresholdingOutputStream.getStream-OutputStream.write
+Writes len bytes from the specified byte array starting at offset off to this output stream
+ThresholdingOutputStream.checkThreshold-ThresholdingOutputStream.getStream-OutputStream.write
+Flushes this output stream and forces any buffered output bytes to be written out
+ThresholdingOutputStream.getStream-OutputStream.flush
+Closes this output stream and releases any system resources associated with this stream
+ThresholdingOutputStream.flush-ThresholdingOutputStream.getStream-OutputStream.close
+Checks to see if writing the specified number of bytes would cause the configured threshold to be exceeded
+ThresholdingOutputStream.thresholdReached
+Write bytes from the specified byte array to the stream
+ByteBuffer.remaining-Math.min-ByteBuffer.put-WriterOutputStream.processInput-WriterOutputStream.flushOutput
+Write bytes from the specified byte array to the stream
+WriterOutputStream.write
+Write a single byte to the stream
+WriterOutputStream.write
+Flush the stream
+WriterOutputStream.flushOutput-Writer.flush
+Close the stream
+WriterOutputStream.processInput-WriterOutputStream.flushOutput-Writer.close
+Decode the contents of the input ByteBuffer into a CharBuffer
+ByteBuffer.flip-CharsetDecoder.decode-CoderResult.isOverflow-CoderResult.isUnderflow-IOException.new-WriterOutputStream.flushOutput-ByteBuffer.compact
+Flush the output
+CharBuffer.position-CharBuffer.array-CharBuffer.position-Writer.write-CharBuffer.rewind
+Close the underlying writer
+OutputStreamWriter.new-StringWriter.toString-Writer.write-Writer.close
+Flush the underlying writer
+Writer.flush
+Detect the encoding
+StringWriter.getBuffer-StringBuffer.length-StringBuffer.length-StringWriter.write-StringBuffer.length-StringBuffer.substring-String.equals-StringBuffer.indexOf-StringBuffer.length-StringBuffer.substring-Pattern.matcher-Matcher.find-Matcher.group-String.toUpperCase-String.length-String.substring-OutputStreamWriter.new-StringBuffer.toString-Writer.write-Writer.write
+Write the characters to the underlying writer, detecing encoding
+Writer.write-XmlStreamWriter.detectEncoding
+Check that the classname conforms to requirements
+ClassNameMatcher.matches-ValidatingObjectInputStream.invalidClassNameFound-ClassNameMatcher.matches-ValidatingObjectInputStream.invalidClassNameFound
+Called to throw InvalidClassException if an invalid class name is found during deserialization
+InvalidClassException.new
+Accept the specified classes for deserialization, unless they  are otherwise rejected
+Class<?.getName-FullClassNameMatcher.new-ClassNameMatcher.add
+Reject the specified classes for deserialization, even if they  are otherwise accepted
+Class<?.getName-FullClassNameMatcher.new-ClassNameMatcher.add
+Accept the wildcard specified classes for deserialization, unless they are otherwise rejected
+WildcardClassNameMatcher.new-ClassNameMatcher.add
+Reject the wildcard specified classes for deserialization,  even if they are otherwise accepted
+WildcardClassNameMatcher.new-ClassNameMatcher.add
+Accept class names that match the supplied pattern for deserialization, unless they are otherwise rejected
+RegexpClassNameMatcher.new-ClassNameMatcher.add
+Reject class names that match the supplied pattern for deserialization, even if they are otherwise accepted
+RegexpClassNameMatcher.new-ClassNameMatcher.add
+Accept class names where the supplied ClassNameMatcher matches for deserialization, unless they are otherwise rejected
+ClassNameMatcher.add
+Reject class names where the supplied ClassNameMatcher matches for deserialization, even if they are otherwise accepted
+ClassNameMatcher.add
+Checks whether the given throwable is tagged with the given tag
+Object.equals
+Throws the original  if the given throwable is a {@link TaggedIOException} decorator the given tag
+TaggedIOException.isTaggedWith-TaggedIOException.getCause
+Returns the wrapped exception
+IOExceptionWithCause.getCause
+Start monitoring the current thread
+Thread.currentThread-ThreadMonitor.start
+Start monitoring the specified thread
+ThreadMonitor.new-ThreadMonitor.getSimpleName-Thread.new-Thread.setDaemon-Thread.start
+Stop monitoring the specified thread
+Thread.interrupt
+Sleep until the specified timeout amount and then interrupt the thread being monitored
+ThreadMonitor.sleep-Thread.interrupt
+Sleep for a guaranteed minimum number of milliseconds unless interrupted
+System.currentTimeMillis-Thread.sleep-System.currentTimeMillis
+Test the comparator
+comparator.compare-assertEquals.assertEquals-comparator.compare-assertTrue.assertTrue-comparator.compare-assertTrue.assertTrue
+Test the comparator reversed
+File.compare-assertEquals.assertEquals-File.compare-assertTrue.assertTrue-File.compare-assertTrue.assertTrue
+Test comparator array sort is null safe
+comparator.sort-assertNull.assertNull
+Test the comparator array sort
+comparator.sort-assertSame.assertSame-assertSame.assertSame-assertSame.assertSame
+Test the comparator array sort
+ArrayList<File>.new-File.add-File.add-File.add-comparator.sort-File.get-assertSame.assertSame-File.get-assertSame.assertSame-File.get-assertSame.assertSame
+Test comparator list sort is null safe
+comparator.sort-assertNull.assertNull
+Test comparator toString
+comparator.toString-assertNotNull.assertNotNull-File.toString-String.startsWith-assertTrue.assertTrue
+Test a file which doesn't exist
+File.new-File.new-File.exists-assertFalse.assertFalse-comparator.compare-assertTrue.assertTrue
+Test a file which doesn't exist
+comparator.compare-assertEquals.assertEquals-SizeFileComparator.SIZE_SUMDIR_COMPARATOR.compare-assertEquals.assertEquals-SizeFileComparator.SIZE_SUMDIR_REVERSE.compare-assertEquals.assertEquals
+Check the files in the array are in the results list
+File.contains-assertTrue.assertTrue
+Extract the directories
+File.size-ArrayList<File>.new-File.isDirectory-File.add
+Extract the files
+File.size-ArrayList<File>.new-File.isFile-File.add
+Create an name filter containg the names of the files in the array
+File.getName-NameFileFilter.new
+find files
+ArrayList<File>.new-ex.toString-Assert.fail-walk.walk
+Handles a directory end by adding the File to the result set
+results.add
+Handles a file by adding the File to the result set
+results.add
+find files
+ArrayList<File>.new-walk.walk
+Handles a directory end by adding the File to the result set
+results.add-directory.getName-cancelFileName.equals-CancelException.new
+Handles a file by adding the File to the result set
+results.add-file.getName-cancelFileName.equals-CancelException.new
+Handles Cancel
+super.handleCancelled
+find files
+ArrayList<File>.new-walk.walk
+Handles a directory end by adding the File to the result set
+results.add-assertFalse.assertFalse-directory.getName-cancelFileName.equals
+Handles a file by adding the File to the result set
+results.add-assertFalse.assertFalse-file.getName-cancelFileName.equals
+Handles Cancel
+super.handleCancelled
+find files
+ArrayList<String>.new-ex.toString-Assert.fail-walk.walk
+Handles a file by adding the File to the result set
+file.toString-results.add
+Check the files in the array are in the results list
+Collection.contains-assertTrue.assertTrue
+Extract the directories
+File.size-ArrayList.new-File.isDirectory-List.add
+Extract the files
+File.size-ArrayList.new-File.isFile-List.add
+Create an name filter containg the names of the files in the array
+File.getName-NameFileFilter.new
+find files
+ArrayList<File>.new-ex.toString-fail.fail-walk.walk
+Handles a directory end by adding the File to the result set
+results.add
+Handles a file by adding the File to the result set
+results.add
+find files
+ArrayList.new-walk.walk
+Handles a directory end by adding the File to the result set
+results.add-directory.getName-cancelFileName.equals-CancelException.new
+Handles a file by adding the File to the result set
+results.add-file.getName-cancelFileName.equals-CancelException.new
+Handles Cancel
+super.handleCancelled
+find files
+ArrayList.new-walk.walk
+Handles a directory end by adding the File to the result set
+results.add-assertFalse.assertFalse-directory.getName-cancelFileName.equals
+Handles a file by adding the File to the result set
+results.add-assertFalse.assertFalse-file.getName-cancelFileName.equals
+Handles Cancel
+super.handleCancelled
+The following block of code can possibly be removed when the deprecated  is gone
+FileBasedTestCase.getTestDirectory-FileUtils.deleteDirectory-ReferenceQueue<Object>.new-theInstance.trackers.clear-theInstance.deleteFailures.clear
+Test for https://issues
+FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals-FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals-FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals-FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals-FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals-FilenameUtils.getFullPathNoEndSeparator-assertEquals.assertEquals
+Test for https://issues
+FilenameUtils.equalsNormalizedOnSystem-fail.fail-FilenameUtils.equalsNormalizedOnSystem-fail.fail-FilenameUtils.equalsNormalizedOnSystem-fail.fail
+See https://issues
+FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch-FilenameUtilsWildcardTestCase.assertMatch
+Tests the isFileNewer(File, *) methods which a "normal" file
+File.exists-IllegalStateException.new-File.lastModified-FileUtilsFileNewerTestCase.testIsFileNewer-FileUtilsFileNewerTestCase.testIsFileNewer-FileUtilsFileNewerTestCase.testIsFileNewer
+Tests the isFileNewer(File, *) methods which a not existing file
+FileBasedTestCase.getTestDirectory-File.new-File.exists-IllegalStateException.new-File.lastModified-FileUtilsFileNewerTestCase.testIsFileNewer
+Tests the isFileNewer(File, *) methods which the specified conditions
+FileUtils.isFileNewer-assertEquals.assertEquals-Date.new-FileUtils.isFileNewer-assertEquals.assertEquals-File.setLastModified-File.lastModified-assertEquals.assertEquals-FileUtils.isFileNewer-assertEquals.assertEquals
+Tests the isFileNewer(File, long) method without specifying a File
+FileUtils.isFileNewer-fail.fail
+Tests the isFileNewer(File, Date) method without specifying a Date
+FileUtils.isFileNewer-fail.fail
+Tests the isFileNewer(File, File) method without specifying a reference File
+FileUtils.isFileNewer-fail.fail
+ Creates the underlying data stream, with or without BOM
+System.arraycopy-ByteArrayInputStream.new
+ Creates the underlying data stream, with or without BOM
+System.arraycopy-ByteArrayInputStream.new
+ Creates the underlying data stream, with or without BOM
+System.arraycopy-ByteArrayInputStream.new
+ Creates the underlying data stream, with or without BOM
+System.arraycopy-ByteArrayInputStream.new
+ Creates the underlying data stream, with or without BOM
+System.arraycopy-ByteArrayInputStream.new
+Closes the XmlStreamReader stream
+Reader.close
+Create the XML
+MessageFormat.get-MessageFormat.format-MessageFormat.format
+Tests the  constructor
+IllegalArgumentException.new-IOException.new-IOExceptionWithCauseTestCase.validate
+Assert that the contents of two byte arrays are the same
+Arrays.equals-assertTrue.assertTrue
+Test for  and {@link IOUtils#toInputStream(CharSequence, String)}
+StringBuilder.new-IOUtils.toInputStream-IOUtils.toByteArray-CharSequence.toString-String.getBytes-IOUtilsTestCase.assertEqualContent-IOUtils.toInputStream-IOUtils.toByteArray-CharSequence.toString-String.getBytes-IOUtilsTestCase.assertEqualContent-IOUtils.toInputStream-IOUtils.toByteArray-CharSequence.toString-String.getBytes-IOUtilsTestCase.assertEqualContent
+Test for  and {@link IOUtils#toInputStream(String, String)}
+IOUtils.toInputStream-IOUtils.toByteArray-String.getBytes-IOUtilsTestCase.assertEqualContent-IOUtils.toInputStream-IOUtils.toByteArray-String.getBytes-IOUtilsTestCase.assertEqualContent-IOUtils.toInputStream-IOUtils.toByteArray-String.getBytes-IOUtilsTestCase.assertEqualContent
+Creates a test file with a specified number of lines
+LineIteratorTestCase.createStringLines-FileUtils.writeLines
+Creates a test file with a specified number of lines
+LineIteratorTestCase.createStringLines-FileUtils.writeLines
+Creates String data lines
+ArrayList<String>.new-String.add
+Utility method to create and test a file with a specified number of lines
+FileBasedTestCase.getTestDirectory-File.new-LineIteratorTestCase.createLinesFile-FileUtils.lineIterator-LineIterator.closeQuietly-iterator.remove-fail.fail-iterator.hasNext-iterator.next-String.get-assertEquals.assertEquals-String.size-String.size-assertTrue.assertTrue-String.size-assertEquals.assertEquals-iterator.next-fail.fail-iterator.nextLine-fail.fail
+Create a 
+FileAlterationObserver.new-observer.addListener-FileAlterationListenerAdaptor.new-observer.addListener-fail.fail-observer.initialize
+Check all the Collections have the expected sizes
+CollectionFileListener.getCreatedDirectories-listener.getCreatedDirectories().size-CollectionFileListener.getChangedDirectories-listener.getChangedDirectories().size-CollectionFileListener.getDeletedDirectories-listener.getDeletedDirectories().size-CollectionFileListener.getCreatedFiles-listener.getCreatedFiles().size-CollectionFileListener.getChangedFiles-listener.getChangedFiles().size-CollectionFileListener.getDeletedFiles-listener.getDeletedFiles().size-CollectionFileListener.getCreatedDirectories-listener.getCreatedDirectories().size-assertEquals.assertEquals-CollectionFileListener.getChangedDirectories-listener.getChangedDirectories().size-assertEquals.assertEquals-CollectionFileListener.getDeletedDirectories-listener.getDeletedDirectories().size-assertEquals.assertEquals-CollectionFileListener.getCreatedFiles-listener.getCreatedFiles().size-assertEquals.assertEquals-CollectionFileListener.getChangedFiles-listener.getChangedFiles().size-assertEquals.assertEquals-CollectionFileListener.getDeletedFiles-listener.getDeletedFiles().size-assertEquals.assertEquals
+Either creates a file if it doesn't exist or updates the last modified date/time if it does
+File.exists-File.lastModified-fail.fail-FileUtils.touch-File.getParent-File.getName-File.new-File.lastModified-TestUtils.sleepQuietly-FileUtils.touch-File.getParent-File.getName-File.new-TestUtils.sleepQuietly
+File system observer started checking event
+clear.clear
+Clear file collections
+createdFiles.clear-changedFiles.clear-deletedFiles.clear-createdDirectories.clear-changedDirectories.clear-deletedDirectories.clear
+Directory created Event
+createdDirectories.add
+Directory changed Event
+changedDirectories.add
+Directory deleted Event
+deletedDirectories.add
+File created Event
+createdFiles.add
+File changed Event
+changedFiles.add
+File deleted Event
+deletedFiles.add
+Test default constructor
+FileAlterationMonitor.new-monitor.getInterval-assertEquals.assertEquals
+Test add/remove observers
+FileAlterationMonitor.new-monitor.getInterval-assertEquals.assertEquals-monitor.getObservers-monitor.getObservers().iterator-monitor.getObservers().iterator().hasNext-assertFalse.assertFalse-FileAlterationMonitor.new-monitor.getObservers-monitor.getObservers().iterator-monitor.getObservers().iterator().hasNext-assertFalse.assertFalse-monitor.addObserver-monitor.getObservers-monitor.getObservers().iterator-monitor.getObservers().iterator().hasNext-assertFalse.assertFalse-monitor.removeObserver-FileAlterationObserver.new-monitor.addObserver-monitor.getObservers-monitor.getObservers().iterator-it.hasNext-assertTrue.assertTrue-it.next-assertEquals.assertEquals-it.hasNext-assertFalse.assertFalse-monitor.removeObserver-monitor.getObservers-monitor.getObservers().iterator-monitor.getObservers().iterator().hasNext-assertFalse.assertFalse
+Test using a thread factory
+Exception.printStackTrace-fail.fail-CollectionFileListener.clear-FileAlterationMonitor.new-Executors.defaultThreadFactory-monitor.setThreadFactory-monitor.getInterval-assertEquals.assertEquals-monitor.start-AbstractMonitorTestCase.checkCollectionsEmpty-File.new-AbstractMonitorTestCase.touch-CollectionFileListener.getCreatedFiles-checkFile.checkFile-CollectionFileListener.clear-AbstractMonitorTestCase.checkCollectionsEmpty-File.delete-CollectionFileListener.getDeletedFiles-checkFile.checkFile-CollectionFileListener.clear-monitor.stop
+Check all the File Collections have the expected sizes
+File.contains-TestUtils.sleepQuietly-fail.fail
+Test add/remove listeners
+FileAlterationObserver.new-observer.addListener-observer.getListeners-observer.getListeners().iterator-observer.getListeners().iterator().hasNext-assertFalse.assertFalse-observer.removeListener-observer.getListeners-observer.getListeners().iterator-observer.getListeners().iterator().hasNext-assertFalse.assertFalse-FileAlterationListenerAdaptor.new-observer.addListener-observer.getListeners-observer.getListeners().iterator-it.hasNext-assertTrue.assertTrue-it.next-assertEquals.assertEquals-it.hasNext-assertFalse.assertFalse-observer.removeListener-observer.getListeners-observer.getListeners().iterator-observer.getListeners().iterator().hasNext-assertFalse.assertFalse
+Test toString()
+File.new-FileAlterationObserver.new-File.getPath-observer.toString-assertEquals.assertEquals-FileAlterationObserver.new-File.getPath-observer.toString-assertEquals.assertEquals-observer.getDirectory-assertEquals.assertEquals
+Call 
+observer.checkAndNotify
+Test the write(b) method
+cos.close-ClosedOutputStream.new-cos.write-fail.fail
+Tests the case where the amount of data falls below the threshold, and is therefore confined to memory
+DeferredFileOutputStream.new-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertTrue.assertTrue-dfos.getData-assertEquals.assertEquals-Arrays.equals-assertTrue.assertTrue
+Tests the case where the amount of data is exactly the same as the threshold
+DeferredFileOutputStream.new-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertTrue.assertTrue-dfos.getData-assertEquals.assertEquals-Arrays.equals-assertTrue.assertTrue
+Tests the case where the amount of data exceeds the threshold, and is therefore written to disk
+File.new-File.delete-DeferredFileOutputStream.new-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertFalse.assertFalse-dfos.getData-assertNull.assertNull-DeferredFileOutputStreamTest.verifyResultFile-File.delete
+Tests the case where there are multiple writes beyond the threshold, to ensure that the thresholdReached() method is only called once, as the threshold is crossed for the first time
+File.new-File.delete-DeferredFileOutputStream.new-fail.fail-dfos.write-dfos.write-dfos.write-dfos.close-dfos.isInMemory-assertFalse.assertFalse-dfos.getData-assertNull.assertNull-DeferredFileOutputStreamTest.verifyResultFile-File.delete
+Test wether writeTo() properly writes small content
+File.new-ByteArrayOutputStream.new-File.delete-DeferredFileOutputStream.new-fail.fail-dfos.write-File.exists-assertFalse.assertFalse-dfos.isInMemory-assertTrue.assertTrue-dfos.writeTo-fail.fail-dfos.close-dfos.writeTo-baos.toByteArray-Arrays.equals-assertTrue.assertTrue-File.delete
+Test wether writeTo() properly writes large content
+File.new-ByteArrayOutputStream.new-File.delete-DeferredFileOutputStream.new-fail.fail-dfos.write-File.exists-assertTrue.assertTrue-dfos.isInMemory-assertFalse.assertFalse-dfos.writeTo-fail.fail-dfos.close-dfos.writeTo-baos.toByteArray-Arrays.equals-assertTrue.assertTrue-DeferredFileOutputStreamTest.verifyResultFile-File.delete
+Test specifying a temporary file and the threshold not reached
+File.new-DeferredFileOutputStream.new-dfos.getFile-assertNull.assertNull-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertTrue.assertTrue-dfos.getFile-assertNull.assertNull
+Test specifying a temporary file and the threshold is reached
+File.new-DeferredFileOutputStream.new-dfos.getFile-assertNull.assertNull-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertFalse.assertFalse-dfos.getData-assertNull.assertNull-dfos.getFile-assertNotNull.assertNotNull-dfos.getFile-dfos.getFile().exists-assertTrue.assertTrue-dfos.getFile-dfos.getFile().getName-dfos.getFile().getName().startsWith-assertTrue.assertTrue-dfos.getFile-dfos.getFile().getName-dfos.getFile().getName().endsWith-assertTrue.assertTrue-File.getPath-dfos.getFile-dfos.getFile().getParent-assertEquals.assertEquals-dfos.getFile-verifyResultFile.verifyResultFile-dfos.getFile-dfos.getFile().delete
+Test specifying a temporary file and the threshold is reached
+DeferredFileOutputStream.new-dfos.getFile-assertNull.assertNull-fail.fail-dfos.write-dfos.close-dfos.isInMemory-assertFalse.assertFalse-dfos.getData-assertNull.assertNull-dfos.getFile-assertNotNull.assertNotNull-dfos.getFile-dfos.getFile().exists-assertTrue.assertTrue-dfos.getFile-dfos.getFile().getName-dfos.getFile().getName().startsWith-assertTrue.assertTrue-dfos.getFile-dfos.getFile().getName-dfos.getFile().getName().endsWith-assertTrue.assertTrue-dfos.getFile-verifyResultFile.verifyResultFile-dfos.getFile-dfos.getFile().delete
+Test specifying a temporary file and the threshold is reached
+File.new-DeferredFileOutputStream.new-(new DeferredFileOutputStream(testBytes.length - 5, prefix, suffix, tempDir)).close-fail.fail
+Verifies that the specified file contains the same data as the original test data
+fail.fail-fail.fail-FileInputStream.new-FileInputStream.available-assertEquals.assertEquals-FileInputStream.read-assertEquals.assertEquals-Arrays.equals-assertTrue.assertTrue-FileInputStream.read-assertEquals.assertEquals-FileInputStream.close
+Tests that the branch  is closed when closing the main {@code OutputStream} throws an exception on {@link TeeOutputStream#close()}
+ExceptionOnCloseByteArrayOutputStream.new-RecordCloseByteArrayOutputStream.new-TeeOutputStream.new-Assert.assertTrue-tos.close-IOException.getName-Assert.fail
+Tests that the main  is closed when closing the branch {@code OutputStream} throws an exception on {@link TeeOutputStream#close()}
+ExceptionOnCloseByteArrayOutputStream.new-RecordCloseByteArrayOutputStream.new-TeeOutputStream.new-Assert.assertTrue-tos.close-IOException.getName-Assert.fail
+Assert that the content of two files is the same
+java.io.FileInputStream.new-InputStream.close-java.io.FileInputStream.new-InputStream.close-InputStream.read-InputStream.read-assertTrue.assertTrue-Arrays.equals-assertTrue.assertTrue
+Assert that the content of a file is equal to that in a byte[]
+java.io.FileInputStream.new-InputStream.close-InputStream.read-assertEquals.assertEquals-assertEquals.assertEquals
+Assert that the content of a file is equal to that in a char[]
+java.io.FileReader.new-Reader.close-Reader.read-assertEquals.assertEquals-assertEquals.assertEquals
+Sleep for a guaranteed number of milliseconds unless interrupted
+System.currentTimeMillis-Thread.sleep-System.currentTimeMillis
+Test timeout
+ThreadMonitor.start-TestUtils.sleep-ThreadMonitor.stop-fail.fail
+Test task completed before timeout
+fail.fail-ThreadMonitor.start-TestUtils.sleep-ThreadMonitor.stop
+Test No timeout
+fail.fail-ThreadMonitor.start-assertNull.assertNull-TestUtils.sleep-ThreadMonitor.stop-fail.fail-ThreadMonitor.start-assertNull.assertNull-TestUtils.sleep-ThreadMonitor.stop

@@ -62,7 +62,9 @@ public class ThesisMethodParser {
 		thesisSequenceVisitorImplements.visit(node, null);
 
 		apiSequence = parsingApi(combinedTypeSolver);
-		apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
+		if (apiSequence != null && !"".equals(apiSequence)) {
+			apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
+		}
 		annotation = parsingAnnotation();
 //		System.out.println("apiSequence : " + apiSequence);
 //		System.out.println("annotation : " + annotation);
@@ -85,21 +87,29 @@ public class ThesisMethodParser {
 					String simpleApiName = "";
 	
 					//TODO 내부 메서드 검색해서 값 추가!
-					if ("com.github.javaparser.ast.expr.SimpleName".equals(methodNode.getClass().getTypeName())) {// 내부 메서드 콜
-						SymbolReference<com.github.javaparser.symbolsolver.model.declarations.MethodDeclaration> reference 
-						= facade.solve(callExpr);
-						simpleApiName = reference.getCorrespondingDeclaration().getClassName();
-					} else {
-						try {
-						 	Type typeOfTheNode = facade.getType(methodNode);
-						 	String apiName = typeOfTheNode.describe().toString();
-						 	simpleApiName = apiName.substring(apiName.lastIndexOf(".") + 1);
-						} catch (UnsolvedSymbolException e) { // static 메서드 콜
-							simpleApiName = methodNode.toString();
+					try {
+						if ("com.github.javaparser.ast.expr.SimpleName".equals(methodNode.getClass().getTypeName())) {// 내부 메서드 콜
+							try {
+							SymbolReference<com.github.javaparser.symbolsolver.model.declarations.MethodDeclaration> reference 
+							= facade.solve(callExpr);
+							simpleApiName = reference.getCorrespondingDeclaration().getClassName();
+							} catch (UnsolvedSymbolException e) { // 왜 에러 나는지 몰겠..
+								simpleApiName = methodNode.toString();
+							}
+						} else {
+							try {
+							 	Type typeOfTheNode = facade.getType(methodNode);
+							 	String apiName = typeOfTheNode.describe().toString();
+							 	simpleApiName = apiName.substring(apiName.lastIndexOf(".") + 1).replace(">", "");//<>를 사용하는 변수는 이상하게 '>'가 추가된다 TODO 확인 요망
+							} catch (UnsolvedSymbolException e) { // static 메서드 콜
+								simpleApiName = methodNode.toString();
+							}
 						}
+						builder.append(simpleApiName).append(".").append(callExpr.getName()).append("-");
+					} catch (RuntimeException re) {
+						System.out.println(re);
+						builder = new StringBuilder();
 					}
-	
-					builder.append(simpleApiName).append(".").append(callExpr.getName()).append("-");
 				} catch (IllegalStateException e) {
 					System.err.println(e);
 					//TODO 예외 처리하기 builder 값 지워야 할 듯
@@ -115,9 +125,13 @@ public class ThesisMethodParser {
 	 * and return first line
 	 * 
 	 * @return
+	 * null - not comment
 	 */
 	private String parsingAnnotation() {
 		JavadocComment comment = thesisSequenceVisitorImplements.getComment();
+		if (comment == null) {
+			return null;
+		}
 		String description = comment.parse().getDescription().toText();
 		String firstLine = "";
 		
@@ -134,9 +148,10 @@ public class ThesisMethodParser {
 		String firstLine = "";
 
 		if (!string.toLowerCase().contains("todo") && 
-				(string.contains(".\n") || string.contains(". ") || string.contains("."))) {
-			String splited[] = string.split("([.]\n|[.] )");
-			firstLine= splited[0].replaceAll("\n", " ");
+				(string.contains(".\n") || string.contains(".\r") 
+						|| string.contains(". ") || string.contains("."))) {
+			String splited[] = string.split("([.]\n|[.]|[.]<p|[.]<P)");
+			firstLine= splited[0].replaceAll("\n", " ").replaceAll("\r", "");
 		} else if (string.contains("\n")){
 			firstLine = string.substring(0, string.indexOf("\n"));
 		} 

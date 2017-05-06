@@ -8,7 +8,8 @@ public class Main {
 //			new GetSequence(),
 //			new GetThesisSequence()
 //			new UseIOUtils()
-			new UseFileLIstSearcher()
+//			new UseFileLIstSearcher()
+			new UsePearser()
 			);
 	
 	public static void main(String[] args) {

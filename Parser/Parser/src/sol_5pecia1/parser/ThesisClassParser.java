@@ -51,6 +51,7 @@ public class ThesisClassParser {
 		methodVisitor
 		.parsedDataList
 		.stream()
+		.filter(d -> d.isValid)
 		.forEach(d -> {
 			builder.append(d);
 
@@ -94,12 +95,17 @@ public class ThesisClassParser {
     }
 	
 	private class ParsedData {
+		boolean isValid = false;
 		String apiSequence = "";
 		String annotation = "";
 		
 		public ParsedData(String apiSequence, String annotation) {
-			this.apiSequence = apiSequence;
-			this.annotation = annotation;
+			if (apiSequence != null && annotation != null
+					&& !"".equals(apiSequence) && !"".equals(annotation)) {  
+				this.apiSequence = apiSequence;
+				this.annotation = annotation;
+				isValid = true;
+			}
 		}
 	
 		@Override
