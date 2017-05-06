@@ -63,7 +63,7 @@ public class DataSaver {
 				count++;
 				
 				if (count >= MAX_LINE || 
-						count / CUT_LINE > splitCouont) { // 다음 파일 대상 || 다음 IO 대상
+						count / CUT_LINE  > splitCouont) { // 다음 파일 대상 || 다음 IO 대상
 					saveLine.append(l.substring(previousLine, i));
 				} else {
 					savedLine.append(l.substring(previousLine, i));
@@ -86,6 +86,7 @@ public class DataSaver {
 			}
 		} else {
 			try {
+				splitCouont = 0;
 				if (currentWriter != null) {
 					currentWriter.close();
 				}
