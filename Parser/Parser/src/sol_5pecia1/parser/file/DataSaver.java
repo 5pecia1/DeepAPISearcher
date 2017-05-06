@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class DataSaver {
 	private final static int MAX_COUNT = 10000;
 	private final static int MAX_LINE = MAX_COUNT * 2;
-	private final static int SPLIT_COUNT = 10;
+	private final static int SPLIT_COUNT = 50;
 	private final static int CUT_LINE = MAX_LINE / SPLIT_COUNT;
 	
 	private static char slash = '/';
