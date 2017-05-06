@@ -7,14 +7,13 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.tools.Diagnostic;
-
 public class DataSaver {
 	private final static int MAX_COUNT = 10000;
 	private final static int MAX_LINE = MAX_COUNT * 2;
 	private final static int SPLIT_COUNT = 10;
 	private final static int CUT_LINE = MAX_LINE / SPLIT_COUNT;
 	
+	private static char slash = '/';
 	private static File saveRoot;
 	private static int fileCount = -1;
 	private static int count = MAX_LINE; 
@@ -31,6 +30,9 @@ public class DataSaver {
 
 	public static void setRootFile(File file) {
 		saveRoot = file;
+		if(System.getProperty("os.name").toLowerCase().startsWith("window")) {
+			slash = '\\';
+		}
 	}
 	
 	public static void flushFile() {
@@ -95,7 +97,7 @@ public class DataSaver {
 						count++;
 					}
 				}
-				currentFile = new File(saveRoot.getAbsolutePath() + "\\data-" + ++fileCount + ".txt");
+				currentFile = new File(saveRoot.getAbsolutePath() + slash + "data-" + ++fileCount + ".txt");
 				System.out.println(
 						currentFile.createNewFile()
 						? "make new file : " + fileCount 
