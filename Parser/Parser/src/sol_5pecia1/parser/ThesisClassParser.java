@@ -14,7 +14,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeS
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
 /**
- * ÇØ´ç Å¬·¡½ºÀÇ ³»¿ëÀ» ³í¹® Çü½ÄÀ¸·Î parsingÇÑ´Ù.
+ * í•´ë‹¹ í´ë˜ìŠ¤ì˜ ë‚´ìš©ì„ ë…¼ë¬¸ í˜•ì‹ìœ¼ë¡œ parsingí•œë‹¤.
  * 
  * @author sol
  *

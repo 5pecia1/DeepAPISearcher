@@ -7,7 +7,7 @@ import sol_5pecia1.parser.file.DataSaver;
 import sol_5pecia1.parser.functions.Parser;
 
 /**
- * ÆÄÀÏÀ» Ã£°í °á°ú°ªÀ» ºñµ¿±âÀûÀ¸·Î ³Ñ°ÜÁØ´Ù
+ * íŒŒì¼ì„ ì°¾ê³  ê²°ê³¼ê°’ì„ ë¹„ë™ê¸°ì ìœ¼ë¡œ ë„˜ê²¨ì¤€ë‹¤
  * 
  * @author sol
  *

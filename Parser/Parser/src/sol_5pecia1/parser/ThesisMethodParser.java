@@ -18,7 +18,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import sol_5pecia1.parser.methodinformation.ThesisSequenceVisitorImplements;
 
 /**
- * ÇÏ³ªÀÇ ¸Ş¼­µå¸¦ ³í¹®Çü½ÄÀ¸·Î ParsingÇÑ apiSequence ¹× annotationÀ» °®´Â´Ù.
+ * í•˜ë‚˜ì˜ ë©”ì„œë“œë¥¼ ë…¼ë¬¸í˜•ì‹ìœ¼ë¡œ Parsingí•œ apiSequence ë° annotationì„ ê°–ëŠ”ë‹¤.
  * 
  * @author sol
  *
@@ -75,33 +75,33 @@ public class ThesisMethodParser {
 		StringBuilder builder = new StringBuilder();
 		for (Node visitedNode : thesisSequenceVisitorImplements.getNodeListSequenceAboutThesis()) {
 			
-			if (visitedNode instanceof ObjectCreationExpr) { //»ı¼ºÀÚ
+			if (visitedNode instanceof ObjectCreationExpr) { //ìƒì„±ì
 				ObjectCreationExpr creationExpr = (ObjectCreationExpr) visitedNode;
 				Node classNode = creationExpr.getChildNodes().get(0);
 				builder.append(classNode).append(".").append(OBJECT_CREATE).append("-");
-			} else if (visitedNode instanceof MethodCallExpr) { // ¸Ş¼Òµå Äİ
+			} else if (visitedNode instanceof MethodCallExpr) { // ë©”ì†Œë“œ ì½œ
 				try {
 					JavaParserFacade facade = JavaParserFacade.get(combinedTypeSolver);
 					MethodCallExpr callExpr = (MethodCallExpr) visitedNode;
 					Node methodNode = callExpr.getChildNodes().get(0);
 					String simpleApiName = "";
 	
-					//TODO ³»ºÎ ¸Ş¼­µå °Ë»öÇØ¼­ °ª Ãß°¡!
+					//TODO ë‚´ë¶€ ë©”ì„œë“œ ê²€ìƒ‰í•´ì„œ ê°’ ì¶”ê°€!
 					try {
-						if ("com.github.javaparser.ast.expr.SimpleName".equals(methodNode.getClass().getTypeName())) {// ³»ºÎ ¸Ş¼­µå Äİ
+						if ("com.github.javaparser.ast.expr.SimpleName".equals(methodNode.getClass().getTypeName())) {// ë‚´ë¶€ ë©”ì„œë“œ ì½œ
 							try {
 							SymbolReference<com.github.javaparser.symbolsolver.model.declarations.MethodDeclaration> reference 
 							= facade.solve(callExpr);
 							simpleApiName = reference.getCorrespondingDeclaration().getClassName();
-							} catch (UnsolvedSymbolException e) { // ¿Ö ¿¡·¯ ³ª´ÂÁö ¸ô°Ú..
+							} catch (UnsolvedSymbolException e) { // ì™œ ì—ëŸ¬ ë‚˜ëŠ”ì§€ ëª°ê² ..
 								simpleApiName = methodNode.toString();
 							}
 						} else {
 							try {
 							 	Type typeOfTheNode = facade.getType(methodNode);
 							 	String apiName = typeOfTheNode.describe().toString();
-							 	simpleApiName = apiName.substring(apiName.lastIndexOf(".") + 1).replace(">", "");//<>¸¦ »ç¿ëÇÏ´Â º¯¼ö´Â ÀÌ»óÇÏ°Ô '>'°¡ Ãß°¡µÈ´Ù TODO È®ÀÎ ¿ä¸Á
-							} catch (UnsolvedSymbolException e) { // static ¸Ş¼­µå Äİ
+							 	simpleApiName = apiName.substring(apiName.lastIndexOf(".") + 1).replace(">", "");//<>ë¥¼ ì‚¬ìš©í•˜ëŠ” ë³€ìˆ˜ëŠ” ì´ìƒí•˜ê²Œ '>'ê°€ ì¶”ê°€ëœë‹¤ TODO í™•ì¸ ìš”ë§
+							} catch (UnsolvedSymbolException e) { // static ë©”ì„œë“œ ì½œ
 								simpleApiName = methodNode.toString();
 							}
 						}
@@ -112,7 +112,7 @@ public class ThesisMethodParser {
 					}
 				} catch (IllegalStateException e) {
 					System.err.println(e);
-					//TODO ¿¹¿Ü Ã³¸®ÇÏ±â builder °ª Áö¿ö¾ß ÇÒ µí
+					//TODO ì˜ˆì™¸ ì²˜ë¦¬í•˜ê¸° builder ê°’ ì§€ì›Œì•¼ í•  ë“¯
 				}
 			}
 		}
@@ -170,7 +170,7 @@ public class ThesisMethodParser {
 	}
 	
 	/**
-	 * TODO Á» ´õ È®½ÇÈ÷ Æ©´× °¡´ÉÇÑÁö È®ÀÎÇÏ±â, class »ç¿ëÇØ¼­ °ıÈ£¾ÈÀÇ °´Ã¼ Á¤º¸ ¾ò¾î¿À±â
+	 * TODO ì¢€ ë” í™•ì‹¤íˆ íŠœë‹ ê°€ëŠ¥í•œì§€ í™•ì¸í•˜ê¸°, class ì‚¬ìš©í•´ì„œ ê´„í˜¸ì•ˆì˜ ê°ì²´ ì •ë³´ ì–»ì–´ì˜¤ê¸°
 	 * @param string
 	 * @return
 	 */

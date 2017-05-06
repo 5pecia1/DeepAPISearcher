@@ -6,7 +6,7 @@ import sol_5pecia1.parser.methodinformation.ThesisSequenceVisitorImplements;
 
 
 /**
- * java ÆÄÀÏ¿¡¼­ ´Ü¼ø sequence ¾ò±â
+ * java íŒŒì¼ì—ì„œ ë‹¨ìˆœ sequence ì–»ê¸°
  * @author sol
  *
  */

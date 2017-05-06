@@ -63,7 +63,7 @@ public class DataSaver {
 				count++;
 				
 				if (count >= MAX_LINE || 
-						count / CUT_LINE  > splitCouont) { // ´ÙÀ½ ÆÄÀÏ ´ë»ó || ´ÙÀ½ IO ´ë»ó
+						count / CUT_LINE  > splitCouont) { // ë‹¤ìŒ íŒŒì¼ ëŒ€ìƒ || ë‹¤ìŒ IO ëŒ€ìƒ
 					saveLine.append(l.substring(previousLine, i));
 				} else {
 					savedLine.append(l.substring(previousLine, i));

@@ -13,15 +13,15 @@ import com.github.javaparser.ast.stmt.WhileStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 /**
- * DeepAPILearning¿¡ ³ª¿À´Â API usage sequence ´ë·Î ¸®½ºÆ®¸¦ ¸¸µé°í ÇØ´ç ¸Ş¼­µåÀÇ ÄÚ¸àÆ®¸¦ °¡Á®¿È.
+ * DeepAPILearningì— ë‚˜ì˜¤ëŠ” API usage sequence ëŒ€ë¡œ ë¦¬ìŠ¤íŠ¸ë¥¼ ë§Œë“¤ê³  í•´ë‹¹ ë©”ì„œë“œì˜ ì½”ë©˜íŠ¸ë¥¼ ê°€ì ¸ì˜´.
  * <br>
- * {@link ThesisSequenceVisitorImplements#visit(com.github.javaparser.ast.body.MethodDeclaration, Void)}À» È£ÃâÇÑ ´ÙÀ½
- * {@link ThesisSequenceVisitorImplements#getNodeListSequenceAboutThesis()}À» È£ÃâÇÏ¸é ¿øÇÏ´Â °ªÀ» ¾òÀ» ¼ö ÀÖ´Ù.
+ * {@link ThesisSequenceVisitorImplements#visit(com.github.javaparser.ast.body.MethodDeclaration, Void)}ì„ í˜¸ì¶œí•œ ë‹¤ìŒ
+ * {@link ThesisSequenceVisitorImplements#getNodeListSequenceAboutThesis()}ì„ í˜¸ì¶œí•˜ë©´ ì›í•˜ëŠ” ê°’ì„ ì–»ì„ ìˆ˜ ìˆë‹¤.
  * <br>
- * ÇÊ¿äÇÒ °æ¿ì »ó¼Ó¹Ş¾Æ »ç¿ëÇÏµÇ <code>visit()</code>À» override ÇÒ ¶§ ¶§ <code>super.visit()</code>Àº 
- * À§¿¡ ¼±¾ğÇØ¾ß ÇÏ´ÂÁö ¾Æ·¡¿¡ ¼±¾ğÇØ¾ßÇÏ´ÂÁö Àß È®ÀÎÇÏ°í ¼±¾ğÇÑ´Ù. ´ëºÎºĞÀÇ °æ¿ì À§¿¡ ¼±¾ğÇÑ´Ù.
+ * í•„ìš”í•  ê²½ìš° ìƒì†ë°›ì•„ ì‚¬ìš©í•˜ë˜ <code>visit()</code>ì„ override í•  ë•Œ ë•Œ <code>super.visit()</code>ì€ 
+ * ìœ„ì— ì„ ì–¸í•´ì•¼ í•˜ëŠ”ì§€ ì•„ë˜ì— ì„ ì–¸í•´ì•¼í•˜ëŠ”ì§€ ì˜ í™•ì¸í•˜ê³  ì„ ì–¸í•œë‹¤. ëŒ€ë¶€ë¶„ì˜ ê²½ìš° ìœ„ì— ì„ ì–¸í•œë‹¤.
  * <br>
- * <p style="color:red">ÇÏ³ªÀÇ °´Ã¼´Â ÇÏ³ªÀÇ ¸Ş¼­µå ½ÃÄı½º¸¸À» °¡Áø´Ù.</p>
+ * <p style="color:red">í•˜ë‚˜ì˜ ê°ì²´ëŠ” í•˜ë‚˜ì˜ ë©”ì„œë“œ ì‹œí€¸ìŠ¤ë§Œì„ ê°€ì§„ë‹¤.</p>
  * @author sol
  *
  */
