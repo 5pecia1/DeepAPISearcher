@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
@@ -37,7 +38,12 @@ public class ThesisClassParser {
 		System.out.println("class : " + this.javaPath);
 		CompilationUnit cu = JavaParser.parse(in);
 	
-		String packageName = cu.getPackageDeclaration().get().getNameAsString();
+		String packageName = "";
+		try {
+			 packageName= cu.getPackageDeclaration().get().getNameAsString();
+		} catch (NoSuchElementException nsee) {
+			System.out.println(nsee);
+		}
 		
 		File javaPackagePathForLoop = new File(javaPath);
 		for (int i = packageName.split("[.]").length; i >= 0 ; i--) {

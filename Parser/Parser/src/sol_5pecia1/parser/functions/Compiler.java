@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import com.github.javaparser.JavaParser;
@@ -20,7 +21,12 @@ public class Compiler {
 			FileInputStream in;
 			in = new FileInputStream(file);
 			CompilationUnit cu = JavaParser.parse(in);
-			String packageName = cu.getPackageDeclaration().get().getNameAsString();
+			String packageName = "";
+			try {
+				packageName = cu.getPackageDeclaration().get().getNameAsString();
+			} catch (NoSuchElementException nsee) {
+				System.out.println(nsee);
+			}
 			
 			String osName = System.getProperty("os.name");
 

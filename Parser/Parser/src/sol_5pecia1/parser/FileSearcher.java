@@ -34,6 +34,7 @@ public class FileSearcher {
 		if (file.isFile() && Pattern.matches(".+[.]java", file.getName())) {
 			compiler.compile(file);
 			parser.run(file);
+			System.gc();
 		} else if (file.isDirectory()){
 			File[] files = file.listFiles();
 		
