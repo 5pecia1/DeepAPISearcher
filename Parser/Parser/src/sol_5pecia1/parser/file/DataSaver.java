@@ -49,8 +49,8 @@ public class DataSaver {
 		}
 	}
 	
-	public static synchronized void save(String l) {
-		Matcher matcher = Pattern.compile("\n").matcher(l);
+	public static synchronized void save(String data) {
+		Matcher matcher = Pattern.compile("\n").matcher(data);
 
 		if (count < MAX_LINE) {
 			StringBuilder saveLine = new StringBuilder();
@@ -64,9 +64,9 @@ public class DataSaver {
 				
 				if (count >= MAX_LINE || 
 						count / CUT_LINE  > splitCouont) { // 다음 파일 대상 || 다음 IO 대상
-					saveLine.append(l.substring(previousLine, i));
+					saveLine.append(data.substring(previousLine, i));
 				} else {
-					savedLine.append(l.substring(previousLine, i));
+					savedLine.append(data.substring(previousLine, i));
 				}
 				previousLine = i;
 			}
@@ -109,7 +109,7 @@ public class DataSaver {
 				FileWriter fileWriter = new FileWriter(currentFile);
 				currentWriter = new BufferedWriter(fileWriter);
 				
-				save(l);
+				save(data);
 			} catch (IOException ioe) {
 				System.out.println(ioe);
 			}
