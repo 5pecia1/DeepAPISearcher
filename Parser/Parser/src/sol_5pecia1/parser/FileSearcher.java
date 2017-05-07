@@ -32,7 +32,9 @@ public class FileSearcher {
 	}
 	private void search(File file) {
 		if (file.isFile() && Pattern.matches(".+[.]java", file.getName())) {
+			System.gc();
 			compiler.compile(file);
+			System.gc();
 			parser.run(file);
 			System.gc();
 		} else if (file.isDirectory()){
