@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
 import com.github.javaparser.JavaParser;
+import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
@@ -22,8 +23,8 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
  */
 public class ThesisClassParser {
 	private final File javaPath;
-	private final File javaPackagePath;
 	private final File classPackagePath;
+	private File javaPackagePath;
 	private StringBuilder builder = new StringBuilder();
 
 	public ThesisClassParser(String javaClassPath) throws FileNotFoundException {
@@ -36,6 +37,8 @@ public class ThesisClassParser {
 	
 		FileInputStream in = new FileInputStream(this.javaPath);
 		System.out.println("class : " + this.javaPath);
+		
+		try {
 		CompilationUnit cu = JavaParser.parse(in);
 	
 		String packageName = "";
@@ -62,6 +65,9 @@ public class ThesisClassParser {
 			builder.append(d);
 
 		});
+		} catch (ParseProblemException ppe) {
+			System.out.println(ppe);
+		}
 	}
 	
 	public String getParsedDatas() {
