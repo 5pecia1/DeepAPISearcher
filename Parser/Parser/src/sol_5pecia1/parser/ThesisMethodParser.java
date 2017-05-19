@@ -59,8 +59,6 @@ public class ThesisMethodParser {
 		
 		thesisSequenceVisitorImplements.visit(node, null);
 		
-		JavaParserFacade.clearInstances();
-
 		apiSequence = parsingApi(combinedTypeSolver);
 		if (apiSequence != null && !"".equals(apiSequence)) {
 			apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
