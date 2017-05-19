@@ -27,7 +27,7 @@ public class FileSearcher {
 
 	public void search() {
 		DataSaver.setRootFile(saveRoot);
-		search(rootFile);
+		searchRoot(rootFile);
 		DataSaver.flushFile();
 	}
 	private void search(File file) {
@@ -47,5 +47,18 @@ public class FileSearcher {
 			}
 		}
 	}
-
+	
+	/**
+	 * 무조건 directory를 넣어야 한다.
+	 * @param file
+	 */
+	private void searchRoot(File file) {
+		File[] files = file.listFiles();
+		
+		if (files != null) {
+			for(File f : files) {
+				search(f);
+			}
+		}
+	}
 }
