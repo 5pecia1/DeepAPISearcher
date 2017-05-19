@@ -1,6 +1,9 @@
 package sol_5pecia1;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import sol_5pecia1.parser.FileSearcher;
 import sol_5pecia1.parser.functions.Compiler;
@@ -28,7 +31,20 @@ public class Main {
 		}
 		
 		FileSearcher fileSearcher = new FileSearcher(startRoot, saveRoot, new Compiler(), new Parser());
-		fileSearcher.search();
+		try {
+			fileSearcher.search();
+		} catch(Exception e) {
+			try(FileWriter fileWriter = new FileWriter(saveRoot);
+				BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
+				bufferedWriter.write(e.getMessage());
+				System.out.println("---------------------------------------------");
+				for(StackTraceElement ste : e.getStackTrace()) {
+					bufferedWriter.write(ste.toString());
+				}
+			} catch (IOException ioe) {
+				System.out.println(ioe);
+			}
+		}
 	}
 
 }
