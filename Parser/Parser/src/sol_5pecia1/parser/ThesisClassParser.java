@@ -65,6 +65,8 @@ public class ThesisClassParser {
 			builder.append(d);
 
 		});
+		
+		methodVisitor.parsedDataList.clear();
 		} catch (ParseProblemException ppe) {
 			System.out.println(ppe);
 		}

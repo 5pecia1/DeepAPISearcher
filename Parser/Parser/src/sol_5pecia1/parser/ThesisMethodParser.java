@@ -12,8 +12,6 @@ import com.github.javaparser.symbolsolver.javaparsermodel.UnsolvedSymbolExceptio
 import com.github.javaparser.symbolsolver.model.resolution.SymbolReference;
 import com.github.javaparser.symbolsolver.model.typesystem.Type;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSolver;
-import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolver;
-import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
 import sol_5pecia1.parser.methodinformation.ThesisSequenceVisitorImplements;
 
@@ -60,12 +58,16 @@ public class ThesisMethodParser {
 //		System.out.println(node);
 		
 		thesisSequenceVisitorImplements.visit(node, null);
+		
+		JavaParserFacade.clearInstances();
 
 		apiSequence = parsingApi(combinedTypeSolver);
 		if (apiSequence != null && !"".equals(apiSequence)) {
 			apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
 		}
 		annotation = parsingAnnotation();
+		
+		thesisSequenceVisitorImplements.getNodeListSequenceAboutThesis().clear();
 //		System.out.println("apiSequence : " + apiSequence);
 //		System.out.println("annotation : " + annotation);
 //		System.out.println("==log end");
