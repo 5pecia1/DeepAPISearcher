@@ -34,13 +34,19 @@ public class Main {
 		try {
 			fileSearcher.search();
 		} catch(Exception e) {
-			try(FileWriter fileWriter = new FileWriter(saveRoot);
+			File errorFile = new File(saveRoot.toString() + "\\error.txt");
+			
+			try(FileWriter fileWriter = new FileWriter(errorFile);
 				BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
 				bufferedWriter.write(e.getMessage());
+				
 				System.out.println("---------------------------------------------");
+				
 				for(StackTraceElement ste : e.getStackTrace()) {
 					bufferedWriter.write(ste.toString());
 				}
+				
+				System.out.println("saved error file!!!!!!");
 			} catch (IOException ioe) {
 				System.out.println(ioe);
 			}
