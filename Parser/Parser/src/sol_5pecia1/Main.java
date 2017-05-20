@@ -14,7 +14,8 @@ import sol_5pecia1.parser.functions.Parser;
 public class Main {
 
 	/**
-	 * 
+	 * TODO 1. make file about root file list.
+	 * TODO 2. make multi-processing or multi-threading
 	 * @param args
 	 * [0] : start root
 	 * [1] : save root
@@ -37,7 +38,6 @@ public class Main {
 			fileSearcher.search();
 		} catch(Throwable e) {
 			File errorFile = new File(saveRoot.toString() + "/error.txt");
-			
 			try(FileWriter fileWriter = new FileWriter(errorFile);
 				BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
 				System.out.println(bufferedWriter == null);
