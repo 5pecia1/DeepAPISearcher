@@ -60,7 +60,6 @@ public class FileSearcher {
 		if (files != null) {
 			for(File f : files) {
 				search(f);
-				JavaParserFacade.clearInstances();
 			}
 		}
 	}
