@@ -11,6 +11,7 @@ import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
@@ -95,7 +96,8 @@ public class ThesisClassParser {
     		if (javaPackagePath.equals(classPackagePath)) {
     			combinedTypeSolver.add(clasSolver);
     		}
-    		
+    	
+    		JavaParserFacade.clearInstances();
     		ThesisMethodParser methodParser = new ThesisMethodParser(n, combinedTypeSolver);
        
         	ParsedData data = new ParsedData(methodParser.getAPISequence(), methodParser.getAnnotaion());
