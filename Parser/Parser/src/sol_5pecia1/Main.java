@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
 import sol_5pecia1.parser.FileSearcher;
 import sol_5pecia1.parser.functions.Compiler;
 import sol_5pecia1.parser.functions.Parser;
@@ -35,16 +37,18 @@ public class Main {
 		try {
 			fileSearcher.search();
 		} catch(Throwable e) {
-			File errorFile = new File(saveRoot.toString() + "\\error.txt");
-			
+			File errorFile = new File(saveRoot.toString() + "/error.txt");
 			try(FileWriter fileWriter = new FileWriter(errorFile);
 				BufferedWriter bufferedWriter = new BufferedWriter(fileWriter)) {
-				bufferedWriter.write(e.getMessage());
+				System.out.println(bufferedWriter == null);
+				System.out.println(e == null);
+				bufferedWriter.write(e.toString());
 				
 				System.out.println("---------------------------------------------");
 				
 				for(StackTraceElement ste : e.getStackTrace()) {
 					bufferedWriter.write(ste.toString());
+					bufferedWriter.write("\n");
 				}
 				
 				System.out.println("saved error file!!!!!!");
