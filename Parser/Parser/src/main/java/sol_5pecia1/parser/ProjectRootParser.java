@@ -27,11 +27,11 @@ public class ProjectRootParser {
         }
 
         Iterable<File> projectList = projectList(startRoot, saveRoot,
-                (args.length == 3)? Boolean.getBoolean(args[2]) : false);
+                (args.length == 3)? Boolean.valueOf(args[2]) : false);
 
 
         for(File project : projectList) {
-            
+            System.out.println(project);
         }
     }
 
@@ -45,6 +45,7 @@ public class ProjectRootParser {
                          new BufferedWriter(fileWriter)) {
                 for (File projectFile : startRoot.listFiles()) {
                     bufferedWriter.write(projectFile.getAbsolutePath());
+                    bufferedWriter.newLine();
                 }
             } catch (IOException ioe) {
                 System.out.println(ioe);
@@ -88,6 +89,9 @@ public class ProjectRootParser {
                     result = file.exists();
                 }
 
+                if(!result) {
+                	System.out.println("haven't next project");
+                }
                 return result;
             } catch (IOException e) {
                 e.printStackTrace();
@@ -114,7 +118,8 @@ public class ProjectRootParser {
                         nextPath = line;
                         continue;
                     }
-                    writer.write(line + System.getProperty("line.separator"));
+                    writer.write(line);
+                    writer.newLine();
                 }
 
             } catch (IOException e) {
@@ -122,7 +127,6 @@ public class ProjectRootParser {
             }
 
             tempFile.renameTo(projectListFile);
-            projectListFile = tempFile;
             return new File(nextPath);
         }
     }
