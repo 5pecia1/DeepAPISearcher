@@ -105,11 +105,6 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/visualstudiocode
 
-# crawller data
-crawller/data/
-crawller/project_data/
-
-
 # Created by https://www.gitignore.io/api/intellij+iml
 
 ### Intellij+iml ###
@@ -172,3 +167,10 @@ modules.xml
 *.ipr
 
 # End of https://www.gitignore.io/api/intellij+iml
+
+# crawller data
+crawller/data/
+crawller/project_data/
+
+# project list data
+data/projectList.dat
