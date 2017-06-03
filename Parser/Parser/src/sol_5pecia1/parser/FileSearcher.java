@@ -32,11 +32,11 @@ public class FileSearcher {
 	}
 	private void search(File file) {
 		if (file.isFile() && Pattern.matches(".+[.]java", file.getName())) {
-			System.gc();
+//			System.gc();
 			compiler.compile(file);
-			System.gc();
+//			System.gc();
 			parser.run(file);
-			System.gc();
+//			System.gc();
 		} else if (file.isDirectory()){
 			File[] files = file.listFiles();
 		
