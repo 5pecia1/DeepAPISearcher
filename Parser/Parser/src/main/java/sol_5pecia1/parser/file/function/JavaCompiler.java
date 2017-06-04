@@ -1,4 +1,4 @@
-package sol_5pecia1.parser.file;
+package sol_5pecia1.parser.file.function;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;

@@ -37,8 +37,8 @@ public class ProjectRootParser {
                     (saveRoot +
                     "/" +
                     JAVA_LIST_FILE));
-            for(File java : files) {
-            }
+
+
         }
     }
 
