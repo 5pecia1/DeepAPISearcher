@@ -13,7 +13,7 @@ import java.util.function.Function;
 /**
  * Created by sol on 17. 6. 3.
  */
-public class Compiler implements Function<File, Boolean> {
+public class JavaCompiler implements Function<File, Boolean> {
 
     @Override
     public Boolean apply(File file) {
