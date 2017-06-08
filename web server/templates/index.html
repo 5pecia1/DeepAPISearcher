@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deep API Searcher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    <style>
+        .container {
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="container">Deep API Searcher</h1>
+</header>
+
+<section>
+    <form id="search_form" method="POST" action="/">
+        <input type="text" name="query" placeholder="query">
+        <button type="submit">Search</button>
+    </form>
+
+    <table>
+        {% for data in datas %}
+            <tr>
+                <td>{{ data }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</section>
+<footer>
+
+</footer>
+</body>
+</html>
