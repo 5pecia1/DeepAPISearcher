@@ -9,9 +9,20 @@
             integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
             crossorigin="anonymous"></script>
     <style>
-        .container {
-
+        header {
+            text-align: center;
+            margin: 20px;
         }
+
+       #search_form{
+            margin-top: 20px;
+           margin-bottom: 20px;
+       }
+
+        #result-table tr td{
+            padding: 5px 10px 5px 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -21,12 +32,19 @@
 </header>
 
 <section>
-    <form id="search_form" method="POST" action="/">
-        <input type="text" name="query" placeholder="query">
-        <button type="submit">Search</button>
+    <form class="container" id="search_form" method="POST" action="/">
+        <div class="input-group">
+        <input type="text" class="form-control" name="query" placeholder="query">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-primary">
+                search
+            </button>
+        </span>
+
+</div>
     </form>
 
-    <table>
+    <table id="result-table" class="container table-striped">
         {% for data in datas %}
             <tr>
                 <td>{{ data }}</td>
@@ -34,8 +52,5 @@
         {% endfor %}
     </table>
 </section>
-<footer>
-
-</footer>
 </body>
 </html>
