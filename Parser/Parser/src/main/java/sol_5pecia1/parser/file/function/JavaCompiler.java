@@ -46,26 +46,13 @@ public class JavaCompiler implements Function<File, Boolean> {
                     "/bin/sh", "/c", "cd ", filePath.toString(),
                     "&&",  "javac", pn + "/" + file.getName()};
 
-            CommandLine commandLine = new CommandLine(
-                    "javac -sourcepath \"" + filePath + "\" \""
-                            + file.getAbsolutePath() + "\""
-            );
-//            CommandLine commandLine = new CommandLine("cd");
-
             DefaultExecutor defaultExecutor = new DefaultExecutor();
-            int exitValue = defaultExecutor.execute(commandLine);
-            System.out.println(exitValue);
-//            Process process = rt.exec(cmd);
-
-//            process.getErrorStream().close();
-//            process.getInputStream().close();
-//            process.getOutputStream().close();
-
-//            boolean exitResult = process.waitFor(2000, TimeUnit.MILLISECONDS);
-//            process.destroy();
-//            System.out.println(Arrays.asList(cmd));
-//            return exitResult != -1;
-            return true;
+            int exitValue = defaultExecutor.execute(
+                    CommandLine.parse(
+                            "javac -sourcepath \"" + filePath + "\" \""
+                    + file.getAbsolutePath() + "\"")
+            );
+            return exitValue == 0;
         } catch (NoSuchElementException nsee) {
             nsee.printStackTrace();
         } catch (FileNotFoundException e) {
