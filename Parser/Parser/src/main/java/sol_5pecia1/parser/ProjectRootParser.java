@@ -3,7 +3,7 @@ package sol_5pecia1.parser;
 import sol_5pecia1.parser.file.FileIterable;
 import sol_5pecia1.parser.file.FileSearcher;
 import sol_5pecia1.parser.file.function.JavaCompiler;
-import sol_5pecia1.parser.parser.preprocessing.Preprocessings;
+import sol_5pecia1.parser.parser.JavaParser;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -43,8 +43,10 @@ public class ProjectRootParser {
             for(File file: files) {
                 System.out.println("Compile result : "
                         + new JavaCompiler().apply(file));
-
+                System.out.println("Parsing result : "
+                        + new JavaParser().apply(file));
             }
+            System.out.println();
         }
     }
 

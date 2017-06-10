@@ -43,7 +43,7 @@ public class ThesisMethodParser {
     public void parsing() {
         thesisSequenceVisitorImplements.visit(node, null);
 
-        apiSequence = parsingApi(combinedTypeSolver);
+        apiSequence = parsingApi();
 
         if (apiSequence != null && !"".equals(apiSequence)) {
             apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
@@ -51,7 +51,7 @@ public class ThesisMethodParser {
         annotation = parsingAnnotation();
     }
 
-    private String parsingApi(CombinedTypeSolver combinedTypeSolver) {
+    private String parsingApi() {
         StringBuilder builder = new StringBuilder();
         for (Node visitedNode : thesisSequenceVisitorImplements.getNodeListSequenceAboutThesis()) {
             String parsedData = "";
