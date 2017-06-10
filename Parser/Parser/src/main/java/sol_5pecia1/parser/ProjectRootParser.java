@@ -1,5 +1,6 @@
 package sol_5pecia1.parser;
 
+import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import sol_5pecia1.parser.file.FileIterable;
 import sol_5pecia1.parser.file.FileSearcher;
 import sol_5pecia1.parser.file.function.JavaCompiler;
@@ -41,11 +42,17 @@ public class ProjectRootParser {
                     JAVA_LIST_FILE));
 
             for(File file: files) {
-                System.out.println("Compile result : "
-                        + new JavaCompiler().apply(file));
-                System.out.println("Parsing result : "
-                        + new JavaParser().apply(file));
+                try {
+                    System.out.println("Compile result : "
+                            + new JavaCompiler().apply(file));
+                    System.out.println("Parsing result : "
+                            + new JavaParser().apply(file));
+                } catch (OutOfMemoryError oome) {
+                    System.err.println(oome);
+                }
             }
+
+            JavaParserFacade.clearInstances();
             System.out.println();
         }
     }
