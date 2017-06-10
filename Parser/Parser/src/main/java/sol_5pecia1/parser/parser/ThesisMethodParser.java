@@ -32,7 +32,6 @@ public class ThesisMethodParser {
             = new ThesisSequenceVisitorImplements();
     private String apiSequence = "";
     private String annotation = "";
-    private String annotaion;
 
 
     public ThesisMethodParser(MethodDeclaration node, CombinedTypeSolver combinedTypeSolver) {
@@ -44,6 +43,7 @@ public class ThesisMethodParser {
         thesisSequenceVisitorImplements.visit(node, null);
 
         apiSequence = parsingApi();
+
 
         if (apiSequence != null && !"".equals(apiSequence)) {
             apiSequence = apiSequence.substring(0, apiSequence.length() - 1);
@@ -75,9 +75,11 @@ public class ThesisMethodParser {
 
     private String parsingAnnotation() {
         JavadocComment comment = thesisSequenceVisitorImplements.getComment();
+
         if (comment == null) {
             return null;
         }
+
         String description = comment.parse().getDescription().toText();
         StringBuilder resultData = new StringBuilder(description);
 
@@ -114,7 +116,7 @@ public class ThesisMethodParser {
                     simpleApiName = innerMethodParsing(callExpr,
                             facade, methodNode);
                 } else {
-                    simpleApiName = outerMethodCall(callExpr, facade, methodNode);
+                    simpleApiName = outerMethodCall(facade, methodNode);
                 }
 
                 if (!"".equals(simpleApiName)) {
@@ -147,8 +149,7 @@ public class ThesisMethodParser {
         return simpleApiName;
     }
 
-    private String outerMethodCall(MethodCallExpr callExpr,
-            JavaParserFacade facade, Node methodNode) {
+    private String outerMethodCall(JavaParserFacade facade, Node methodNode) {
 
         String simpleApiName = "";
 
@@ -170,6 +171,6 @@ public class ThesisMethodParser {
     }
 
     public String getAnnotaion() {
-        return annotaion;
+        return annotation;
     }
 }
