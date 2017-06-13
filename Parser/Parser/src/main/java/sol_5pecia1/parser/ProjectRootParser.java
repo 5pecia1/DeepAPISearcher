@@ -57,14 +57,14 @@ public class ProjectRootParser {
                                                 + "/"
                                                 + String.format(
                                                         SAVE_DATA,
-                                                logSaver.getDataFileLineCount()));
+                                                logSaver.getDataFileCount()));
                         boolean isParsed
                                 = new JavaParserFunction()
                                 .apply(file, saveFile);
                         System.out.println("Parsing result : " + isParsed);
 
                         if (isParsed) {
-                            logSaver.saveLog(file);
+                            logSaver.saveLog(file, saveFile);
                         }
                     }
                 } catch (OutOfMemoryError oome) {

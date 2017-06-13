@@ -26,7 +26,6 @@ public class LogSaver {
         if (logFile.exists()) {
             if (isNewStart) {
                 logFile.delete();
-                saveLog(new File("/"));
             } else {
                 readLog();
             }
@@ -34,6 +33,7 @@ public class LogSaver {
     }
 
     private void readLog() {
+    	if (logFile.exists()) {
         try(FileReader fileReader = new FileReader(logFile);
             BufferedReader reader = new BufferedReader(fileReader)) {
             String dataFileCount = reader.readLine();
@@ -51,11 +51,12 @@ public class LogSaver {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    	}
     }
 
 
-    public void saveLog(File parsingFile) {
-        changeLogData(parsingFile);
+    public void saveLog(File parsingFile, File saveFile) {
+        changeLogData(parsingFile, saveFile);
 
         try(FileWriter fileWriter = new FileWriter(logFile);
             BufferedWriter writer = new BufferedWriter(fileWriter)) {
@@ -72,9 +73,9 @@ public class LogSaver {
         }
     }
 
-    private void changeLogData(File parsingFile) {
+    private void changeLogData(File parsingFile, File saveFile) {
         try {
-            dataFileLineCount = countLines(parsingFile);
+            dataFileLineCount = countLines(saveFile);
 
             if (dataFileLineCount >= MAX_FILE_COUNT) {
                 dataFileLineCount = 0;
@@ -110,7 +111,7 @@ public class LogSaver {
         }
     }
 
-    public int getDataFileLineCount() {
-        return dataFileLineCount;
+    public int getDataFileCount() {
+        return dataFileCount;
     }
 }
