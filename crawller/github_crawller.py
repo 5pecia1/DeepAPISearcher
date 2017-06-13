@@ -107,7 +107,8 @@ if __name__ == "__main__":
 
             for repo_url in repo_urls:
                 print("repo url : ", repo_url)
-                os.system('cd project_data; git clone ' + repo_url + ".git")
+                splited = repo_url.split("/")
+                os.system('cd project_data; git clone ' + repo_url + ".git " + splited[-2] + "_" + splited[-1])
 
                 count += 1
                 print("count : ", count)
