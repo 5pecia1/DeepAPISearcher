@@ -16,20 +16,21 @@ public class JavaParserFunction implements BiFunction<File, File, String> {
     @Override
     public String apply(File parsingFile, File parsedFilePath) {
         DefaultExecutor defaultExecutor = new DefaultExecutor();
+        int exitValue = 2;
         try {
-            int exitValue = defaultExecutor.execute(
+            exitValue = defaultExecutor.execute(
                     CommandLine.parse(
                             "java -jar "
-                                    + "/media/sol/OS/Users/sol/DeepAPISearcher/Parser/Parser/out/artifacts/Parser_main_jar"
+                                    + "/home/sol/DeepAPISearcher/Parser/Parser/out/JavaParser.jar "
                                     + parsingFile
                                     + " "
-                                    + parsedFilePath + PARSED_FILE
+                                    + parsedFilePath + "/" + PARSED_FILE
                     )
             );
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return "tt";
+        return (exitValue == 1) + "";
     }
 }
