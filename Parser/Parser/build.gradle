@@ -1,0 +1,17 @@
+group 'Parser'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'com.github.javaparser', name: 'javaparser-core', version: '3.2.5'
+    compile group: 'com.github.javaparser', name: 'java-symbol-solver-core', version: '0.5.5'
+    compile group: 'org.apache.commons', name: 'commons-exec', version: '1.3'
+}
