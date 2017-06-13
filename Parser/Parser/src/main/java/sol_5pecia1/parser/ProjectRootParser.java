@@ -45,8 +45,11 @@ public class ProjectRootParser {
                 try {
                     boolean isCompiled = new JavaCompiler().apply(file);
                     System.out.println("Compile result : " + isCompiled);
-                    System.out.println("Parsing result : "
-                            + new JavaParserFunction().apply(file,saveRoot));
+
+                    if (isCompiled) {
+                        System.out.println("Parsing result : "
+                                + new JavaParserFunction().apply(file, saveRoot));
+                    }
                 } catch (OutOfMemoryError oome) {
                     System.err.println(oome);
                 }
