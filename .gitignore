@@ -175,3 +175,5 @@ crawller/project_data/
 # project list data
 data/projectList.dat
 data/javaList.dat
+data/parsing.log
+
