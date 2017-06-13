@@ -10,11 +10,11 @@ import java.util.function.BiFunction;
 /**
  * Created by sol on 17. 6. 9.
  */
-public class JavaParserFunction implements BiFunction<File, File, String> {
+public class JavaParserFunction implements BiFunction<File, File, Boolean> {
     private static final String PARSED_FILE= "parsed.dat";
 
     @Override
-    public String apply(File parsingFile, File parsedFilePath) {
+    public Boolean apply(File parsingFile, File parsedFilePath) {
         DefaultExecutor defaultExecutor = new DefaultExecutor();
         try {
             int exitValue = defaultExecutor.execute(
@@ -26,10 +26,12 @@ public class JavaParserFunction implements BiFunction<File, File, String> {
                                     + parsedFilePath + PARSED_FILE
                     )
             );
+
+            return exitValue == 0;
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return "tt";
+        return false;
     }
 }
