@@ -4,7 +4,7 @@ import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import sol_5pecia1.parser.file.FileIterable;
 import sol_5pecia1.parser.file.FileSearcher;
 import sol_5pecia1.parser.file.function.JavaCompiler;
-import sol_5pecia1.parser.parser.JavaParser;
+import sol_5pecia1.parser.parser.JavaParserFunction;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -46,7 +46,7 @@ public class ProjectRootParser {
                     System.out.println("Compile result : "
                             + new JavaCompiler().apply(file));
                     System.out.println("Parsing result : "
-                            + new JavaParser().apply(file));
+                            + new JavaParserFunction().apply(file,saveRoot));
                 } catch (OutOfMemoryError oome) {
                     System.err.println(oome);
                 }

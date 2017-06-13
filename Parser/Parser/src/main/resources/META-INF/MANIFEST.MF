@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: sol_5pecia1.parser.JavaParser
+
