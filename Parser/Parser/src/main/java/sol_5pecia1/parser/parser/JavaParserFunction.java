@@ -11,10 +11,9 @@ import java.util.function.BiFunction;
  * Created by sol on 17. 6. 9.
  */
 public class JavaParserFunction implements BiFunction<File, File, Boolean> {
-    private static final String PARSED_FILE= "parsed.dat";
 
     @Override
-    public Boolean apply(File parsingFile, File parsedFilePath) {
+    public Boolean apply(File parsingFile, File saveFile) {
         DefaultExecutor defaultExecutor = new DefaultExecutor();
 
         try {
@@ -24,7 +23,7 @@ public class JavaParserFunction implements BiFunction<File, File, Boolean> {
                                     + "/home/sol/DeepAPISearcher/Parser/Parser/out/JavaParser.jar "
                                     + parsingFile
                                     + " "
-                                    + parsedFilePath + "/" + PARSED_FILE
+                                    + saveFile
                     )
             );
 

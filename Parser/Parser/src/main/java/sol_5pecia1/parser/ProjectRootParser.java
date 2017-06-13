@@ -4,6 +4,7 @@ import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import sol_5pecia1.parser.file.FileIterable;
 import sol_5pecia1.parser.file.FileSearcher;
 import sol_5pecia1.parser.file.function.JavaCompiler;
+import sol_5pecia1.parser.log.LogSaver;
 import sol_5pecia1.parser.parser.JavaParserFunction;
 
 import java.io.BufferedWriter;
@@ -17,6 +18,7 @@ import java.io.IOException;
 public class ProjectRootParser {
     private final static String PROJECT_LIST_FILE = "projectList.dat";
     private final static String JAVA_LIST_FILE = "javaList.dat";
+    private final static String SAVE_DATA = "data-%d.dat";
 
     public static void main(String[] args) {
         if (args.length !=2 && args.length != 3) {
@@ -32,8 +34,11 @@ public class ProjectRootParser {
             System.exit(0);
         }
 
-        Iterable<File> projectList = projectList(startRoot, saveRoot,
-                (args.length == 3)? Boolean.valueOf(args[2]) : false);
+        boolean isNewStart = (args.length == 3)? Boolean.valueOf(args[2]) : false;
+
+        Iterable<File> projectList = projectList(startRoot, saveRoot, isNewStart);
+        LogSaver logSaver = new LogSaver(saveRoot, isNewStart);
+
 
         for(File project : projectList) {
             FileIterable files = FileSearcher.search(project, new File
@@ -47,8 +52,20 @@ public class ProjectRootParser {
                     System.out.println("Compile result : " + isCompiled);
 
                     if (isCompiled) {
-                        System.out.println("Parsing result : "
-                                + new JavaParserFunction().apply(file, saveRoot));
+                        File saveFile = new File(
+                                        saveRoot.getAbsolutePath()
+                                                + "/"
+                                                + String.format(
+                                                        SAVE_DATA,
+                                                logSaver.getDataFileLineCount()));
+                        boolean isParsed
+                                = new JavaParserFunction()
+                                .apply(file, saveFile);
+                        System.out.println("Parsing result : " + isParsed);
+
+                        if (isParsed) {
+                            logSaver.saveLog(file);
+                        }
                     }
                 } catch (OutOfMemoryError oome) {
                     System.err.println(oome);
