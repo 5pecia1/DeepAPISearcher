@@ -30,21 +30,11 @@ public class JavaCompiler implements Function<File, Boolean> {
             String packageName =
                     cu.getPackageDeclaration().get().getNameAsString();
 
-            String osName = System.getProperty("os.name");
-            Runtime rt = Runtime.getRuntime();
             File filePath = file.getParentFile();
 
             for (int i = packageName.split("[.]").length; i > 0 ; i--) {
                 filePath = filePath.getParentFile();
             }
-            String pn = packageName.replaceAll("[.]", "/");
-            String[] cmd = (osName.toLowerCase().startsWith("window"))
-                    ? new String[]{
-                    "cmd.exe", "/c", "cd ", filePath.toString(),
-                    "&&",  "javac", pn + "/" + file.getName()}
-                    : new String[]{
-                    "/bin/sh", "/c", "cd ", filePath.toString(),
-                    "&&",  "javac", pn + "/" + file.getName()};
 
             DefaultExecutor defaultExecutor = new DefaultExecutor();
             int exitValue = defaultExecutor.execute(
