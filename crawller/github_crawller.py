@@ -89,6 +89,7 @@ if __name__ == "__main__":
     URL = "https://github.com/search?\
     o=desc&p={0}&q=language%3AJava+stars%3A1..{1}&\
     ref=searchresults&s=stars&type=Repositories&utf8=%E2%9C%93"
+    SAVE_PATH = '/media/sol/26A745B1362009C1/java_projects'
     CRAWLL_COUNT = 500000
     SLEEP_TIME_MAX_COUNT = 10
     END_PAGE = 100
@@ -117,7 +118,8 @@ if __name__ == "__main__":
             for repo_url in repo_urls:
                 print("repo url : ", repo_url)
                 splited = repo_url.split("/")
-                os.system('cd /media/sol/26A745B1362009C1/java_projects; git clone ' + repo_url + ".git " + splited[-2] + "_" + splited[-1])
+                fileName = splited[-2] + "_" + splited[-1]
+                os.system('cd ' + SAVE_PATH + '; git clone --bare ' + repo_url + ".git " + fileName)
 
                 count += 1
                 print("count : ", count)
