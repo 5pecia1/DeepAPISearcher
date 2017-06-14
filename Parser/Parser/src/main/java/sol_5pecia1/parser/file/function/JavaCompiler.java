@@ -1,6 +1,7 @@
 package sol_5pecia1.parser.file.function;
 
 import com.github.javaparser.JavaParser;
+import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecutor;
@@ -49,6 +50,8 @@ public class JavaCompiler implements Function<File, Boolean> {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (ParseProblemException ppbe) {
+        	 ppbe.printStackTrace();
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
         }
