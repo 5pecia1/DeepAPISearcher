@@ -25,9 +25,16 @@
         }
 
     </style>
+    <script type="text/javascript">
+        function showSpinner() {
+            var inputTag = document.createElement("div");
+            inputTag.className = 'loading';
+            inputTag.append("Loading&#8230;");
+            document.body.appendChild(inputTag);
+        }
+    </script>
 </head>
 <body>
-
 <header>
     <h1 class="container">Deep API Searcher</h1>
 </header>
@@ -37,7 +44,7 @@
         <div class="input-group">
             <input type="text" class="form-control" name="query" placeholder="query">
             <span class="input-group-btn">
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary" onclick="showSpinner()">
                 search
             </button>
         </span>
