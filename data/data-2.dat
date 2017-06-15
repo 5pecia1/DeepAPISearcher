@@ -1,0 +1,2069 @@
+  -    If the command prefix contains a hyphen, or the -i option is present, or the special target 
+Command.getPrefix
+'@'    If the command prefix contains an at sign and the command-line -n option is not specified, or the -s option is present, or the special target 
+Command.getPrefix
++    If the command prefix contains a plus sign, this indicates a command line that will be executed even if -n, -q or -t is specified
+Command.getPrefix
+Adds the given listener to this list
+System.arraycopy
+Returns an array containing all the registered listeners, in the order in which they were added
+System.arraycopy
+Removes the given listener from this list
+System.arraycopy
+Returns the next character
+StringBuilder.length-StringBuilder.charAt-StringBuilder.length-StringBuilder.setLength-Reader.read-Character.isWhitespace-Reader.read-Character.isWhitespace
+Returns the string from the plugin's resource bundle, or 'key' if not found
+ResourceBundle.getString
+Returns the string from the plugin's resource bundle, or 'key' if not found
+MakefileMessages.getString-MessageFormat.format
+Given the starting (inclusive) and the ending (exclusive) poisitions in the   
+IllegalArgumentException.new-String.regionMatches-String.length-String.length-StringMatcher.regExpRegionMatches-String.indexOf-StringMatcher.regExpPosIn-StringMatcher.textPosIn-String.length-String.length-StringMatcher.regExpRegionMatches
+ This method parses the given pattern into segments seperated by wildcard '*' characters
+String.startsWith-String.endsWith-String.charAt-Vector<>.new-StringBuilder.new-String.charAt-String.charAt-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.length-StringBuilder.toString-String.addElement-StringBuilder.length-StringBuilder.setLength-StringBuilder.append-StringBuilder.append-StringBuilder.length-StringBuilder.toString-String.addElement-StringBuilder.length-String.size-String.copyInto
+Special indexOf() method that makes sure that what we are searching
+String.charAt-String.indexOf-String.length
+Returns the string from the resource bundle, or 'key' if not found
+ResourceBundle.getString
+Returns the formatted string from the resource bundle, or 'key' if not found
+InvokeMessages.getString-MessageFormat.format
+Returns the string from the resource bundle, or 'key' if not found
+ResourceBundle.getString
+Returns the formatted string from the resource bundle, or 'key' if not found
+ConfigureMessages.getString-MessageFormat.format
+Compare two version numbers if return -1 if v1 is older than v2 0 if they are the same and +1 if v1 is newer than v2  Version numbers are expected to be in the format x
+String.split-String.split-Integer.valueOf-Integer.valueOf
+Sets up the flag the allows IO streams closing
+Object.notifyAll
+Returns a new map that contains the key-value pair
+NullPointerException.new-FunctionalMap<K, V>.new-FunctionalMap.insert-FunctionalMap.checkInvariants
+Returns the value if it is in the map, null otherwise
+NullPointerException.new-K.compareTo
+Returns true if there exists a mapping with the given key in this map
+NullPointerException.new-K.compareTo
+Warning, this is a linear operation
+FunctionalMap.size
+Free resources
+REDFile.close-File.new-File.delete
+Flush buffers
+REDFile.flush
+Flush a dirty buffer
+REDFile.write
+copy file - Convenience method
+REDFile.purge-RandomAccessFile.read-RandomAccessFile.write-RandomAccessFile.read-REDFile.length
+Write char array as 16-bit Unicode at absolute position
+PrintStream.println-REDFile.createTmpFile-REDFile.setFile-RandomAccessFile.seek-RandomAccessFile.write-RandomAccessFile.write
+Write char array as UTF-16 bytes (2 bytes each)
+REDFile.isReadonly-IOException.new-REDFile.getBufferForOffset-Buffer.free-Math.min-System.arraycopy
+Write String as UTF-16 bytes (2 bytes each)
+REDFile.isReadonly-IOException.new-REDFile.getBufferForOffset-Buffer.free-Math.min-String.getChars
+Update the content of a buffer
+REDFile.read
+Read an array of characters  at absolute position
+RandomAccessFile.seek-Math.min-RandomAccessFile.read-PrintStream.println
+Read an array of characters
+REDFile.getBufferForOffset-Buffer.avail-Math.min-System.arraycopy
+Read characters into StringBuffer
+REDFile.getBufferForOffset-Buffer.avail-Math.min-StringBuffer.append
+Get a REDFileBuffer for an offset
+REDFile.flush-Buffer.new-Buffer.avail-REDFile.flush-REDFile.update
+Return a string that uniquely identifies a Java object reference, in the form "classname@id", where 'classname' is the simple or package qualified name of the object's class, and 'id' is the hash code
+Object.getClass-Object.getName-String.lastIndexOf-String.length-String.substring-System.identityHashCode-Integer.toHexString
+Flatten out an array of strings into one string, in the form "{s1, s2, s3, 
+StringBuilder.new-StringBuilder.append-StringBuilder.append-StringBuilder.length-StringBuilder.delete-StringBuilder.append-StringBuilder.toString
+General string utility for removing newline and space character from the end of a string
+String.length-String.charAt-Character.isWhitespace-String.length-String.substring
+After each instruction, we check the debug command channel for control input
+PrintStream.println-System.exit-BufferedReader.ready-BufferedReader.readLine-PDAVirtualMachine.processDebugCommand
+The stack frame output is: frame # frame # frame 
+StringBuilder.new-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-Object.keySet-String.indexOf-String.indexOf-String.indexOf-String.substring-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Serialize an object into a byte array
+ByteArrayOutputStream.new-ObjectOutputStream.new-ObjectOutputStream.writeObject-ObjectOutputStream.close-ByteArrayOutputStream.toByteArray
+Deserialize a byte array into an object
+ByteArrayInputStream.new-ObjectInputStream.new-ObjectInputStream.readObject-Class<T.cast
+Returns the long read
+CharArr.unsafeWrite-JSONParser.getChar-CharArr.unsafeWrite-CharArr.unsafeWrite-JSONParser.readFrac-CharArr.unsafeWrite-JSONParser.readExp
+Returns the next event encountered in the JSON stream, one of
+JSONParser.continueNumber-JSONParser.readStringChars2-JSONParser.getCharNWS-JSONParser.next-JSONParser.getCharNWS-JSONParser.pop-JSONParser.err-JSONParser.getCharNWS-JSONParser.err-JSONParser.getChar-JSONParser.next-JSONParser.getCharNWS-JSONParser.err-JSONParser.pop-JSONParser.getCharNWS-JSONParser.err-JSONParser.getCharNWS-JSONParser.pop-JSONParser.next-JSONParser.getCharNWS-JSONParser.err-JSONParser.pop-JSONParser.getChar-JSONParser.next
+Returns the JSON string value, decoding any escaped characters
+JSONParser.getStringChars-CharArr.toString
+Returns the characters of a JSON string value, decoding any escaped characters
+JSONParser.goTo-JSONParser.readStringChars
+Reads a JSON string into the output, decoding any escaped characters
+JSONParser.goTo-JSONParser.readStringChars2
+Reads a number from the input stream and parses it as a long, only if the value will in fact fit into a signed 64 bit integer
+JSONParser.goTo
+Returns the characters of a JSON numeric value
+JSONParser.nextEvent-JSONParser.err-JSONParser.continueNumber
+Reads a JSON numeric value into the output
+JSONParser.nextEvent-JSONParser.err-JSONParser.continueNumber-CharArr.write
+True if the entry is expired
+System.currentTimeMillis
+True if a refresh is needed from the original data source
+System.currentTimeMillis
+Ensures there is enough space in the buffer for the given number of additional bytes
+ByteArrayPool.getBuf-System.arraycopy-ByteArrayPool.returnBuf
+Get the value for the given key
+String.length-IllegalArgumentException.new-SystemProperties.native_get
+Get the value for the given key
+String.length-IllegalArgumentException.new-SystemProperties.native_get
+Get the value for the given key, and return as an integer
+SystemProperties.get-Integer.parseInt
+Get the value for the given key, and return as a long
+SystemProperties.get-Long.parseLong
+Get the value for the given key, returned as a boolean
+SystemProperties.get-String.equals-String.equals-String.equals-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase-String.equalsIgnoreCase
+Set the value for the given key
+String.length-IllegalArgumentException.new-String.length-IllegalArgumentException.new-SystemProperties.native_set
+Returns a buffer from the pool if one is available in the requested size, or allocates a new one if a pooled one is not available
+List<byte[].get-List<byte[].remove-List<byte[].remove-List<byte[].size
+Returns a buffer to the pool, throwing away old buffers if the pool would exceed its allotted size
+List<byte[].add-Collections.binarySearch-List<byte[].add-ByteArrayPool.trim
+Removes buffers from the pool until it is under its size limit
+List<byte[].remove-List<byte[].remove
+Split string by delimiter
+StringUtils.split
+Split string by delimiter
+StringUtils.split
+Split string by delimiter
+LinkedList<String>.new-String.length-String.length-String.indexOf-String.substring-String.add-String.indexOf-String.add-String.size-String.add-String.toArray
+Join array to a string
+Object.getClass-Object.isArray-IllegalArgumentException.new-StringBuilder.new-Array.getLength-Array.get-String.valueOf-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Prepend value(s) to an array
+Object.getClass-Object.isArray-IllegalArgumentException.new-Object.getClass-Object.isArray-Array.getLength-Array.get-String.valueOf-Array.get-String.valueOf-String.valueOf
+Append value(s) to an array
+Object.getClass-Object.isArray-IllegalArgumentException.new-Object.getClass-Object.isArray-Array.getLength-Array.get-String.valueOf-String.valueOf-Array.get-String.valueOf
+Prepend and append value(s) to an array
+Object.getClass-Object.isArray-IllegalArgumentException.new-Object.getClass-Object.isArray-Object.getClass-Object.isArray-Array.getLength-Array.get-String.valueOf-Array.get-String.valueOf-String.valueOf-Array.get-String.valueOf
+Parse a  value from string
+Long.parseLong
+Parse a  value from string
+Integer.parseInt
+Parse a  value from string
+Boolean.parseBoolean
+Parse a  value from string
+Float.parseFloat
+Parse a  value from string
+Double.parseDouble
+Parse an  value from string
+StringUtils.getInteger
+Parse an  value from string
+StringUtils.getLong
+Parse an  value from string
+StringUtils.getFloat
+Parse an  value from string
+StringUtils.getDouble
+Parse an  value from string
+StringUtils.getBoolean
+Compare to version strings
+StringUtils.split-StringUtils.split-StringUtils.getInteger-StringUtils.getInteger-StringUtils.getInteger-StringUtils.getInteger
+Extract a name from a URL
+URL.getHost-String.lastIndexOf-String.substring-String.lastIndexOf-String.substring-String.equals-String.charAt-Character.toUpperCase-String.substring
+Print all object fields which  and not final
+StringBuilder.new-Object.getClass-Object.getFields-RuntimeException.new-Field.getType-ReflectUtils.isPrimitive-Field.setAccessible-Field.getModifiers-Field.get-Field.getName-StringBuilder.append-String.charAt-String.charAt-Character.isUpperCase-String.charAt-String.charAt-String.charAt-Character.isUpperCase-StringBuilder.append-String.charAt-Character.toLowerCase-StringBuilder.append-String.substring-StringBuilder.append-String.charAt-Character.toLowerCase-StringBuilder.append-String.substring-StringBuilder.append-StringBuilder.append-String.valueOf-StringBuilder.append-StringBuilder.append-StringBuilder.length-StringBuilder.replace-StringBuilder.toString
+Is class representing a primitive type
+Class<?.contains-Class<?.isEnum
+Convert from one time unit to another
+BigInteger.valueOf-BigInteger.valueOf-BigInteger.multiply-BigInteger.valueOf-BigInteger.divide-BigInteger.valueOf-BigInteger.compareTo-BigInteger.longValue
+Get (internationalized) full name of month
+Calendar.getInstance-Calendar.set-Calendar.add-String.format
+Get (internationalized) short name of month
+Calendar.getInstance-Calendar.set-Calendar.add-String.format
+Get (internationalized) full name of day
+Calendar.getInstance-Calendar.set-Calendar.add-String.format
+Get (internationalized) short name of day
+Calendar.getInstance-Calendar.set-Calendar.add-String.format
+Put object into pool
+GeneralPool.clean-GeneralPool.getReference-Reference<T.remove-Integer.remove-Reference<T.put-Integer.put
+Get pooled object
+GeneralPool.clean-Reference<T.get-Reference<T.get
+Clear pool
+ReferenceQueue<T>.new-Reference<T.clear-Integer.clear
+Clean pool from all dead references from reference queue
+ReferenceQueue<T.poll-Integer.remove-Reference<T.remove
+Patches the first argument with the second
+Wrapper.wrap-Wrapper.wrap-JsonDiff.apply
+Modifies the given original JSON object using the instructions provided and returns the result
+Wrapper.parse-Wrapper.parse-JsonDiff.apply-JzonElement.toString
+Runs a diff using underlying JSON parser implementations
+Wrapper.wrap-Wrapper.wrap-JsonDiff.diff-JzonObject.unwrap
+Runs a diff on the two given JSON objects given as string to produce another JSON object with instructions of how to transform the first argument to the second
+Wrapper.parse-Wrapper.parse-JsonDiff.diff-JzonObject.toString
+Sets the point as deleted
+Math.min-Math.max
+Sets the point as added
+Math.min-Math.max
+Returns a string representation of this difference
+StringBuffer.new-StringBuffer.append-StringBuffer.append-StringBuffer.append-StringBuffer.toString
+Runs diff and returns the results
+IncavaDiff.traverseSequences-IncavaEntry.add
+Traverses the sequences, seeking the longest common subsequences, invoking the methods finishedA, finishedB, onANotB, and onBNotA
+IncavaDiff.getLongestCommonSubsequences-List<Type.size-List<Type.size-IncavaDiff.onBNotA-IncavaDiff.onMatch-IncavaDiff.onANotB-IncavaDiff.callFinishedA-IncavaDiff.onBNotA-IncavaDiff.finishedA-IncavaDiff.callFinishedB-IncavaDiff.onANotB-IncavaDiff.finishedB-IncavaDiff.onANotB-IncavaDiff.onBNotA
+Invoked for elements in a and not in b
+IncavaEntry.setDeleted-IncavaEntry.new
+Invoked for elements in b and not in a
+IncavaEntry.setAdded-IncavaEntry.new
+Invoked for elements matching in a and b
+IncavaEntry.add
+Compares the two objects, using the comparator provided with the constructor, if any
+Comparator<Type.compare-Type.equals
+Returns an array of the longest common subsequences
+List<Type.size-List<Type.size-TreeMap<Integer, Integer>.new-List<Type.get-List<Type.get-IncavaDiff.equals-Integer.put-List<Type.get-List<Type.get-IncavaDiff.equals-Integer.put-TreeMap<Type, List<Integer>>.new-List<Type.size-List<Type.get-HashMap<Type, List<Integer>>.new-TreeMap<Type, List<Integer>>.new-List<Type.get-Integer.get-ArrayList<Integer>.new-Integer.put-Integer.add-TreeMap<Integer, Integer>.new-HashMap<Integer, Object[]>.new-List<Type.get-Integer.get-Integer.size-Integer.listIterator-Integer.hasPrevious-Integer.previous-IncavaDiff.insert-Object[].get-Object[].put-Integer.size-Integer.lastKey-Object[].get-Integer.put-Integer.size-Integer.lastKey-Integer.keySet-Integer.get
+Returns whether the value in the map for the given index is greater than the given value
+Integer.get-Integer.compareTo
+Returns whether the value in the map for the given index is less than the given value
+Integer.get-Integer.compareTo
+Returns the value for the greatest key in the map
+Integer.lastKey-Integer.get
+Adds the given value to the "end" of the threshold map, that is, with the greatest index/key
+Integer.size-Integer.lastKey-Integer.put
+Inserts the given values into the threshold map
+IncavaDiff.isNonzero-IncavaDiff.isGreaterThan-IncavaDiff.isLessThan-IncavaDiff.isNonzero-Integer.size-Integer.lastKey-IncavaDiff.getLastValue-Integer.compareTo-Integer.get-Integer.compareTo-Integer.put-IncavaDiff.append-Integer.put
+Returns a string representation of this SpineSetupSensor object
+SPINESensorConstants.sensorCodeToString
+Returns a string representation of the FeatureSpineSetupFunction object
+SPINESensorConstants.sensorCodeToString
+Returns a string representation of the BufferedRawDataSpineFunctionReq object
+SPINESensorConstants.sensorCodeToString-SPINESensorConstants.channelBitmaskToString
+Returns a string representation of this BufferedRawDataSpineSetupFunction object
+SPINESensorConstants.sensorCodeToString
+Returns a string representation of the AlarmSpineFunctionReq object
+SPINESensorConstants.sensorCodeToString-SPINEFunctionConstants.functionalityCodeToString-SPINESensorConstants.channelBitmaskToString-SPINEFunctionConstants.functionalityCodeToString
+Returns a string representation of this SpineSetupSensor object
+SPINESensorConstants.sensorCodeToString-SPINESensorConstants.timeScaleToString
+Returns a string representation of the AlarmSpineSetupFunction object
+SPINESensorConstants.sensorCodeToString
+This method returns the int representation of this Address
+Address.hashCode-String.toString-Integer.parseInt
+Returns a string representation of the Functionality object
+SPINEFunctionConstants.functionCodeToString-SPINEFunctionConstants.functionalityCodeToString
+Returns a string representation of the Sensor object
+SPINESensorConstants.sensorCodeToString-SPINESensorConstants.channelBitmaskToString
+Clone this Message, but give it a new unitialised data array of size
+Message.cloneself
+Copy new data for this message from 'data'
+Math.min-Message.dataSet
+Copy new data for this message from offsetFrom in data to offsetTo in this message
+System.arraycopy
+Copy new data for this message from the raw data in msg to offsetTo in this message
+Message.dataGet-Message.baseOffset-Message.dataLength-System.arraycopy
+Parses the byte @b as part of a ThinkGear data stream
+StreamParser.parsePacketPayload-RuntimeException.new
+Parses a Packet's array of payload[] bytes into DataRows
+DataListener.dataValueReceived
+Assuming the @c bytes array contains the 4 bytes of an IEEE 754 floating point number in network byte order (big-endian), this function returns the corresponding Java floating point number
+Float.intBitsToFloat
+parse the value from the character buffer starting from the given offset and with the given length
+String.new-ValueRecipient.setString
+parse the value from the character buffer starting from the given offset and with the given length
+String.new-ValueRecipient.setString
+set the new value of this property
+PropertyHolder.propertyChanged
+do not override this method but the  method instead
+Exception.new-String.trim-NameCompleter.getAlternatives-String.hasNext-StringBuilder.new-StringBuilder.append-StringBuilder.append-StringBuilder.toString-Exception.new-String.next-String.hasNext-StringBuilder.new-StringBuilder.append-String.next-StringBuilder.append-String.hasNext-StringBuilder.toString-Exception.new-String.equals-EnumeratedPropertyHolder.enumeratedPropertyChanged
+Split a line at the nearest whitespace
+ArrayList<String>.new-String.length-String.charAt-Character.isWhitespace-String.substring-String.add-String.substring-String.add-String.substring-String.add-String.size-String.toArray
+replaces a row with multiple other rows
+System.arraycopy-System.arraycopy-System.arraycopy
+Set autowrapping at a given column
+String.length-Column.splitLine-String.length-Column.replaceRow
+Print message to screen
+CancelWriter.cancel-OutputDevice.print-String.length-CancelWriter.writeChars-CancelWriter.writeChars-OutputDevice.flush
+cancel out the written string and wipe it with spaces
+CancelWriter.cancel
+cancel the output
+String.length-CancelWriter.writeChars-CancelWriter.writeChars-CancelWriter.writeChars-OutputDevice.flush
+Formats a double to a String with number-format
+NumberFormat.setMinimumFractionDigits-NumberFormat.setMaximumFractionDigits-NumberFormat.format
+returns an iterator with alternatives that match the partial name given or 'null' if there is no alternative
+String.tailSet-String.iterator-String.hasNext-String.next-String.startsWith-String.toLowerCase-String.tailMap-String.keySet-String.iterator-String.hasNext-String.next-String.startsWith-String.get-String.length-String.substring-SortedMatchIterator.new
+Overwrite this method if you need to handle customized columns
+ColumnMetaData.getAutoWrap-Column.setAutoWrap-Column.getWidth-ColumnMetaData.updateWidth
+flush the cached rows
+TableRenderer.printTableHeader-TableRenderer.printColumns-OutputDevice.println
+Checks for each element in the array its type, so can handle ExtendedColumn correctly
+ExtendedColumn.getColspan-Column.getWidth-ColumnMetaData.updateWidth-ExtendedTableRenderer.updateMetaWidth
+Overwrites the TableRenderers implementation for special handling of ExtendedColumns
+ColumnMetaData.doDisplay-TableRenderer.printColumn-ExtendedTableRenderer.printColumn-ExtendedColumn.getColspan
+Every command or subsystem that needs to be able to set Properties, needs to register its property here
+PropertyHolder.containsKey-IllegalArgumentException.new-PropertyHolder.put
+sets the Property to the given value
+PropertyHolder.get-IllegalArgumentException.new-PropertyHolder.setValue
+Begin masking until asked to stop
+Object.wait-Thread.sleep-PrintStream.print-PrintStream.flush
+In GNU getopt, it is possible to change the string containg valid options on the fly because it is passed as an argument to getopt() each time
+String.length
+Check to see if an option is a valid long option
+String.indexOf-String.length-String.substring-LongOpt.getName-String.startsWith-String.substring-LongOpt.getName-String.equals-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.length-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-String.startsWith-String.charAt-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.substring-String.length-String.substring-StringBuffer.setLength-StringBuffer.append
+This method returns a char that is the current option that has been parsed from the command line
+String.equals-Getopt.exchange-String.equals-String.charAt-String.equals-String.equals-Getopt.exchange-String.equals-String.charAt-String.equals-String.startsWith-String.substring-String.substring-String.startsWith-String.length-String.charAt-String.indexOf-Getopt.checkLongOption-String.startsWith-String.charAt-String.indexOf-String.startsWith-String.charAt-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-String.length-String.substring-String.indexOf-String.indexOf-String.substring-String.equals-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-String.length-String.charAt-String.equals-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-Getopt.checkLongOption-String.length-String.charAt-String.length-String.charAt-String.equals-String.equals-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-Character.new-Character.toString-ResourceBundle.getString-MessageFormat.format-PrintStream.println-String.charAt-String.equals
+We might adjust the interval based on the data consumption profile
+Calendar.getInstance-Calendar.add-Calendar.getTime
+To determine if a task has changed when receiving a new schedule from the server
+String.equals-String.equals-String.equals
+Calculate jitter as the standard deviation of one-way delays
+Long.size-Math.sqrt
+The thread continually receives the packet from client
+Config.logmsg-UDPReceiver.sendPacket-ClientRecord.containsKey-System.currentTimeMillis-ClientRecord.new-ClientRecord.addPacketInfo-InterruptedException.getMessage-Config.logmsg-Thread.sleep-ClientRecord.get-System.currentTimeMillis-ClientIdentifier.toString-Config.logmsg-MeasurementError.getMessage-Config.logmsg-ClientRecord.remove-UDPReceiver.sendPacket-Runnable.new-Thread.new-Thread.start-ClientRecord.put-ClientRecord.get-Config.logmsg-UDPReceiver.sendPacket-ClientRecord.remove-ClientIdentifier.toString-MeasurementError.new-System.currentTimeMillis-ClientRecord.addPacketInfo-Config.logmsg-ClientRecord.remove-UDPReceiver.sendPacket-Config.logmsg-ClientRecord.new-MeasurementError.new-MeasurementError.new-MeasurementError.new-MeasurementError.new-MeasurementError.new-MeasurementError.new-RequestHandler.new-Thread.new-Thread.start
+Return this value with an opposite sign
+BigDecimal.negate-MoneyBigDecimal.new
+Convert into a String in a plain notation with a decimal dot
+BigDecimal.toPlainString
+Multiply the current object by the long value
+BigDecimal.valueOf-BigDecimal.multiply-MoneyFactory.fromBigDecimal
+Multiply the current object by the double value
+BigDecimal.new-BigDecimal.multiply-MoneyFactory.fromBigDecimal
+Divide the current object by the given long divider
+BigDecimal.valueOf-BigDecimal.divide-MoneyBigDecimal.truncate
+Divide the current object by the given long divider
+BigDecimal.valueOf-BigDecimal.divide-MoneyBigDecimal.truncate
+Truncate the current value leaving no more than  signs after decimal point
+MoneyFactory.checkPrecision-BigDecimal.setScale-MoneyFactory.fromBigDecimal
+Truncate the current value leaving no more than  signs after decimal point
+BigDecimal.scale-MoneyBigDecimal.truncate
+Add another Money object to this one
+AbstractMoney.add-AbstractMoney.add
+Subtract another Money object from this one
+Money.negate-AbstractMoney.add
+Compares another Money object to this one
+AbstractMoney.compareTo-AbstractMoney.compareTo
+Convert into a String in a plain notation with a decimal dot
+Long.toString-Math.abs-String.new
+Convert this value into a BigDecimal
+BigDecimal.valueOf
+Return this value with an opposite sign
+MoneyLong.new
+Multiply the current object by the long value
+MoneyLong.new-MoneyLong.normalize-BigInteger.valueOf-BigInteger.valueOf-BigInteger.multiply-BigDecimal.new-MoneyFactory.fromBigDecimal-MoneyLong.new-MoneyLong.normalize
+Multiply the current object by the double value
+MoneyLong.new-MoneyLong.normalize-MoneyFactory.fromDoubleNoFallback-MoneyLong.new-MoneyLong.normalize-BigDecimal.new-MoneyLong.toBigDecimal-BigDecimal.multiply-MoneyFactory.fromBigDecimal
+Divide the current object by the given long divider
+MoneyLong.divide
+Divide the current object by the given long divider
+MoneyLong.toBigDecimal-MoneyBigDecimal.new-MoneyBigDecimal.divide-Math.round-Math.round-Math.round-MoneyLong.new-MoneyLong.normalize
+Truncate the current value leaving no more than  signs after decimal point
+MoneyFactory.checkPrecision-Math.round-MoneyLong.new-MoneyLong.normalize
+Convert from currency units and their precision into Money object
+MoneyFactory.checkPrecision-MoneyLong.new-MoneyLong.normalize
+Same as fromString, but characters are extracted from the given part of byte array
+ByteArraySeq.new-MoneyFactory.fromCharSequence
+Convert a String monetary value into a Money object
+MoneyFactory.parseFast-MoneyFactory.fromString0
+     Convert a double monetary value into a Money object
+MoneyFactory.fromDouble
+     Convert a double monetary value into a Money object
+MoneyFactory.checkPrecision-MoneyFactory.fromDoubleNoFallback-MoneyBigDecimal.new
+Extracts resource id from android:id attribute of layout widget
+IdAttributeUnion.new-ResourceIdExtractor.getNamespace-ResourceId.new
+Forces an update of the 's layout
+parent.autosize-parent.snapshot-parent.layout
+Drags the given  by the given x and y displacements
+node.getLayoutX-node.getLayoutY-dragTo.dragTo
+Drags the given  by the given x and y displacements
+node.getLayoutX-node.getLayoutY-dragTo.dragTo
+Drags the given  from the start location to the end location
+dragTo.dragTo
+Drags the given  from the start location to the end location
+node.getLayoutX-node.getLayoutY-node.getLayoutX-node.getLayoutY-createMouseEvent.createMouseEvent-createMouseEvent.createMouseEvent-createMouseEvent.createMouseEvent-Event.fireEvent-Event.fireEvent-Event.fireEvent
+Creates a new 
+// event type
+MouseEvent.new
+Handles mouse-dragged events
+event.isPrimaryButtonDown-event.getTarget-event.getTarget-event.getX-event.getY-getDistanceToJump.getDistanceToJump-isAutoScrollingEnabled.isAutoScrollingEnabled-startScrolling.startScrolling
+Handles mouse released events
+endScrolling.endScrolling
+Gets the distance to jump based on the current cursor position
+parameters.getBaseJumpAmount-parameters.getJumpAmountIncreasePerJump-parameters.getMaxJumpAmount-Math.min-parameters.getInsetToBeginScroll-getWidth.getWidth-parameters.getInsetToBeginScroll-parameters.getInsetToBeginScroll-getHeight.getHeight-parameters.getInsetToBeginScroll-Math.round-Math.round-Point2D.new
+Starts the auto-scrolling
+parameters.getJumpPeriod-Duration.millis-jumpDistance.getX-jumpDistance.getY-panBy.panBy-dragEventTarget.fireEvent-KeyFrame.new-Timeline.new-timeline.setCycleCount-timeline.getKeyFrames-timeline.getKeyFrames().add-timeline.play
+Stops the auto-scrolling
+timeline.stop
+Pans the window to the specified x and y coordinates
+windowXProperty.set-windowYProperty.set-checkWindowBounds.checkWindowBounds
+Pans the window by the specified x and y values
+windowXProperty.get-windowXProperty.set-windowYProperty.get-windowYProperty.set-checkWindowBounds.checkWindowBounds
+Pans the window to the given position
+content.getWidth-getWidth.getWidth-windowXProperty.set-windowYProperty.set-content.getWidth-getWidth.getWidth-windowXProperty.set-content.getHeight-getHeight.getHeight-windowYProperty.set-checkWindowBounds.checkWindowBounds
+Checks that the window bounds are completely inside the content bounds, and repositions if necessary
+windowXProperty.get-windowXProperty.set-windowYProperty.get-windowYProperty.set-content.getLocalToSceneTransform-content.getLocalToSceneTransform().getMxx-content.getWidth-getWidth.getWidth-content.getHeight-getHeight.getHeight-windowXProperty.get-windowXProperty.set-windowYProperty.get-windowYProperty.set-windowXProperty.get-Math.round-windowXProperty.set-windowYProperty.get-Math.round-windowYProperty.set
+Sets the content of the panning window
+removeMouseHandlersFromContent.removeMouseHandlersFromContent-getChildren.getChildren-getChildren().remove-this.content.layoutXProperty-this.content.layoutXProperty().unbind-this.content.layoutYProperty-this.content.layoutYProperty().unbind-content.setManaged-content.cacheHintProperty-content.cacheHintProperty().set-getChildren.getChildren-getChildren().add-windowXProperty.multiply-content.layoutXProperty-content.layoutXProperty().bind-windowYProperty.multiply-content.layoutYProperty-content.layoutYProperty().bind-addMouseHandlersToContent.addMouseHandlersToContent
+Adds mouse handlers to the content to pan the  upon right mouse click-and-drag
+event.getButton().equals-startPanning.startPanning-event.getButton().equals-startPanning.startPanning-Point2D.new-currentPosition.getX-clickPosition.getX-currentPosition.getY-clickPosition.getY-panTo.panTo-event.getButton().equals-setCursor.setCursor-content.setCache-content.addEventHandler-content.addEventHandler-content.addEventHandler
+Removes existing mouse pressed, drag, and released handlers from the content, if possible
+content.removeEventHandler-content.removeEventHandler-content.removeEventHandler
+Sets up the mechanism to cache the panning window when the mouse is not inside it
+content.setCache-addEventHandler.addEventHandler-content.setCache-addEventHandler.addEventHandler-content.setCache-addEventHandler.addEventHandler
+Starts panning
+setCursor.setCursor-content.setCache-Point2D.new-windowXProperty.windowXProperty-windowXProperty().get-windowYProperty.windowYProperty-windowYProperty().get
+Sets the center position of the arrow-head
+rotate.setPivotX-rotate.setPivotY
+Sets the rotation angle of the arrow-head
+rotate.setAngle
+Draws the arrow-head for its current size and position values
+getElements.getElements-getElements().clear-MoveTo.new-getElements.getElements-getElements().add-LineTo.new-getElements.getElements-getElements().add-LineTo.new-getElements.getElements-getElements().add-ArcTo.new-arcTo.setX-arcTo.setY-arcTo.setRadiusX-arcTo.setRadiusY-arcTo.setSweepFlag-getElements.getElements-getElements().add-ClosePath.new-getElements.getElements-getElements().add
+Checks if the background grid is visible
+gridVisibleProperty.get
+Sets whether the background grid should be visible or not
+gridVisibleProperty.set
+Checks if snap-to-grid is on
+snapToGridProperty.get
+Sets whether snap-to-grid should be on
+snapToGridProperty.set
+Gets the current grid spacing in pixels
+gridSpacingProperty.get
+Sets the grid spacing to be used if the grid is visible and/or snap-to-grid is enabled
+gridSpacingProperty.set
+Draws the selection box for the given position parameters
+setVisible.setVisible-setX.setX-setY.setY-setWidth.setWidth-setHeight.setHeight
+Adds a listener to the focused property of the selection box's window, so that the selection box always disappears when the window loses focus
+oldValue.windowProperty().removeListener-newValue.windowProperty().addListener-oldValue.focusedProperty().removeListener-newValue.focusedProperty().addListener-setVisible.setVisible-sceneProperty.sceneProperty-sceneProperty().addListener
+Creates a rectangular path from the start to the end positions
+startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-startSide.equals-endSide.equals-connectBottomToBottom.connectBottomToBottom-connectTopToBottom.connectTopToBottom-connectRightToBottom.connectRightToBottom-connectLeftToBottom.connectLeftToBottom-connectTopToBottom.connectTopToBottom-connectTopToTop.connectTopToTop-connectRightToTop.connectRightToTop-connectLeftToTop.connectLeftToTop-connectRightToBottom.connectRightToBottom-connectRightToTop.connectRightToTop-connectRightToRight.connectRightToRight-connectLeftToRight.connectLeftToRight-connectLeftToBottom.connectLeftToBottom-connectLeftToTop.connectLeftToTop-connectLeftToRight.connectLeftToRight-connectLeftToLeft.connectLeftToLeft
+Connects the start point on the left side of a node to an end point on the left side of a node
+ArrayList<>.new-start.getX-end.getX-Math.min-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint
+Connects the start point on the left side of a node to an end point on the right side of a node
+ArrayList<>.new-start.getX-end.getX-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getX-end.getX-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint
+Connects the start point on the left side of a node to an end point on the top side of a node
+ArrayList<>.new-start.getX-end.getX-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint-start.getY-end.getY-start.getX-end.getX-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-end.getX-start.getY-addPoint.addPoint
+Connects the start point on the left side of a node to an end point on the bottom side of a node
+ArrayList<>.new-start.getX-end.getX-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint-start.getY-end.getY-start.getX-end.getX-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-end.getX-start.getY-addPoint.addPoint
+Connects the start point on the lerightft side of a node to an end point on the right side of a node
+ArrayList<>.new-start.getX-end.getX-Math.max-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint
+Connects the start point on the right side of a node to an end point on the top side of a node
+ArrayList<>.new-start.getX-end.getX-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint-start.getY-end.getY-start.getX-end.getX-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-end.getX-start.getY-addPoint.addPoint
+Connects the start point on the right side of a node to an end point on the bottom side of a node
+ArrayList<>.new-start.getX-end.getX-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getY-end.getY-start.getX-start.getY-addPoint.addPoint-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint-start.getY-end.getY-start.getX-end.getX-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-end.getX-start.getY-addPoint.addPoint
+Connects the start point on the top side of a node to an end point on the top side of a node
+ArrayList<>.new-start.getY-end.getY-Math.min-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint
+Connects the start point on the top side of a node to an end point on the bottom side of a node
+ArrayList<>.new-start.getY-end.getY-start.getX-end.getX-start.getX-start.getY-addPoint.addPoint-start.getY-addPoint.addPoint-end.getY-addPoint.addPoint-end.getX-end.getY-addPoint.addPoint-start.getY-end.getY-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint
+Connects the start point on the bottom side of a node to an end point on the bottom side of a node
+ArrayList<>.new-start.getY-end.getY-Math.max-start.getX-addPoint.addPoint-end.getX-addPoint.addPoint
+Adds a point with the given x and y values to the path
+Point2D.new-path.add
+Reverses a list of points and returns it
+Collections.reverse
+Adds animated color properties to the given node that can be accessed from CSS
+removeAnimation.removeAnimation-SimpleObjectProperty<>.new-AnimatedColor.getFirstColor-KeyValue.new-AnimatedColor.getSecondColor-KeyValue.new-KeyFrame.new-AnimatedColor.getInterval-KeyFrame.new-Timeline.new-AnimatedColor.getProperty-String.format-node.setStyle-baseColor.addListener-node.getProperties-node.getProperties().put-timeline.setAutoReverse-timeline.setCycleCount-timeline.play
+Removes an animated color from this node, if one has been set on it
+node.getProperties-node.getProperties().get-node.getProperties-node.getProperties().get-timeline.stop
+Returns true if the type is supported by the default skins
+DefaultConnectorTypes.isTop-DefaultConnectorTypes.isRight-DefaultConnectorTypes.isBottom-DefaultConnectorTypes.isLeft-DefaultConnectorTypes.isInput-DefaultConnectorTypes.isOutput
+Gets the side corresponding to the given connector type
+DefaultConnectorTypes.isTop-DefaultConnectorTypes.isRight-DefaultConnectorTypes.isBottom-DefaultConnectorTypes.isLeft
+Returns true if the type corresponds to a connector positioned at the top of a node
+String.contains
+Returns true if the type corresponds to a connector positioned on the right side of a node
+String.contains
+Returns true if the type corresponds to a connector positioned at the bottom of a node
+String.contains
+Returns true if the type corresponds to a connector positioned on the left side of a node
+String.contains
+Returns true if the type corresponds to an input connector
+String.contains
+Returns true if the type corresponds to an output connector
+String.contains
+Returns true if the two given types are on the same side of a node
+DefaultConnectorTypes.getSide-DefaultConnectorTypes.getSide-DefaultConnectorTypes.getSide-getSide(firstType).equals
+Returns a new  containing the icon
+String.valueOf-Text.new-text.getStyleClass-text.getStyleClass().setAll-Font.font-text.setFont
+Returns the value resulting from the initialization
+LazyInitializer.init
+Kick off this thread which will look for old objects and remove them
+ReadWriteLock.writeLock-Lock.lock-ReadWriteLock.writeLock-Lock.unlock-Thread.start
+If this thread has not started, then start it
+ReadWriteLock.readLock-Lock.lock-ReadWriteLock.readLock-Lock.unlock-ReadWriteLock.writeLock-Lock.lock-ReadWriteLock.writeLock-Lock.unlock-Thread.start
+Stop the thread from monitoring the map
+ReadWriteLock.writeLock-Lock.lock-ReadWriteLock.writeLock-Lock.unlock-Thread.interrupt
+Returns the Time-to-live value
+ReadWriteLock.readLock-Lock.lock-ReadWriteLock.readLock-Lock.unlock
+Get the interval in which an object will live in the map before it is removed
+ReadWriteLock.readLock-Lock.lock-ReadWriteLock.readLock-Lock.unlock
+Set the interval in which an object will live in the map before it is removed
+ReadWriteLock.writeLock-Lock.lock-ReadWriteLock.writeLock-Lock.unlock
+Adds the provided key and value to this map
+HashMap<>.new-Map<K, V.put
+Removed the value and key from this map based on the provided key
+HashMap<>.new-Map<K, V.remove
+Inserts all the keys and values contained in the provided map to this map
+HashMap<>.new-Map<K, V.putAll
+Removes all entries in this map
+HashMap<>.new
+Returns the number of key/value pairs in this map
+Map<K, V.size
+Returns true if this map is empty, otherwise false
+Map<K, V.isEmpty
+Returns true if this map contains the provided key, otherwise this method return false
+Map<K, V.containsKey
+Returns true if this map contains the provided value, otherwise this method returns false
+Map<K, V.containsValue
+Returns the value associated with the provided key from this map
+Map<K, V.get
+This method will return a read-only 
+Map<K, V.keySet
+This method will return a read-only 
+Map<K, V.values
+This method will return a read-only 
+Map<K, V.entrySet
+Returns the  of currently available port numbers ()
+AvailablePortFinder.getAvailablePorts
+Gets the next available port starting at the lowest port number
+AvailablePortFinder.getNextAvailable
+Gets the next available port starting at a port
+IllegalArgumentException.new-AvailablePortFinder.available-NoSuchElementException.new
+Checks to see if a specific port is available
+IllegalArgumentException.new-DatagramSocket.close-ServerSocket.close-ServerSocket.new-ServerSocket.setReuseAddress-DatagramSocket.new-DatagramSocket.setReuseAddress
+Returns the  of currently avaliable port numbers () between the specified port range
+IllegalArgumentException.new-TreeSet<>.new-ServerSocket.close-ServerSocket.new-Integer.add
+Tests a given byte array to see if it contains only valid characters within the Base64 alphabet
+Base64.discardWhitespace-Base64.isBase64
+Encodes binary data using the base64 algorithm but does not chunk the output
+Base64.encodeBase64
+Encodes binary data using the base64 algorithm and chunks
+Base64.encodeBase64
+Decodes an Object using the base64 algorithm
+InvalidParameterException.new-Base64.decode
+Decodes a byte[] containing containing characters in the Base64 alphabet
+Base64.decodeBase64
+Encodes binary data using the base64 algorithm, optionally chunking the output into 76 character blocks
+Math.ceil-System.arraycopy-System.arraycopy
+Discards any whitespace from a base-64 encoded block
+System.arraycopy
+Discards any characters outside of the base64 alphabet, per the requirements on page 25 of RFC 2045 - "Any characters outside of the base64 alphabet are to be ignored in base64 encoded data
+Base64.isBase64-System.arraycopy
+Encodes an Object using the base64 algorithm
+InvalidParameterException.new-Base64.encode
+Encodes a byte[] containing binary data, into a byte[] containing characters in the Base64 alphabet
+Base64.encodeBase64
+This method takes a string which may contain HTML tags (ie, &lt;b&gt;, &lt;table&gt;, etc) and replaces any '' , '&' or '"' characters with respective predefined entity references
+String.length-String.indexOf-String.indexOf-String.indexOf-String.indexOf-String.length-StringBuilder.new-String.length-String.charAt-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Ensures that embeded CDEnd strings (]]>) are handled properly within message, NDC and throwable tag text
+String.indexOf-String.substring-StringBuffer.append-StringBuffer.append-String.length-String.indexOf-String.substring-StringBuffer.append-StringBuffer.append
+Sets the protocol to use when creating the 
+NullPointerException.new
+Sets the password which will be used in the call to {@link KeyManagerFactory#init(java
+String.toCharArray
+Creates a new 
+IllegalStateException.new-KeyStore.getInstance-KeyStore.getInstance-ByteArrayInputStream.new-InputStream.close-KeyStore.load
+Sets the type of key store to create
+NullPointerException.new
+Sets the key store password
+String.toCharArray
+Sets the data which contains the key store
+System.arraycopy
+Sets the data which contains the key store
+ByteArrayOutputStream.new-InputStream.close-InputStream.read-ByteArrayOutputStream.write-ByteArrayOutputStream.toByteArray-KeyStoreFactory.setData
+Sets the data which contains the key store
+FileInputStream.new-BufferedInputStream.new-KeyStoreFactory.setData
+Sets the data which contains the key store
+URL.openStream-KeyStoreFactory.setData
+Converts an IP address to a subnet using the provided 
+Subnet.toInt
+Returns the endpoint address resulting from the 
+ProxyRequest.getEndpointAddress-ProxyRequest.getEndpointAddress-InetSocketAddress.getAddress-InetAddress.getAddress
+Return the server port as a byte array
+ProxyRequest.getEndpointAddress-ProxyRequest.getEndpointAddress-InetSocketAddress.getPort
+Return the server host name
+ProxyRequest.getEndpointAddress-InetSocketAddress.isUnresolved-ProxyRequest.getEndpointAddress-InetSocketAddress.getHostName
+Writes a security buffer to the given array b at offset  offset
+ByteUtilities.writeShort-ByteUtilities.writeShort-ByteUtilities.writeInt
+Tries to return a valid OS version on Windows systems
+System.getProperty-String.toUpperCase-String.contains-System.getProperty-String.substring-Byte.parseByte-String.substring-Byte.parseByte-NTLMUtilities.writeOSVersion-Runtime.getRuntime-Runtime.exec-Process.getInputStream-InputStreamReader.new-BufferedReader.new-Process.waitFor-BufferedReader.readLine-String.length-BufferedReader.close-Exception.new-String.toLowerCase-String.indexOf-Exception.new-String.indexOf-String.substring-StringTokenizer.new-StringTokenizer.countTokens-Exception.new-StringTokenizer.nextToken-Byte.parseByte-StringTokenizer.nextToken-Byte.parseByte-StringTokenizer.nextToken-Short.parseShort-NTLMUtilities.writeOSVersion
+see http://davenport
+IllegalArgumentException.new-NullPointerException.new-ByteArrayOutputStream.new-ByteArrayOutputStream.write-ByteUtilities.writeInt-ByteArrayOutputStream.write-ByteUtilities.writeInt-ByteArrayOutputStream.write-ByteUtilities.getOEMStringAsByteArray-ByteUtilities.getOEMStringAsByteArray-NTLMUtilities.writeSecurityBuffer-ByteArrayOutputStream.write-NTLMUtilities.writeSecurityBuffer-ByteArrayOutputStream.write-ByteArrayOutputStream.write-ByteArrayOutputStream.write-ByteArrayOutputStream.write-ByteArrayOutputStream.toByteArray-ByteArrayOutputStream.close
+Writes a security buffer and returns the pointer of the position  where to write the next security buffer
+NTLMUtilities.writeSecurityBuffer-ByteArrayOutputStream.write
+Extracts the NTLM challenge from the type 2 message as an 8 byte array
+System.arraycopy
+Extracts the NTLM flags from the type 2 message
+System.arraycopy-ByteUtilities.changeWordEndianess-ByteUtilities.makeIntFromByte4
+Reads the byte array described by the security buffer stored at the securityBufferOffset offset
+System.arraycopy-ByteUtilities.changeWordEndianess-ByteUtilities.makeIntFromByte2-ByteUtilities.makeIntFromByte4-System.arraycopy
+Extracts the target name from the type 2 message
+NTLMUtilities.readSecurityBufferTarget-NTLMUtilities.extractFlagsFromType2Message-ByteUtilities.isFlagSet-String.new-String.new
+Extracts the target information block from the type 2 message
+NTLMUtilities.extractFlagsFromType2Message-ByteUtilities.isFlagSet-NTLMUtilities.readSecurityBufferTarget
+Prints to the  the target information block extracted from the type 2 message
+NTLMUtilities.extractFlagsFromType2Message-NTLMUtilities.extractTargetInfoFromType2Message-PrintWriter.print-PrintWriter.println-PrintWriter.println-PrintWriter.println-PrintWriter.println-PrintWriter.println-System.arraycopy-ByteUtilities.changeByteEndianess-ByteUtilities.makeIntFromByte2-PrintWriter.println-PrintWriter.print-ByteUtilities.isFlagSet-String.new-PrintWriter.println-String.new-PrintWriter.println-PrintWriter.flush-PrintWriter.println
+Calculates the LM Response for the given challenge, using the specified password
+NTLMResponses.lmHash-NTLMResponses.lmResponse
+Calculates the NTLM Response for the given challenge, using the specified password
+NTLMResponses.ntlmHash-NTLMResponses.lmResponse
+Calculates the NTLMv2 Response for the given challenge, using the specified authentication target, username, password, target information block, and client nonce
+System.currentTimeMillis-NTLMResponses.getNTLMv2Response
+Calculates the NTLMv2 Response for the given challenge, using the specified authentication target, username, password, target information block, and client nonce
+NTLMResponses.ntlmv2Hash-NTLMResponses.createBlob-NTLMResponses.lmv2Response
+Calculates the LMv2 Response for the given challenge, using the specified authentication target, username, password, and client challenge
+NTLMResponses.ntlmv2Hash-NTLMResponses.lmv2Response
+Calculates the NTLM2 Session Response for the given challenge, using the specified password and client nonce
+NTLMResponses.ntlmHash-MessageDigest.getInstance-MessageDigest.update-MessageDigest.update-MessageDigest.digest-System.arraycopy-NTLMResponses.lmResponse
+Creates the LM Hash of the user's password
+String.toUpperCase-String.getBytes-Math.min-System.arraycopy-NTLMResponses.createDESKey-NTLMResponses.createDESKey-Cipher.getInstance-Cipher.init-Cipher.doFinal-Cipher.init-Cipher.doFinal-System.arraycopy-System.arraycopy
+Creates the NTLM Hash of the user's password
+String.getBytes-MessageDigest.getInstance-MessageDigest.digest
+Creates the NTLMv2 Hash of the user's password
+NTLMResponses.ntlmHash-String.toUpperCase-String.getBytes-NTLMResponses.hmacMD5
+Creates the LM Response from the given hash and Type 2 challenge
+System.arraycopy-NTLMResponses.createDESKey-NTLMResponses.createDESKey-NTLMResponses.createDESKey-Cipher.getInstance-Cipher.init-Cipher.doFinal-Cipher.init-Cipher.doFinal-Cipher.init-Cipher.doFinal-System.arraycopy-System.arraycopy-System.arraycopy
+Creates the LMv2 Response from the given hash, client data, and Type 2 challenge
+System.arraycopy-System.arraycopy-NTLMResponses.hmacMD5-System.arraycopy-System.arraycopy
+Creates the NTLMv2 blob from the given target information block and client nonce
+System.arraycopy-System.arraycopy-System.arraycopy-System.arraycopy-System.arraycopy-System.arraycopy-System.arraycopy
+Calculates the HMAC-MD5 hash of the given data using the specified hashing key
+System.arraycopy-System.arraycopy-MessageDigest.getInstance-MessageDigest.digest-System.arraycopy-System.arraycopy-MessageDigest.digest
+Creates a DES encryption key from the given key material
+System.arraycopy-NTLMResponses.oddParity-SecretKeySpec.new
+Returns the integer represented by up to 4 bytes in network byte order
+IllegalArgumentException.new
+Encodes an integer into up to 4 bytes in network byte order
+ByteUtilities.intToNetworkByteOrder
+Encodes an integer into up to 4 bytes in network byte order in the  supplied buffer starting at start offset and writing count bytes
+IllegalArgumentException.new
+Write a 16 bit short as LITTLE_ENDIAN
+ByteUtilities.writeShort
+Write a 32 bit int as LITTLE_ENDIAN
+ByteUtilities.writeInt
+Converts an OEM string as defined in NTLM protocol (eg ASCII charset) to a byte array
+String.getBytes
+Converts an UTF-16LE string as defined in NTLM protocol to a byte array
+String.getBytes
+Encodes the string to a byte array using UTF-16LE or the ASCII charset in function of the useUnicode argument
+ByteUtilities.getUTFStringAsByteArray-ByteUtilities.getOEMStringAsByteArray
+Returns a hexadecimal representation of the given byte array
+ByteUtilities.asHex
+Returns a hexadecimal representation of the given byte array
+StringBuilder.new-Integer.toHexString-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Converts a hex string representation to a byte array
+String.length-String.substring-Integer.parseInt
+Reads an int from 4 bytes of the given array at offset 0
+ByteUtilities.makeIntFromByte4
+Reads an int from 2 bytes of the given array at offset 0
+ByteUtilities.makeIntFromByte2
+A directive is a parameter of the digest authentication process
+String.get-AuthenticationException.new
+Copy the directive to the  if not null
+String.get-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append
+Copy the directive from the source map to the destination map, if it's value isn't null
+String.get-String.put
+Parses digest-challenge string, extracting each token and value(s)
+HashMap<>.new-ByteArrayOutputStream.new-ByteArrayOutputStream.new-StringUtilities.skipLws-StringUtilities.isLws-ByteArrayOutputStream.write-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.toString-ByteArrayOutputStream.toString-StringUtilities.extractDirective-ByteArrayOutputStream.reset-ByteArrayOutputStream.reset-StringUtilities.skipLws-ByteArrayOutputStream.write-ByteArrayOutputStream.toString-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.write-StringUtilities.isLws-ByteArrayOutputStream.write-StringUtilities.skipLws-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.size-SaslException.new-StringUtilities.skipLws-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.size-SaslException.new-StringUtilities.skipLws-ByteArrayOutputStream.toString-ByteArrayOutputStream.toString-SaslException.new-ByteArrayOutputStream.size-ByteArrayOutputStream.toString-ByteArrayOutputStream.toString-StringUtilities.extractDirective
+Processes directive/value pairs from the digest-challenge and fill out the provided map
+String.get-SaslException.new-String.put
+Used to convert username-value, passwd or realm to 8859_1 encoding if all chars in string are within the 8859_1 (Latin 1) encoding range
+String.getBytes-String.new
+Returns the value of the named header
+String.get-String.size-IllegalArgumentException.new-String.get
+Adds an header to the provided map of headers
+String.get-ArrayList<>.new-String.put-String.size-String.add-String.set
+Get the Socket receive buffer size for this DatagramChannel
+RuntimeIoException.new-DatagramChannel.socket-DatagramSocket.getReceiveBufferSize
+Set the Socket receive buffer size for this DatagramChannel
+RuntimeIoException.new-PrintStream.println-DatagramChannel.socket-DatagramSocket.setReceiveBufferSize
+Tells if SO_BROADCAST is enabled
+RuntimeIoException.new-DatagramChannel.socket-DatagramSocket.getBroadcast
+Tells if SO_REUSEADDR is enabled
+RuntimeIoException.new-DatagramChannel.socket-DatagramSocket.getReuseAddress
+Get the current Traffic Class for this Socket, if any
+RuntimeIoException.new-DatagramChannel.socket-DatagramSocket.getTrafficClass
+Retrieves the class path entries
+Object.getClass-Object.getClassLoader-ClassLoader.getResources
+Decode octets and extract the length information from a DER-encoded message
+ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get
+Decodes ID and length octets from a DER-encoded message
+DerId.decode-DerUtils.decodeLength
+DER-encode content into a provided buffer
+ByteBuffer.position-ByteBuffer.position-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-IllegalArgumentException.new-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-IllegalArgumentException.new-ByteBuffer.position
+Computes the DER-encoded size of content with a specified tag number
+IllegalArgumentException.new-Integer.highestOneBit-Integer.numberOfTrailingZeros-Math.ceil-Integer.highestOneBit-Integer.numberOfTrailingZeros-Math.ceil
+Decodes identifier octets from a DER-encoded message
+ByteBuffer.remaining-IllegalArgumentException.new-DerId.new-ByteBuffer.get-TagClass.values-EncodingType.values-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.hasRemaining-ByteBuffer.get
+WARNING: this method will throw a runtime exception if there is incomplete data at the end of buf (e
+Encoding.decode
+This function generates the secret key based on the procedure described in  https://tools
+Key.getEncoded-TurnException.new-Mac.getInstance-SecretKeySpec.new-Mac.init-String.getBytes-Mac.doFinal-Base64.getEncoder-Encoder.encodeToString-String.toCharArray
+Decode an ASN
+DerId.decode-DerId.matches-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new-DerId.getEncodingType-ByteBuffer.get-BitSet.new-ByteBuffer.get-BitSet.set
+Decode an ASN
+DerId.decode-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get-String.new-Pattern.matcher-Matcher.matches-IllegalArgumentException.new-Calendar.getInstance-Calendar.clear-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Integer.parseInt-Calendar.set-Matcher.group-Float.parseFloat-Calendar.set-Matcher.group-String.equals-TimeZone.getTimeZone-Calendar.setTimeZone-Calendar.getTime
+Decode an ASN
+DerId.decode-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get-String.new
+Decode an ASN
+DerId.decode-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get
+Decode an ASN
+DerId.decode-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new-ByteBuffer.get
+Decode an ASN
+DerId.decode-DerId.matches-IllegalArgumentException.new-DerUtils.decodeLength-ByteBuffer.remaining-IllegalArgumentException.new
+Encode an ASN
+BitSet.length-IllegalArgumentException.new-ByteBuffer.position-Math.ceil-BitSet.get-ByteBuffer.put-ByteBuffer.put-ByteBuffer.position-ByteBuffer.position-DerUtils.encodeIdAndLength
+Encode an ASN
+IllegalArgumentException.new-ByteBuffer.position-SimpleDateFormat.new-TimeZone.getTimeZone-SimpleDateFormat.setTimeZone-SimpleDateFormat.format-String.getBytes-ByteBuffer.put-ByteBuffer.position-ByteBuffer.position-DerUtils.encodeIdAndLength
+Encode an ASN
+ByteBuffer.position-String.getBytes-ByteBuffer.put-ByteBuffer.position-ByteBuffer.position-DerUtils.encodeIdAndLength
+Encode an ASN
+ByteBuffer.position-ByteBuffer.put-ByteBuffer.position-ByteBuffer.position-DerUtils.encodeIdAndLength
+Encode an ASN
+ByteBuffer.position-ByteBuffer.put-ByteBuffer.position-ByteBuffer.position-DerUtils.encodeIdAndLength
+Encode an ASN
+DerUtils.encodeIdAndLength
+Size of an ASN
+Math.ceil-DerUtils.sizeOf
+Size of an ASN
+String.length-DerUtils.sizeOf
+Size of an ASN
+String.getBytes-DerUtils.sizeOf
+Size of an ASN
+DerUtils.sizeOf
+Size of an ASN
+DerUtils.sizeOf
+Size of an ASN
+DerUtils.sizeOf
+Given a File object, return the extension (portion after the final '
+File.getName-String.lastIndexOf-String.substring
+Custom UTF-8 encoding
+String.format-IllegalStateException.new-String.format-IllegalStateException.new-String.format-IllegalStateException.new-Character.toCodePoint-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put
+For internal use only
+LoginResult.compareAndSet-UnsupportedOperationException.new
+Returns the string/JSON representation of the table of entries
+AmqpTableEntry.toString
+Adds an integer entry to the AmqpTable
+AmqpTable.add
+Adds a long string entry to the AmqpTable
+AmqpTable.add
+Returns a list of AmqpTableEntry objects that matches the specified key
+ArrayList<>.new-String.equals-AmqpTableEntry.add
+Creates an implementation of an Gateway
+GatewayCreator.createGateway-GatewayCreator.configureGateway-RuntimeException.new
+Find the product information from the server JAR MANIFEST files and store it in static variables here for later retrieval
+System.getProperty-System.getProperty-String.split-HashMap<>.new-HashSet<>.new-String.contains-JarFile.new-JarFile.getManifest-Manifest.getMainAttributes-Attributes.getValue-Attributes.getValue-Attributes.getValue-Attributes.getValue-Attributes.put-String.split-Collections.addAll-Attributes.remove-Attributes.size-Attributes.values-Attributes.iterator-Attributes.next-Attributes.getValue-Attributes.getValue-Attributes.getValue-Attributes.getValue
+Returns a unique object representing the current thread
+Thread.get-Thread.currentThread-WeakReference<>.new-Thread.set
+Creates a new 
+VicariousThreadLocal<>.new
+Creates a new  with specified initial value
+VicariousThreadLocal<T>.new
+Creates a new  with initial value from 
+Error.new-Callable<T.call-VicariousThreadLocal<T>.new
+Creates a new holder object, and registers it appropriately
+VicariousThreadLocal.poll-Holder.new-WeakReference<>.new-Holder.compareAndSet-Holder.set
+Indicates whether thread-local has been initialised for the current thread
+Holder.get-Holder.get
+Swaps the current threads value with the supplied value
+Holder.get-VicariousThreadLocal.createHolder-ThreadLocal.initialValue-Holder.get-ThreadLocal.initialValue
+Executes task with thread-local set to the specified value
+Holder.get-VicariousThreadLocal.createHolder-Holder.get-Runnable.run
+Executes task with thread-local set to the specified value
+Holder.get-VicariousThreadLocal.createHolder-Holder.get-Callable<R.call
+Check if any strong references need should be removed due to thread exit
+Object.poll-Object.poll-Holder.get-Holder.get-Holder.weakCompareAndSet
+Returns a  instance for the named scheme
+NullPointerException.new-NullPointerException.new-ResourceAddressFactorySpi.getSchemeName-NullPointerException.new-ResourceAddressFactorySpi.getTransportName-NullPointerException.new-URIUtils.getScheme-String.equals-String.format-IllegalArgumentException.new-Factory.newResourceOptions-ResourceAddressFactorySpi.setAlternateOption-ResourceAddressFactorySpi.stripOptionPrefixes-URIUtils.getPort-ResourceAddressFactorySpi.getSchemePort-URIUtils.modifyURIPort-URIUtils.getPort-ResourceAddressFactorySpi.getSchemePort-URIUtils.modifyURIPort-ResourceAddressFactorySpi.getSchemeName-String.equals-URIUtils.modifyURIScheme-ResourceAddressFactorySpi.parseNamedOptions-ResourceAddressFactorySpi.newResourceAddresses0-List<T.size-List<T.get-ResourceAddressFactorySpi.setOptions-Factory.newResourceOptions-ResourceOptions.setOption-ResourceAddressFactorySpi.setOptions-T.getResource-URI.getScheme-String.equals-String.format-IllegalArgumentException.new-List<T.isEmpty-ResourceAddressFactorySpi.throwNoAddressesToBindError-List<T.get
+Throws general exception when no addresses to bind are found
+String.format-IllegalArgumentException.new
+Create a canonical URI from a given URI
+String.equals-URIUtils.getCanonicalizedURI
+Create a canonical URI from a given URI
+URIUtils.getHost-URIUtils.getPath-String.equals-String.equals-URIUtils.getScheme-String.equals-String.equals-String.equals-String.equals-String.equals-String.toLowerCase-String.equals-IllegalArgumentException.new-URIUtils.getUserInfo-String.toLowerCase-URIUtils.getPort-URIUtils.getQuery-URIUtils.getFragment-URIUtils.buildURIAsString
+Masks source buffer into destination buffer
+ByteBuffer.remaining-ByteBuffer.remaining-ByteBuffer.position-ByteBuffer.position-ByteBuffer.getInt-ByteBuffer.putInt-ByteBuffer.get-ByteBuffer.put-ByteBuffer.get-ByteBuffer.put-ByteBuffer.get-ByteBuffer.put-ByteBuffer.get-ByteBuffer.put-ByteBuffer.get-ByteBuffer.put-ByteBuffer.get-ByteBuffer.put
+Opens the cache in , creating a cache if none exists there
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-File.new-File.exists-File.new-File.exists-DiskLruCache.renameTo-File.delete-DiskLruCache.new-File.exists-IOException.getMessage-PrintStream.println-DiskLruCache.delete-DiskLruCache.readJournal-DiskLruCache.processJournal-FileOutputStream.new-OutputStreamWriter.new-BufferedWriter.new-File.mkdirs-DiskLruCache.new-DiskLruCache.rebuildJournal
+Computes the initial size and collects garbage as a part of opening the cache
+DiskLruCache.deleteIfExists-Entry.values-Entry.iterator-Entry.next-Entry.getCleanFile-DiskLruCache.deleteIfExists-Entry.getDirtyFile-DiskLruCache.deleteIfExists-Entry.remove-Entry.hasNext
+Creates a new journal that omits redundant information
+Writer.close-FileOutputStream.new-OutputStreamWriter.new-BufferedWriter.new-Writer.close-Writer.write-Writer.write-Writer.write-Writer.write-Integer.toString-Writer.write-Writer.write-Integer.toString-Writer.write-Writer.write-Writer.write-Entry.values-Entry.getLengths-Writer.write-Writer.write-File.exists-DiskLruCache.renameTo-DiskLruCache.renameTo-File.delete-FileOutputStream.new-OutputStreamWriter.new-BufferedWriter.new
+Returns a snapshot of the entry named , or null if it doesn't exist is not currently readable
+DiskLruCache.checkNotClosed-DiskLruCache.validateKey-Entry.get-Util.closeQuietly-Entry.getCleanFile-FileInputStream.new-Writer.append-DiskLruCache.journalRebuildRequired-ThreadPoolExecutor.submit-Snapshot.new
+Returns an editor for the entry named , or null if another edit is in progress
+DiskLruCache.edit
+Changes the maximum number of bytes the cache can store and queues a job to trim the existing store, if necessary
+ThreadPoolExecutor.submit
+We only rebuild the journal when it will halve the size of the journal and eliminate at least 2000 ops
+Entry.size
+Drops the entry for  if it exists and can be removed
+DiskLruCache.checkNotClosed-DiskLruCache.validateKey-Entry.get-Entry.getCleanFile-File.exists-File.delete-IOException.new-Writer.append-Entry.remove-DiskLruCache.journalRebuildRequired-ThreadPoolExecutor.submit
+Force buffered operations to the filesystem
+DiskLruCache.checkNotClosed-DiskLruCache.trimToSize-DiskLruCache.trimToFileCount-Writer.flush
+Closes this cache
+Entry.values-ArrayList<Entry>.new-Editor.abort-DiskLruCache.trimToSize-DiskLruCache.trimToFileCount-Writer.close
+Closes the cache and deletes all of its stored values
+DiskLruCache.close-Util.deleteContents
+Returns an editor for this snapshot's entry, or null if either the entry has changed since this snapshot was created or if another edit is in progress
+DiskLruCache.edit
+Returns the string value for 
+DiskLruCache.Snapshot.getInputStream-DiskLruCache.inputStreamToString
+Returns an unbuffered input stream to read the last committed value, or null if no value has been committed
+IllegalStateException.new-Entry.getCleanFile-FileInputStream.new
+Returns the last committed value as a string, or null if no value has been committed
+DiskLruCache.Editor.newInputStream-DiskLruCache.inputStreamToString
+Returns a new unbuffered output stream to write the value at 
+IllegalStateException.new-Entry.getDirtyFile-File.mkdirs-FileOutputStream.new-FileOutputStream.new-FaultHidingOutputStream.new
+Sets the value at  to 
+Util.closeQuietly-DiskLruCache.Editor.newOutputStream-OutputStreamWriter.new-Writer.write
+Commits this edit so it is visible to readers
+DiskLruCache.completeEdit-DiskLruCache.completeEdit-DiskLruCache.remove
+Aborts this edit
+DiskLruCache.completeEdit
+Set lengths using decimal numbers like "10123"
+DiskLruCache.Entry.invalidLengths-DiskLruCache.Entry.invalidLengths-Long.parseLong
+Deletes the contents of 
+File.listFiles-IOException.new-File.isDirectory-Util.deleteContents-File.delete-IOException.new
+Closes the reader by closing the underlying  and marking this reader as closed
+InputStream.close
+Reads the next line
+IOException.new-StrictLineReader.fillBuf-Charset.name-String.new-AssertionError.new-Charset.name-String.new-ByteArrayOutputStream.new-ByteArrayOutputStream.write-StrictLineReader.fillBuf-ByteArrayOutputStream.write-ByteArrayOutputStream.toString
+Reads new input data into the buffer
+InputStream.read-EOFException.new
+Links node as first element, or returns false if full
+Condition.signal
+Links node as last element, or returns false if full
+Condition.signal
+Removes and returns first element, or null if empty
+Condition.signal
+Removes and returns last element, or null if empty
+Condition.signal
+Unlinks x
+Condition.signal-LinkedBlockingDeque.unlinkLast-LinkedBlockingDeque.unlinkFirst
+Inserts the specified element at the end of this deque unless it would violate capacity restrictions
+LinkedBlockingDeque.addLast
+Retrieves and removes the head of the queue represented by this deque
+LinkedBlockingDeque.removeFirst
+Retrieves, but does not remove, the head of the queue represented by this deque
+LinkedBlockingDeque.getFirst
+Returns the number of additional elements that this deque can ideally (in the absence of memory or resource constraints) accept without blocking
+ReentrantLock.lock-ReentrantLock.unlock
+Removes the first occurrence of the specified element from this deque
+LinkedBlockingDeque.removeFirstOccurrence
+Returns the number of elements in this deque
+ReentrantLock.lock-ReentrantLock.unlock
+Returns  if this deque contains the specified element
+ReentrantLock.lock-ReentrantLock.unlock-Object.equals
+Returns an array containing all of the elements in this deque, in proper sequence (from first to last element)
+ReentrantLock.lock-ReentrantLock.unlock
+Returns an array containing all of the elements in this deque, in proper sequence; the runtime type of the returned array is that of the specified array
+ReentrantLock.lock-ReentrantLock.unlock-T[].getClass-Object.getComponentType-Array.newInstance
+Atomically removes all of the elements from this deque
+ReentrantLock.lock-ReentrantLock.unlock-Condition.signalAll
+Returns an iterator over the elements in this deque in proper sequence
+Itr.new
+Returns an iterator over the elements in this deque in reverse sequential order
+DescendingItr.new
+Returns the successor node of the given non-null, but possibly previously deleted, node
+LinkedBlockingDeque.AbstractItr.nextNode-LinkedBlockingDeque.AbstractItr.firstNode
+Advances next
+ReentrantLock.lock-ReentrantLock.unlock-LinkedBlockingDeque.AbstractItr.succ
+Save the state of this deque to a stream (that is, serialize it)
+ReentrantLock.lock-ReentrantLock.unlock-ObjectOutputStream.defaultWriteObject-ObjectOutputStream.writeObject-ObjectOutputStream.writeObject
+Reconstitute this deque from a stream (that is, deserialize it)
+ObjectInputStream.defaultReadObject-ObjectInputStream.readObject-LinkedBlockingDeque.add
+Inserts the specified element at the front of this deque if it is possible to do so immediately without violating capacity restrictions, returning true upon success and false if no space is currently available
+LinkedBlockingDeque<T.offerFirst
+Retrieves and removes the first element of this deque
+LinkedBlockingDeque<T.removeFirst
+Scales down dimensions in sampleSize times
+ImageSize.new
+Scales dimensions according to incoming scale
+ImageSize.new
+Copies stream, fires progress events by listener, can be interrupted by listener
+IoUtils.copyStream
+Copies stream, fires progress events by listener, can be interrupted by listener
+InputStream.available-IoUtils.shouldStopLoading-InputStream.read-OutputStream.write-IoUtils.shouldStopLoading-OutputStream.flush
+Gets the value of the host property
+ArrayList<HostTrustXmlResponse>.new
+Gets the value of the host property
+ArrayList<HostType>.new
+Gets the value of the manifest property
+ArrayList<ManifestType>.new
+This method compares serial number, then subject name, then the entire encoded certificate
+X509Certificate.getSerialNumber-X509Certificate.getSerialNumber-BigInteger.compareTo-X509Certificate.getSubjectX500Principal-X500Principal.getName-X509Certificate.getSubjectX500Principal-X500Principal.getName-String.compareTo-X509Certificate.getEncoded-ByteBuffer.wrap-X509Certificate.getEncoded-ByteBuffer.wrap-ByteBuffer.compareTo
+Searches for the specified key, if found returns its value, otherwise returns the value returned from the defaultValueCallback
+Configuration.get-AbstractConfiguration.getName-Logger.getLogger-Logger.log-String.call
+Any changes to the returned Map will NOT affect the configuration instance
+HashMap<>.new-Configuration.keys-Configuration.get-String.put
+Any changes to the returned Properties will NOT affect the configuration instance
+Properties.new-Configuration.keys-Configuration.get-Properties.setProperty
+Adds the specified keys to the exclusion list which prevents it from
+String.add-Object.remove
+Adds the specified keys to the exclusion list which prevents it from
+String.add-Object.remove
+Changes to the returned array will not affect this instance
+Arrays.copyOf
+Changes to the returned array will not affect this instance
+Charset.forName-Password.toByteArray
+Changes to the returned array will not affect this instance
+CharBuffer.wrap-Charset.encode-ByteBuffer.array
+Replaces each character in the password with NULL then empties the password
+Arrays.fill
+Does not allow XML External Entity (XXE) injection CWE-611 http://cwe
+JAXB.getContextForType-XMLInputFactory.newFactory-XMLInputFactory.setProperty-XMLInputFactory.setProperty-XMLInputFactory.setProperty-StringReader.new-StreamSource.new-XMLInputFactory.createXMLStreamReader-JAXBContext.createUnmarshaller-Unmarshaller.unmarshal-JAXBElement<T.getValue
+This method does NOT check the network for the existence of the given address, it only checks its format for validity and, if an IPv4 or IPv6 address is given, checks that it is within the allowed range
+String.contains-String.format-URI.new-URI.getHost-String.matches-String.format-URI.new-URI.getHost
+Gets the value of the host property
+ArrayList<HostType>.new
+Gets the value of the manifest property
+ArrayList<ManifestType>.new
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+String.trim
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+CustomerExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+This method was generated by MyBatis Generator
+Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.add
+This method was generated by MyBatis Generator
+AddressExample.createCriteriaInternal-Criteria.size-Criteria.add
+This method was generated by MyBatis Generator
+Criteria.new
+This method was generated by MyBatis Generator
+Criteria.clear
+************
+_IALSynTask.addLast
+************
+_IALSynTask.isEmpty-_IALSynTask.pop-_IALSynTask.addLast
+*******************
+Properties.getProperty-String.isEmpty-String.trim-Integer.parseInt-PrintStream.println
+*******************
+Properties.getProperty-String.isEmpty-String.trim-Long.parseLong-PrintStream.println
+*******************
+Properties.getProperty-String.isEmpty-PrintStream.println
+*******************
+Properties.getProperty-String.isEmpty-PrintStream.println
+*******************
+Properties.getProperty-String.isEmpty-String.trim-String.equalsIgnoreCase-PrintStream.println
+***************
+_AALBasicThread._run
+*************
+ByteBuffer.getShort-ByteBuffer.get-Charset.forName-Charset.newDecoder-ByteBuffer.wrap-CharsetDecoder.decode-CharBuffer.toString
+********
+String.isEmpty-String.getBytes
+*********
+String.length-ByteBuffer.putShort-String.getBytes-ByteBuffer.putShort-ByteBuffer.put
+***********
+String.length-ByteBuffer.allocate-ByteBuffer.putShort-ByteBuffer.flip-String.getBytes-ByteBuffer.allocate-ByteBuffer.putShort-ByteBuffer.put-ByteBuffer.flip
+*************
+ByteBuffer.put-ByteBuffer.putShort-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.putInt
+*************
+ByteBuffer.put-ByteBuffer.putInt-ByteBuffer.put-ByteBuffer.putShort-ByteBuffer.put-ByteBuffer.put-ByteBuffer.put-ByteBuffer.putLong
+*************
+ByteBuffer.get-ByteBuffer.getShort-ByteBuffer.get-ByteBuffer.getInt
+*************
+ByteBuffer.get-ByteBuffer.getInt-ByteBuffer.getShort-ByteBuffer.get-ByteBuffer.getLong
+********
+String.isEmpty-String.getBytes
+*********
+String.length-ByteBuffer.putShort-String.getBytes-ByteBuffer.putShort-ByteBuffer.put
+*************
+ByteBuffer.getShort-ByteBuffer.get-Charset.newDecoder-ByteBuffer.wrap-CharsetDecoder.decode-CharBuffer.toString
+*************
+Charset.newDecoder-ByteBuffer.wrap-CharsetDecoder.decode-CharBuffer.toString
+******************
+_AALBasicProtocolSubOrderDealer._createProtocolObj-T.readPackage-_AALBasicProtocolSubOrderDealer._dealProtocol
+*********
+T.getMainOrder
+Take a String which is a delimited list and convert it to a String array
+StringUtils.delimitedListToStringArray
+Take a String which is a delimited list and convert it to a String array
+ArrayList<String>.new-String.equals-String.indexOf-String.substring-StringUtils.deleteAny-String.add-String.length-String.length-String.length-String.substring-StringUtils.deleteAny-String.add-String.substring-StringUtils.deleteAny-String.add-String.length-StringUtils.toStringArray
+Delete any character in a given String
+StringUtils.hasLength-StringUtils.hasLength-StringBuilder.new-String.charAt-String.indexOf-StringBuilder.append-String.length-StringBuilder.toString
+Check that the given CharSequence is neither null nor of length 0
+CharSequence.length
+Check that the given String is neither null nor of length 0
+StringUtils.hasLength
+Copy the given Collection into a String array
+String.size-String.toArray
+Trim leading and trailing whitespace from the given String
+StringUtils.hasLength-StringBuilder.new-StringBuilder.length-StringBuilder.charAt-Character.isWhitespace-StringBuilder.deleteCharAt-StringBuilder.length-StringBuilder.length-StringBuilder.charAt-Character.isWhitespace-StringBuilder.length-StringBuilder.deleteCharAt-StringBuilder.toString
+Split a String at the first occurrence of the delimiter
+StringUtils.hasLength-StringUtils.hasLength-String.indexOf-String.substring-String.length-String.substring
+Check whether the given CharSequence has actual text
+StringUtils.hasLength-CharSequence.length-CharSequence.charAt-Character.isWhitespace
+Check whether the given String has actual text
+StringUtils.hasText
+Returns a 'cleaned' representation of the specified argument
+String.trim-String.equals
+Return the same value as 
+Double.doubleToLongBits-ObjectUtils.hashCode
+Return the same value as 
+Float.floatToIntBits
+Determine if the given objects are equal, returning true if both are null or false if only one is null
+Object.equals-Object.getClass-Object.isArray-Object.getClass-Object.isArray-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals
+Return as hash code for the given object; typically the value of 
+Object.getClass-Object.isArray-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-ObjectUtils.nullSafeHashCode-Object.hashCode
+Return a hash code based on the contents of the specified array
+ObjectUtils.nullSafeHashCode
+Return a hash code based on the contents of the specified array
+ObjectUtils.hashCode
+Return a hash code based on the contents of the specified array
+ObjectUtils.hashCode
+Return a hash code based on the contents of the specified array
+ObjectUtils.hashCode
+Return a hash code based on the contents of the specified array
+ObjectUtils.hashCode
+Loads the 
+Scanner.new-Scanner.useDelimiter-Scanner.next-OrderPreservingProperties.toMapProps-OrderPreservingProperties.putAll
+Returns the HTTP status series of this status code
+Series.valueOf
+Return a string representation of this status code
+Integer.toString
+Return the enum constant of this type with the specified numeric value
+HttpStatus.values-IllegalArgumentException.new
+Move from the current path point to the new one specified by x and y
+PathPoint.moveTo-PathPoint.add
+Create a straight line from the current path point to the new one specified by x and y
+PathPoint.lineTo-PathPoint.add
+Create a cubic B�zier curve from the current path point to the new one specified by x and y
+PathPoint.curveTo-PathPoint.add
+Constructs and returns a PathPoint object that describes a line to the given xy location
+PathPoint.new
+Constructs and returns a PathPoint object that describes a cubic B�zier curve to the given xy location with the control points at c0 and c1
+PathPoint.new
+Constructs and returns a PathPoint object that describes a discontinuous move to the given xy location
+PathPoint.new
+Incomplete Gamma function Q(a,x)
+GammaFunction.lnGamma-GammaFunction.incompleteGamma
+Incomplete Gamma function P(a,x) = 1-Q(a,x)
+GammaFunction.lnGamma-GammaFunction.incompleteGamma
+Incomplete Gamma function P(a,x) = 1-Q(a,x)
+GammaFunction.incompleteGamma
+Returns the incomplete gamma ratio I(x,alpha) where x is the upper limit of the integration and alpha is the shape parameter
+IllegalArgumentException.new-Math.log-Math.exp-Math.abs-Math.abs
+Checks if a CharSequence is null or has no characters
+CharSequence.length
+Defines or reset a listener for the given method signature
+MethodListener.put-MethodListener.remove
+Invokes the specific listener for the given signature or the default one if defined
+MethodListener.get-MethodListener.onInvokeV-MethodListener.onInvokeV
+Invokes the specific listener for the int return type
+MethodListener.get-MethodListener.onInvokeI-MethodListener.onInvokeI
+Invokes the specific listener for the long return type
+MethodListener.get-MethodListener.onInvokeL-MethodListener.onInvokeL
+Invokes the specific listener for the float return type
+MethodListener.get-MethodListener.onInvokeF-MethodListener.onInvokeF
+Invokes the specific listener for the double return type
+MethodListener.get-MethodListener.onInvokeD-MethodListener.onInvokeD
+Invokes the specific listener for the object return type
+MethodListener.get-MethodListener.onInvokeA-MethodListener.onInvokeA
+Same as  but returns an integer or similar
+MethodAdapter.onInvokeV
+Same as  but returns a long
+MethodAdapter.onInvokeV
+Same as  but returns a float
+MethodAdapter.onInvokeV
+Same as  but returns a double
+MethodAdapter.onInvokeV
+Same as  but returns an object
+MethodAdapter.onInvokeV
+Similar to debug() but doesn't do a \n automatically
+String.format-PrintStream.print
+Returns a new byte array containing the bytes corresponding to the given characters, encoded in US-ASCII
+CharBuffer.allocate-CharBuffer.put-Charset.encode-ByteBuffer.array
+Returns a new byte array containing the bytes corresponding to the given characters, encoded in ISO-8859-1
+CharBuffer.allocate-CharBuffer.put-Charset.encode-ByteBuffer.array
+Returns a new byte array containing the bytes corresponding to the given characters, encoded in UTF-8
+CharBuffer.allocate-CharBuffer.put-Charset.encode-ByteBuffer.array
+Equivalent to Integer
+IntegralToString.intToString-String.new
+Equivalent to Integer
+IntegralToString.convertInt
+Equivalent to sb
+IntegralToString.convertInt
+Returns the string representation of i and leaves sb alone if sb is null
+IntegralToString.stringOf-IntegralToString.stringOf-IntegralToString.stringOf-IntegralToString.stringOf-StringBuilder.append-ThreadLocal<char[].get-String.new-StringBuilder.append
+Equivalent to Long
+IntegralToString.intToString-IntegralToString.longToString-String.new
+Equivalent to Long
+IntegralToString.convertLong
+Equivalent to sb
+IntegralToString.convertLong
+Returns the string representation of n and leaves sb alone if sb is null
+IntegralToString.convertInt-StringBuilder.append-ThreadLocal<char[].get-IntegralToString.intIntoCharArray-IntegralToString.intIntoCharArray-IntegralToString.intIntoCharArray-String.new-StringBuilder.append
+Returns 0 if , or {@code c
+Comparator<? super T.compare
+Returns true if both arguments are null, the result of  if both arguments are primitive arrays, the result of  if both arguments are arrays of reference types, and the result of  otherwise
+Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.equals-Arrays.deepEquals-Object.equals
+Null-safe equivalent of {@code a
+Object.equals
+Convenience wrapper for , adding varargs
+Arrays.hashCode
+Returns 0 for null or {@code o
+Object.hashCode
+Returns  if non-null, or throws 
+NullPointerException.new
+Returns  if non-null, or throws  with the given detail message
+NullPointerException.new
+Returns "null" for null or {@code o
+Object.toString
+Returns  for null or {@code o
+Object.toString
+Sets the size of the cache
+IllegalArgumentException.new-LruCache.trimToSize
+Returns the value for  if it exists in the cache or can be created by 
+NullPointerException.new-LinkedHashMap<K, V.get-LruCache.create-LinkedHashMap<K, V.put-LruCache.safeSizeOf-LinkedHashMap<K, V.put-LruCache.trimToSize-LruCache.entryRemoved
+Caches  for 
+NullPointerException.new-LruCache.safeSizeOf-LinkedHashMap<K, V.put-LruCache.safeSizeOf-LruCache.entryRemoved-LruCache.trimToSize
+Removes the entry for  if it exists
+NullPointerException.new-LinkedHashMap<K, V.remove-LruCache.safeSizeOf-LruCache.entryRemoved
+Clear the cache, calling  on each removed entry
+LruCache.trimToSize
+Returns a copy of the current contents of the cache, ordered from least recently accessed to most recently accessed
+LinkedHashMap<K, V>.new
+Remove the object at the top of the stack and returns it
+ArrayList.size-ArrayList.size-ArrayList.remove
+Returns the object at the top of the stack
+ArrayList.size-ArrayList.size-ArrayList.get
+Serialize the given collection to an XML document
+StringBuilder.new-StringBuilder.append-DumpDataIO.serialize-StringBuilder.append-StringBuilder.toString
+Load a collection of DumpData objects from the given file
+SAXParserFactory.newInstance-SAXParserFactory.setNamespaceAware-SAXParserFactory.newSAXParser-SAXParser.getXMLReader-DumpDataContentHandler.new-xmlReader.setContentHandler-FileReader.new-InputSource.new-xmlReader.parse
+Checks that the value has the expected bitwise flags set
+String.format-IllegalArgumentException.new
+Checks that the value is  to the expected value
+Objects.equals-String.format-IllegalArgumentException.new
+Checks that the value is not 
+NullPointerException.new
+Checks that the value is not 
+Preconditions.checkNotNull
+Checks that the state is currently 
+IllegalStateException.new
+Ensures that the  is not , and none of its elements are 
+NullPointerException.new-String.format-NullPointerException.new
+Ensures that the  is not , and contains at least one element
+NullPointerException.new-Collection<T.isEmpty-IllegalArgumentException.new
+Obtains objectHandle event parameter
+IllegalParameterAccess.new
+Obtains storageID event parameter
+IllegalParameterAccess.new
+Obtains devicePropCode event parameter
+IllegalParameterAccess.new
+Obtains transactionID event parameter
+IllegalParameterAccess.new
+Obtains objectPropCode event parameter
+IllegalParameterAccess.new
+Obtains objectFormatCode event parameter
+IllegalParameterAccess.new
+Returns if the given operation is supported by the device or not
+MtpDeviceInfo.isSupported
+Returns if the given event is supported by the device or not
+MtpDeviceInfo.isSupported
+Utility function for packing MIDI data to be sent through our ParcelFileDescriptor  message byte array contains variable length MIDI message
+System.arraycopy
+Instructs the receiver to discard all pending MIDI data
+MidiReceiver.onFlush
+Called to send MIDI data to the receiver without a timestamp
+MidiReceiver.send
+Called to send MIDI data to the receiver with a specified timestamp
+MidiReceiver.getMaxMessageSize-MidiReceiver.onSend
+Get the system unique device ID
+AudioHandle.id
+Build a specific configuration of this audio port for use by methods like AudioManager
+AudioPortConfig.new
+Get the system unique patch ID
+AudioHandle.id
+This method starts the playback of a tone of the specified type
+ToneGenerator.startTone
+Returns the array of supported output file formats
+EncoderCapabilities.native_get_num_file_formats-EncoderCapabilities.native_get_file_format
+Returns the capabilities of the supported video encoders
+EncoderCapabilities.native_get_num_video_encoders-ArrayList<VideoEncoderCap>.new-EncoderCapabilities.native_get_video_encoder_cap-VideoEncoderCap.add
+Returns the capabilities of the supported audio encoders
+EncoderCapabilities.native_get_num_audio_encoders-ArrayList<AudioEncoderCap>.new-EncoderCapabilities.native_get_audio_encoder_cap-AudioEncoderCap.add
+Build a valid gain configuration for this gain controller for use by AudioPortDescriptor
+AudioGainConfig.new
+Build a specific configuration of this audio mix port for use by methods like AudioManager
+AudioMixPortConfig.new
+Gets the child element with the given name
+Element.getChild
+Gets the child element with the given name
+IllegalStateException.new-Children.new-Children.getOrCreate
+Gets the child element with the given name
+Element.requireChild
+Gets the child element with the given name
+Element.getChild-Element.contains-Element.add-ArrayList<Element>.new-Element.add
+Sets start and end element listeners at the same time
+Element.setStartElementListener-Element.setEndElementListener
+Sets start and end text element listeners at the same time
+Element.setStartElementListener-Element.setEndTextElementListener
+Sets a listener for the start of this element
+IllegalStateException.new
+Sets a listener for the end of this element
+IllegalStateException.new
+Sets a listener for the end of this text element
+IllegalStateException.new-IllegalStateException.new
+Clears flags on required children
+Element.size-Element.get
+Throws an exception if a required child was not present
+Element.size-Element.get-BadXmlException.new
+Looks up a child by name and creates a new one if necessary
+String.hashCode-String.hashCode-String.compareTo-String.compareTo-Child.new-Child.new
+Looks up a child by name
+String.hashCode-String.hashCode-String.compareTo-String.compareTo
+Sets current values to be a rotation matrix of certain angle
+Math.cos-Math.sin-Math.sqrt
+Sets current values to be a translation matrix of given
+Matrix4f.loadIdentity
+Sets current values to be the result of multiplying two given
+Matrix4f.get-Matrix4f.get-Matrix4f.get-Matrix4f.get-Matrix4f.get-Matrix4f.set-Matrix4f.set-Matrix4f.set-Matrix4f.set
+Set current values to be an orthographic projection matrix with the right and bottom clipping planes set to the given values
+Matrix4f.loadOrtho
+Helper function to set the current values to a perspective
+Matrix4f.new-Matrix4f.new-Matrix4f.loadFrustum-Matrix4f.loadFrustum-Matrix4f.loadRotate-Matrix4f.loadMultiply-Matrix4f.loadScale-Matrix4f.loadMultiply-Matrix4f.loadTranslate-Matrix4f.loadMultiply-Matrix4f.load
+Modifies the current matrix by post-multiplying it with a
+Matrix4f.new-Matrix4f.loadRotate-Matrix4f.multiply
+Modifies the current matrix by post-multiplying it with a
+Matrix4f.new-Matrix4f.loadScale-Matrix4f.multiply
+Modifies the current matrix by post-multiplying it with a
+Matrix4f.new-Matrix4f.loadTranslate-Matrix4f.multiply
+Sets current values to be the result of multiplying two given
+Matrix2f.get-Matrix2f.get-Matrix2f.get-Matrix2f.set-Matrix2f.set
+Modifies the current matrix by post-multiplying it with a
+Matrix2f.new-Matrix2f.loadRotate-Matrix2f.multiply
+Modifies the current matrix by post-multiplying it with a
+Matrix2f.new-Matrix2f.loadScale-Matrix2f.multiply
+Sets current values to be a rotation matrix of certain angle
+Math.cos-Math.sin-Math.sqrt
+Sets current values to be a translation matrix of given
+Matrix3f.loadIdentity
+Sets current values to be the result of multiplying two given
+Matrix3f.get-Matrix3f.get-Matrix3f.get-Matrix3f.get-Matrix3f.set-Matrix3f.set-Matrix3f.set
+Modifies the current matrix by post-multiplying it with a
+Matrix3f.new-Matrix3f.loadRotate-Matrix3f.multiply
+Modifies the upper 2x2 of the current matrix by
+Matrix3f.new-Matrix3f.loadRotate-Matrix3f.multiply
+Modifies the upper 2x2 of the current matrix by
+Matrix3f.new-Matrix3f.loadScale-Matrix3f.multiply
+Modifies the current matrix by post-multiplying it with a
+Matrix3f.new-Matrix3f.loadScale-Matrix3f.multiply
+Modifies the current matrix by post-multiplying it with a
+Matrix3f.new-Matrix3f.loadTranslate-Matrix3f.multiply
+Returns timestamp given by param in KML format ie yyyy-mm-ddThh:mm:ssZ,
+TimeZone.getTimeZone-Calendar.getInstance-Calendar.setTimeInMillis-String.format
+Helper version of getKMLTimestamp, that returns timestamp for current
+System.currentTimeMillis-DateUtils.getKMLTimestamp
+Constructs a wild-card FrameType that matches any other FrameType
+FrameType.fetchType
+Constructs an object-based single FrameType that matches object-based FrameTypes of any class
+FrameType.fetchType
+Constructs an object-based single FrameType of the specified class
+FrameType.fetchType
+Constructs an object-based array FrameType that matches object-based FrameTypes of any class
+FrameType.fetchType
+Constructs an object-based array FrameType with elements of the specified class
+FrameType.fetchType
+Constructs a one-dimensional buffer type of the specified element
+FrameType.fetchType
+Constructs a two-dimensional buffer type of the specified element
+FrameType.fetchType
+Constructs a two-dimensional image type of the specified element
+FrameType.fetchType
+Converts the current array type to a single type
+RuntimeException.new-FrameType.fetchType
+Converts the current single type to an array type
+RuntimeException.new-FrameType.fetchType
+Copy pixels from one buffer to another, applying a transformation
+ByteBuffer.remaining-ByteBuffer.remaining-ByteBuffer.remaining-ByteBuffer.remaining-ByteBuffer.remaining-ByteBuffer.remaining-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-PixelUtils.nativeCopyPixels
+Convert YUV420-Planer data to RGBA8888
+ColorSpace.expectInputSize-ColorSpace.expectOutputSize-ColorSpace.nativeYuv420pToRgba8888
+Convert ARGB8888 to RGBA8888
+ColorSpace.expectInputSize-ColorSpace.expectOutputSize-ColorSpace.nativeArgb8888ToRgba8888
+Convert RGBA8888 to HSVA8888
+ColorSpace.expectInputSize-ColorSpace.expectOutputSize-ColorSpace.nativeRgba8888ToHsva8888
+Convert RGBA8888 to YCbCrA8888
+ColorSpace.expectInputSize-ColorSpace.expectOutputSize-ColorSpace.nativeRgba8888ToYcbcra8888
+Retrieves a singleton instance of Configurator
+Configurator.new
+Define a viewing transformation in terms of an eye point, a center of view, and an up vector
+Matrix.setLookAtM-GL10.glMultMatrixf
+Map object coordinates into window coordinates
+Matrix.multiplyMM-Matrix.multiplyMV
+Map window coordinates to object coordinates
+Matrix.multiplyMM-Matrix.invertM-Matrix.multiplyMV
+Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format
+ETC1Util.createTexture-ETC1Util.loadTexture
+Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format
+IllegalArgumentException.new-IllegalArgumentException.new-ETC1Texture.getWidth-ETC1Texture.getHeight-ETC1Texture.getData-ETC1Util.isETC1Supported-ByteOrder.nativeOrder-ByteBuffer.allocateDirect-ByteBuffer.order-ETC1.decodeImage-GLES10.glTexImage2D-Buffer.remaining-GLES10.glCompressedTexImage2D
+Check if ETC1 texture compression is supported by the active OpenGL ES context
+GLES10.glGetIntegerv-GLES10.glGetIntegerv
+Create a new ETC1Texture from an input stream containing a PKM formatted compressed texture
+InputStream.read-IOException.new-ByteOrder.nativeOrder-ByteBuffer.allocateDirect-ByteBuffer.order-ByteBuffer.put-ByteBuffer.position-ETC1.isValid-IOException.new-ETC1.getWidth-ETC1.getHeight-ETC1.getEncodedDataSize-ByteOrder.nativeOrder-ByteBuffer.allocateDirect-ByteBuffer.order-Math.min-InputStream.read-IOException.new-ByteBuffer.put-ByteBuffer.position-ETC1Texture.new
+Helper function that compresses an image into an ETC1Texture
+ETC1.getEncodedDataSize-ByteOrder.nativeOrder-ByteBuffer.allocateDirect-ByteBuffer.order-ETC1.encodeImage-ETC1Texture.new
+Helper function that writes an ETC1Texture to an output stream formatted as a PKM file
+ETC1Texture.getData-ByteBuffer.position-ByteBuffer.position-ETC1Texture.getWidth-ETC1Texture.getHeight-ByteOrder.nativeOrder-ByteBuffer.allocateDirect-ByteBuffer.order-ETC1.formatHeader-ByteBuffer.get-OutputStream.write-ETC1.getEncodedDataSize-Math.min-ByteBuffer.get-OutputStream.write
+Computes an orthographic projection matrix
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new
+Defines a projection matrix in terms of six clip planes
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new
+Defines a projection matrix in terms of a field of view angle, an aspect ratio, and z clip planes
+Math.tan
+Computes the length of a vector
+Math.sqrt
+Rotates matrix m by angle a (in degrees) around the axis (x, y, z)
+Matrix.setRotateM-Matrix.multiplyMM
+Rotates matrix m in place by angle a (in degrees) around the axis (x, y, z)
+Matrix.setRotateM-Matrix.multiplyMM-System.arraycopy
+Creates a matrix for rotation by angle a (in degrees) around the axis (x, y, z)
+Math.sin-Math.cos-Matrix.length
+Converts Euler angles to a rotation matrix
+Math.cos-Math.sin-Math.cos-Math.sin-Math.cos-Math.sin
+Defines a viewing transformation in terms of an eye point, a center of view, and an up vector
+Matrix.length-Matrix.length-Matrix.translateM
+Determines how many bytes have been written to the output stream
+ByteArrayOutputStream.size
+Writes the specified byte to this output stream
+PrivateOutputStream.ensureOpen-BaseStream.ensureNotDone-ByteArrayOutputStream.write-ByteArrayOutputStream.size-BaseStream.continueOperation
+Reads the bytes that have been written to this stream
+ByteArrayOutputStream.size-ByteArrayOutputStream.toByteArray-ByteArrayOutputStream.reset-System.arraycopy-ByteArrayOutputStream.write
+Closes the output stream
+BaseStream.streamClosed
+Returns the number of bytes that can be read (or skipped over) from this input stream without blocking by the next caller of a method for this input stream
+PrivateInputStream.ensureOpen
+Reads the next byte of data from the input stream
+PrivateInputStream.ensureOpen-BaseStream.continueOperation
+Allows the OperationImpl thread to add body data to the input stream
+System.arraycopy-System.arraycopy-Object.notifyAll
+Closes the input stream
+BaseStream.streamClosed
+Create a complete OBEX packet by reading data from an InputStream
+InputStream.read-ObexPacket.read
+Read the remainder of an OBEX packet, with a specified headerId
+InputStream.read-InputStream.read-ObexPacket.new-InputStream.read-InputStream.read
+Gets an instance of {@link DrmUtils
+ExtendedMetadataParser.new
+This method returns an iterator object that can be used to iterate over all values of the metadata
+String.values-String.iterator
+This method returns an iterator object that can be used to iterate over all keys of the metadata
+String.keySet-String.iterator
+This method retrieves the metadata value associated with a given key
+String.get
+Adds optional information as key-value pairs to this object
+Object.put
+Retrieves the value of a given key
+Object.get
+Retrieves an iterator object that you can use to iterate over the keys associated with this DrmInfo object
+Object.keySet-String.iterator
+Retrieves an iterator object that you can use to iterate over the values associated with this DrmInfo object
+Object.values-Object.iterator
+Adds optional information as key-value pairs to this object
+Object.put
+Retrieves the value of a given key
+Object.get
+Retrieves an iterator object that you can use to iterate over the keys associated with this DrmInfoRequest object
+Object.keySet-String.iterator
+Retrieves an iterator object that you can use to iterate over the values associated with this DrmInfoRequest object
+Object.values-Object.iterator
+Adds the specified MIME type to the list of MIME types this DRM plug-in supports
+IllegalArgumentException.new-IllegalArgumentException.new-String.add
+Adds the specified file suffix to the list of file suffixes this DRM plug-in supports
+IllegalArgumentException.new-String.add
+Retrieves an iterator object that you can use to iterate over the MIME types that  this DRM plug-in supports
+String.iterator
+Retrieves an iterator object that you can use to iterate over the file suffixes that this DRM plug-in supports
+String.iterator
+Sets a description for the DRM plug-in (agent)
+IllegalArgumentException.new-IllegalArgumentException.new
+Overridden hash code implementation
+String.hashCode-String.hashCode-String.hashCode
+Overridden equals implementation
+String.equals-String.equals-String.equals
+Retrieves the attribute associated with the specified key
+Object.get
+Specifies the RGB color used to multiply the source color when the color filter is applied
+LightingColorFilter.update
+Specifies the RGB that will be added to the source color when the color filter is applied
+LightingColorFilter.update
+Specifies the color matrix used by this filter
+ColorMatrix.set-ColorMatrix.reset-ColorMatrixColorFilter.update
+Specifies the color matrix used by this filter
+ArrayIndexOutOfBoundsException.new-ColorMatrix.set-ColorMatrix.reset-ColorMatrixColorFilter.update
+Packs a rectangle of the specified dimensions in this atlas
+Atlas.pack
+Packs a rectangle of the specified dimensions in this atlas
+Entry.new-Policy.pack
+Attempts to pack a rectangle of specified dimensions in the available empty space
+Cell.new-Cell.new-SplitDecision.splitHorizontal
+Set this colormatrix to identity:
+Arrays.fill
+Assign the src colormatrix into this matrix, copying all of its values
+System.arraycopy
+Assign the array of floats into this matrix, copying all of its values
+System.arraycopy
+Set the rotation on a color axis by the specified values
+ColorMatrix.reset-Math.cos-Math.sin-RuntimeException.new
+Set this colormatrix to the concatenation of the two specified colormatrices, such that the resulting colormatrix has the same effect as applying matB and then applying matA
+System.arraycopy
+Concat this colormatrix with the specified prematrix
+ColorMatrix.setConcat
+Concat this colormatrix with the specified postmatrix
+ColorMatrix.setConcat
+Set the matrix to affect the saturation of colors
+ColorMatrix.reset
+Returns the name (with quoting added if necessary), the comment (in parentheses), and the address (in angle brackets)
+StringBuilder.new-String.length-Rfc822Token.quoteNameIfNecessary-StringBuilder.append-StringBuilder.append-String.length-StringBuilder.append-Rfc822Token.quoteComment-StringBuilder.append-StringBuilder.append-String.length-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Returns the name, conservatively quoting it if there are any characters that are likely to cause trouble outside of a quoted string, or returning it literally if it seems safe
+String.length-String.charAt-Rfc822Token.quoteName
+Returns the name, with internal backslashes and quotation marks preceded by backslashes
+StringBuilder.new-String.length-String.charAt-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Returns the comment, with internal backslashes and parentheses preceded by backslashes
+String.length-StringBuilder.new-String.charAt-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Removes all internal references to the spans to avoid memory leaks
+Arrays.fill
+This function returns the result of linearly interpolating the start and end values, with fraction representing the proportion between the start and end values
+Number.floatValue-Number.floatValue
+Constructs a Keyframe object with the given time and value
+IntKeyframe.new
+Constructs a Keyframe object with the given time
+IntKeyframe.new
+Constructs a Keyframe object with the given time and value
+FloatKeyframe.new
+Constructs a Keyframe object with the given time
+FloatKeyframe.new
+Constructs a Keyframe object with the given time and value
+ObjectKeyframe.new
+Constructs a Keyframe object with the given time
+ObjectKeyframe.new
+Returns the inverse of this converter, where the from and to classes are reversed
+InvertedConverter.new
+Sets the resource response's MIME type, for example &quot;text/html&quot;
+WebResourceResponse.checkImmutable
+Sets the resource response's encoding, for example &quot;UTF-8&quot;
+WebResourceResponse.checkImmutable
+Sets the resource response's status code and reason phrase
+WebResourceResponse.checkImmutable-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-String.trim-String.isEmpty-IllegalArgumentException.new-String.charAt-IllegalArgumentException.new-String.length
+Sets the headers for the resource response
+WebResourceResponse.checkImmutable
+Sets the input stream that provides the resource response's data
+WebResourceResponse.checkImmutable-InputStream.getClass-StringBufferInputStream.isAssignableFrom-IllegalArgumentException.new
+Handle a confirmation response from the user
+JsResult.confirm
+Register a new UrlInterceptHandler
+UrlInterceptRegistry.getHandlers-LinkedList.contains-UrlInterceptRegistry.getHandlers-LinkedList.addFirst
+Unregister a previously registered UrlInterceptHandler
+UrlInterceptRegistry.getHandlers-LinkedList.remove
+Given an url, returns the CacheResult of the first UrlInterceptHandler interested, or null if none are
+UrlInterceptRegistry.urlInterceptDisabled-UrlInterceptRegistry.getHandlers-LinkedList.listIterator-Iterator.hasNext-Iterator.next-UrlInterceptHandler.service
+Given an url, returns the PluginData of the first UrlInterceptHandler interested, or null if none are or if intercepts are disabled
+UrlInterceptRegistry.urlInterceptDisabled-UrlInterceptRegistry.getHandlers-LinkedList.listIterator-Iterator.hasNext-Iterator.next-UrlInterceptHandler.getPluginData
+Handle the result if the user cancelled the dialog
+JsResult.wakeUp
+Handle a confirmation response from the user
+JsResult.wakeUp
+Adds a cache entry to the HTTP cache for the specicifed URL
+CacheManager.saveCacheFile
+Utility method to check whether the type of the underlying field/method on the target object matches the type of the Property
+Class.isPrimitive
+Returns the ZIP End of Central Directory record of the provided ZIP file
+RandomAccessFile.length-ZipUtils.findZipEndOfCentralDirectoryRecord-ZipUtils.findZipEndOfCentralDirectoryRecord
+Returns the ZIP End of Central Directory record of the provided ZIP file
+IllegalArgumentException.new-RandomAccessFile.length-Math.min-ByteBuffer.allocate-ByteBuffer.order-ByteBuffer.capacity-RandomAccessFile.seek-ByteBuffer.array-ByteBuffer.arrayOffset-ByteBuffer.capacity-RandomAccessFile.readFully-ZipUtils.findZipEndOfCentralDirectoryRecord-ByteBuffer.position-ByteBuffer.slice-ByteBuffer.order-Pair.create
+Returns the position at which ZIP End of Central Directory record starts in the provided buffer or  if the record is not present
+ZipUtils.assertByteOrderLittleEndian-ByteBuffer.capacity-Math.min-ByteBuffer.getInt-ZipUtils.getUnsignedInt16
+Returns  if the provided file contains a ZIP64 End of Central Directory Locator
+RandomAccessFile.seek-RandomAccessFile.readInt
+Returns the offset of the start of the ZIP Central Directory in the archive
+ZipUtils.assertByteOrderLittleEndian-ByteBuffer.position-ZipUtils.getUnsignedInt32
+Sets the offset of the start of the ZIP Central Directory in the archive
+ZipUtils.assertByteOrderLittleEndian-ByteBuffer.position-ZipUtils.setUnsignedInt32
+Returns the size (in bytes) of the ZIP Central Directory
+ZipUtils.assertByteOrderLittleEndian-ByteBuffer.position-ZipUtils.getUnsignedInt32
+Read data from the input stream into inputBuffer, then decode/encode it into the empty coder
+InputStream.read-Coder.process-Coder.process-Base64DataException.new
+Filters objects against the ANDROID_OBJECT_FILTER environment variable
+System.getenv-String.length-String.split-Object.getClass-Object.getSimpleName-String.matches-String.split-Object.getClass-NoSuchMethodException.printStackTrace-IllegalAccessException.printStackTrace-InvocationTargetException.printStackTrace-String.substring-String.toUpperCase-String.substring-Class<?.getDeclaredMethod-Class<?.getSuperclass-Method.invoke-Object.toString-String.matches
+Use prefixed constants (static final values) on given class to turn value into human-readable string
+Class<?.getDeclaredFields-Field.getModifiers-Modifier.isStatic-Modifier.isFinal-Field.getType-Object.equals-Field.getName-String.startsWith-Field.getInt-String.length-Field.getName-String.substring-Integer.toString
+Use prefixed constants (static final values) on given class to turn flags into human-readable string
+StringBuilder.new-Class<?.getDeclaredFields-Field.getModifiers-Modifier.isStatic-Modifier.isFinal-Field.getType-Object.equals-Field.getName-String.startsWith-Field.getInt-String.length-Field.getName-String.substring-StringBuilder.append-StringBuilder.append-StringBuilder.length-StringBuilder.length-StringBuilder.deleteCharAt-Integer.toHexString-StringBuilder.append-StringBuilder.toString
+Move up one box, potentially flipping to the previous month
+MonthDisplayHelper.isWithinCurrentMonth-MonthDisplayHelper.previousMonth-MonthDisplayHelper.isWithinCurrentMonth
+Move down one box, potentially flipping to the next month
+MonthDisplayHelper.isWithinCurrentMonth-MonthDisplayHelper.nextMonth-MonthDisplayHelper.isWithinCurrentMonth
+Move left one box, potentially flipping to the previous month
+MonthDisplayHelper.isWithinCurrentMonth-MonthDisplayHelper.previousMonth-MonthDisplayHelper.getNumberOfDaysInMonth-MonthDisplayHelper.getRowOf-MonthDisplayHelper.getColumnOf
+Move right one box, potentially flipping to the next month
+MonthDisplayHelper.isWithinCurrentMonth-MonthDisplayHelper.nextMonth-MonthDisplayHelper.isWithinCurrentMonth
+Creates an appropriate spline based on the properties of the control points
+Spline.isStrictlyIncreasing-IllegalArgumentException.new-Spline.isMonotonic-Spline.createLinearSpline-Spline.createMonotoneCubicSpline
+Creates a monotone cubic spline from a given set of control points
+MonotoneCubicSpline.new
+Creates a linear spline from a given set of control points
+LinearSpline.new
+This factory method creates and returns a Property given the class and name parameters, where the "name" parameter represents either:      a public getName() method on the class which takes no arguments, plus an     optional public setName() method which takes a value of the same type     returned by getName()     a public isName() method on the class which takes no arguments, plus an     optional public setName() method which takes a value of the same type     returned by isName()     a public name field on the class   If either of the get/is method alternatives is found on the class, but an appropriate setName() method is not found, the Property will be 
+ReflectiveProperty<T, V>.new
+Sets the value on object which this property represents
+Property.getName-UnsupportedOperationException.new
+Flush any buffered data from calls to write(int)
+Base64OutputStream.internalWrite
+Write the given bytes to the encoder/decoder
+Coder.maxOutputSize-Base64OutputStream.embiggen-Coder.process-Base64DataException.new-OutputStream.write
+Creates a new PrefixPrinter
+String.equals-PrefixPrinter.new
+Returns true if these display metrics equal the other display metrics
+DisplayMetrics.equalsPhysical
+Decode the Base64-encoded data in input and return the data in a new byte array
+String.getBytes-Base64.decode
+Decode the Base64-encoded data in input and return the data in a new byte array
+Base64.decode
+Decode the Base64-encoded data in input and return the data in a new byte array
+Decoder.new-Decoder.process-IllegalArgumentException.new-System.arraycopy
+Base64-encode the given data and return a newly allocated String with the result
+AssertionError.new-Base64.encode-String.new
+Base64-encode the given data and return a newly allocated String with the result
+AssertionError.new-Base64.encode-String.new
+Base64-encode the given data and return a newly allocated byte[] with the result
+Base64.encode
+Base64-encode the given data and return a newly allocated byte[] with the result
+Encoder.new-Encoder.process
+Sets the indentation string to be repeated for each level of indentation in the encoded document
+String.isEmpty
+Begins encoding a new array
+JsonWriter.open
+Ends encoding the current array
+JsonWriter.close
+Begins encoding a new object
+JsonWriter.open
+Ends encoding the current object
+JsonWriter.close
+Enters a new scope by appending any necessary whitespace and the given bracket
+JsonWriter.beforeValue-JsonScope.add-Writer.write
+Closes the current scope by appending any necessary whitespace and the given bracket
+JsonWriter.peek-IllegalStateException.new-JsonScope.size-JsonScope.remove-JsonWriter.newline-Writer.write
+Returns the value on the top of the stack
+JsonScope.size-JsonScope.get
+Replace the value on the top of the stack with the given value
+JsonScope.size-JsonScope.set
+Encodes the property name
+NullPointerException.new-JsonWriter.beforeName-JsonWriter.string
+Encodes 
+JsonWriter.nullValue-JsonWriter.beforeValue-JsonWriter.string
+Encodes 
+JsonWriter.beforeValue-Writer.write
+Encodes 
+JsonWriter.beforeValue-Writer.write
+Encodes 
+Double.isNaN-Double.isInfinite-IllegalArgumentException.new-JsonWriter.beforeValue-Double.toString-Writer.append
+Encodes 
+JsonWriter.beforeValue-Long.toString-Writer.write
+Encodes 
+JsonWriter.nullValue-Number.toString-String.equals-String.equals-String.equals-IllegalArgumentException.new-JsonWriter.beforeValue-Writer.append
+Ensures all buffered data is written to the underlying  and flushes that writer
+Writer.flush
+Flushes and closes this writer and the underlying 
+Writer.close-JsonWriter.peek-IOException.new
+Inserts any necessary separators and whitespace before a name
+JsonWriter.peek-IllegalStateException.new-Writer.write-JsonWriter.newline-JsonWriter.replaceTop
+Inserts any necessary separators and whitespace before a literal value, inline array, or inline object
+IllegalStateException.new-JsonWriter.replaceTop-JsonWriter.replaceTop-JsonWriter.newline-Writer.append-JsonWriter.newline-Writer.append-JsonWriter.replaceTop-IllegalStateException.new-IllegalStateException.new-JsonWriter.peek
+Returns the float conversion of the most positive (i
+Math.floor
+Returns the float conversion of the most negative (i
+Math.ceil
+Returns the closest float approximation of the sine of the argument
+Math.sin
+Returns the closest float approximation of the cosine of the argument
+Math.cos
+Returns the closest float approximation of the square root of the argument
+Math.sqrt
+Returns the closest float approximation of the raising "e" to the power of the argument
+Math.exp
+Returns the closest float approximation of the result of raising  to the power of 
+Math.pow
+Returns   
+Math.hypot
+ Convenience method to take all of the non-null matching groups in a  regex Matcher and return them as a concatenated string
+StringBuilder.new-Matcher.groupCount-Matcher.group-StringBuilder.append-StringBuilder.toString
+Convenience method to return only the digits and plus signs in the matching string
+StringBuilder.new-Matcher.group-String.length-String.charAt-Character.isDigit-StringBuilder.append-StringBuilder.toString
+Decrement the month
+Calendar.add-MonthDisplayHelper.recalculate
+Increment the month
+Calendar.add-MonthDisplayHelper.recalculate
+Returns the sum of the two parameters, or throws an exception if the resulting sum would cause an overflow or underflow
+IllegalArgumentException.new
+Checks the two objects for equality by delegating to their respective  methods
+Objects.equals-Objects.equals
+Convenience method for creating an appropriately typed pair
+Pair<A, B>.new
+Forcibly detach native resources associated with this object
+SurfaceSession.nativeKill
+Gets the start time of the interval for which these statistics apply
+FrameStats.getFrameCount
+Gets the end time of the interval for which these statistics apply
+FrameStats.getFrameCount
+Get the time a frame at a given index was presented
+IndexOutOfBoundsException.new
+Sanitize a value
+String.length-String.toLowerCase-String.startsWith-String.startsWith-UrlQuerySanitizer.IllegalCharacterValueSanitizer.trimWhitespace-String.length-StringBuilder.new-String.charAt-UrlQuerySanitizer.IllegalCharacterValueSanitizer.characterIsLegal-StringBuilder.append-StringBuilder.toString
+Trim whitespace from the beginning and end of a string
+String.length-String.charAt-UrlQuerySanitizer.IllegalCharacterValueSanitizer.isWhitespace-String.charAt-UrlQuerySanitizer.IllegalCharacterValueSanitizer.isWhitespace-String.substring
+Parse the query parameters out of an encoded URL
+String.indexOf-String.substring-UrlQuerySanitizer.parseQuery
+Parse a query
+UrlQuerySanitizer.clear-StringTokenizer.new-StringTokenizer.hasMoreElements-StringTokenizer.nextToken-String.length-String.indexOf-String.substring-String.substring-UrlQuerySanitizer.parseEntry-UrlQuerySanitizer.parseEntry
+Get a set of all of the parameters found in the sanitized query
+String.keySet
+Check if a parameter exists in the current sanitized query
+String.containsKey
+Get the value for a parameter in the current sanitized query
+String.get
+Register a value sanitizer for a particular parameter
+ValueSanitizer.remove-ValueSanitizer.put
+Register a value sanitizer for an array of parameters
+ValueSanitizer.put
+Parse an escaped parameter-value pair
+UrlQuerySanitizer.unescape-UrlQuerySanitizer.getEffectiveValueSanitizer-UrlQuerySanitizer.unescape-ValueSanitizer.sanitize-UrlQuerySanitizer.addSanitizedEntry
+Record a sanitized parameter-value pair
+ParameterValuePair.new-ParameterValuePair.add-String.containsKey-String.put
+Get the value sanitizer for a parameter
+ValueSanitizer.get
+Get the effective value sanitizer for a parameter
+UrlQuerySanitizer.getValueSanitizer-UrlQuerySanitizer.getUnregisteredParameterValueSanitizer
+Unescape an escaped string
+String.indexOf-String.indexOf-String.length-StringBuilder.new-String.substring-StringBuilder.append-String.charAt-String.charAt-String.charAt-UrlQuerySanitizer.isHexDigit-UrlQuerySanitizer.isHexDigit-UrlQuerySanitizer.decodeHexDigit-UrlQuerySanitizer.decodeHexDigit-StringBuilder.append-StringBuilder.toString
+Test if a character is a hexidecimal digit
+UrlQuerySanitizer.decodeHexDigit
+Clear the existing entries
+String.clear-ParameterValuePair.clear
+Gets the current factory test mode
+SystemProperties.getInt
+When true, long-press on power should immediately cause the device to shut down, without prompting the user
+SystemProperties.getInt
+Caches a copy of the enabled-tag bits
+Trace.nativeGetEnabledTags
+Returns true if a trace tag is enabled
+Trace.cacheEnabledTags
+Writes trace message to indicate the value of a given counter
+Trace.isTagEnabled-Trace.nativeTraceCounter
+Set whether application tracing is allowed for this process
+Trace.nativeSetAppTracingAllowed-Trace.cacheEnabledTags
+Set whether tracing is enabled in this process
+Trace.nativeSetTracingEnabled-Trace.cacheEnabledTags
+Writes a trace message to indicate that a given section of code has begun
+Trace.isTagEnabled-Trace.nativeTraceBegin
+Writes a trace message to indicate that the current method has ended
+Trace.isTagEnabled-Trace.nativeTraceEnd
+Writes a trace message to indicate that a given section of code has begun
+Trace.isTagEnabled-Trace.nativeAsyncTraceBegin
+Writes a trace message to indicate that the current method has ended
+Trace.isTagEnabled-Trace.nativeAsyncTraceEnd
+Writes a trace message to indicate that a given section of code has begun
+Trace.isTagEnabled-String.length-IllegalArgumentException.new-Trace.nativeTraceBegin
+Writes a trace message to indicate that a given section of code has ended
+Trace.isTagEnabled-Trace.nativeTraceEnd
+Rethrow this exception when we know it came from the system server
+RuntimeException.new-DeadSystemException.new-RuntimeException.new
+Get the value for the given key
+String.length-IllegalArgumentException.new-SystemProperties.native_get
+Get the value for the given key
+String.length-IllegalArgumentException.new-SystemProperties.native_get
+Get the value for the given key, and return as an integer
+String.length-IllegalArgumentException.new-SystemProperties.native_get_int
+Get the value for the given key, and return as a long
+String.length-IllegalArgumentException.new-SystemProperties.native_get_long
+Get the value for the given key, returned as a boolean
+String.length-IllegalArgumentException.new-SystemProperties.native_get_boolean
+Set the value for the given key
+String.length-IllegalArgumentException.new-String.length-IllegalArgumentException.new-SystemProperties.native_set
+Open the condition, and release all threads that are blocked
+ConditionVariable.notifyAll
+Block the current thread until the condition is opened
+ConditionVariable.wait
+Block the current thread until the condition is opened or until timeout milliseconds have passed
+ConditionVariable.block-System.currentTimeMillis-ConditionVariable.wait-System.currentTimeMillis
+Check if this InputConfiguration is equal to another InputConfiguration
+InputConfiguration.getWidth-InputConfiguration.getHeight-InputConfiguration.getFormat
+Return this  as a string representation
+String.format
+Return  true if the  contains the 
+List<T.contains
+Return  if the  is only a single element equal to 
+List<T.size-List<T.contains
+Return a human-readable representation of a list (non-recursively)
+StringBuilder.new-StringBuilder.append-List<T.size-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.toString
+Return the first item from  that is contained in the 
+List<T.contains
+Hash every element uniformly using the Modified Bernstein hash
+Float.floatToIntBits
+Hash every element uniformly using the Modified Bernstein hash
+T.hashCode
+Compute the ration between the Gauss-normalized associated Legendre functions and the Schmidt quasi-normalized version
+Math.sqrt
+Extract the next entity header from the restore stream
+BackupDataInput.readNextHeader_native-Integer.toHexString-IOException.new
+Report the size in bytes of the data associated with the current entity in the restore stream
+IllegalStateException.new
+Read a record's raw data from the restore stream
+IllegalStateException.new-BackupDataInput.readEntityData_native-Integer.toHexString-IOException.new
+Consume the current entity's data without extracting it into a buffer for further processing
+IllegalStateException.new-BackupDataInput.skipEntityData_native
+Read one byte of entity data from the stream, returning it as an integer value
+BackupDataInput.readEntityData
+Read up to  bytes of data into a byte array, beginning at position  within the array
+BackupDataInput.readEntityData
+Read enough entity data into a byte array to fill the array
+BackupDataInput.readEntityData
+Returns a single-thread Executor shared by the entire process, creating it if necessary
+Executors.newSingleThreadExecutor
+Add a runnable to finish (or wait for) a deferred operation started in this context earlier
+Runnable.add
+Finishes or waits for async operations to complete
+Runnable.poll-Runnable.run
+Returns true if there is pending work to be done
+Runnable.isEmpty
+Invokes  on each observer
+ArrayList<T.size-ArrayList<T.get-T.onChanged
+Invokes  on each observer
+ArrayList<T.size-ArrayList<T.get-T.onInvalidated
+Called when the last reference to the object was released by a call to 
+SQLiteClosable.onAllReferencesReleased
+Acquires a reference to the object
+IllegalStateException.new
+Releases a reference to the object, closing the object if the last reference was released
+SQLiteClosable.onAllReferencesReleased
+Releases a reference to the object that was owned by the container of the object, closing the object if the last reference was released
+SQLiteClosable.onAllReferencesReleasedFromContainer
+Releases a reference to the object, closing the object if the last reference was released
+SQLiteClosable.releaseReference
+Adds an observer to the list
+IllegalArgumentException.new-ArrayList<T.contains-IllegalStateException.new-ArrayList<T.add
+Removes a previously registered observer
+IllegalArgumentException.new-ArrayList<T.indexOf-IllegalStateException.new-ArrayList<T.remove
+Remove all registered observers
+ArrayList<T.clear
+Extracts the array of SubjectAlt DNS names from an X509Certificate
+LinkedList<String>.new-AbstractVerifier.getName-Logger.getLogger-Logger.log-X509Certificate.getSubjectAlternativeNames-List<?.get-Integer.intValue-List<?.get-String.add-String.isEmpty-String.size-String.toArray
+Counts the number of dots "
+String.charAt-String.length
+Parses the DN and returns the most significant attribute value for an attribute type, or null if none found
+String.toCharArray-AndroidDistinguishedNameParser.nextAT-AndroidDistinguishedNameParser.quotedAV-AndroidDistinguishedNameParser.hexAV-AndroidDistinguishedNameParser.escapedAV-String.equalsIgnoreCase-IllegalStateException.new-AndroidDistinguishedNameParser.nextAT-IllegalStateException.new
+Parses the DN and returns all values for an attribute type, in the order of decreasing significance (most significant first)
+String.toCharArray-Collections.emptyList-AndroidDistinguishedNameParser.nextAT-AndroidDistinguishedNameParser.quotedAV-AndroidDistinguishedNameParser.hexAV-AndroidDistinguishedNameParser.escapedAV-String.equalsIgnoreCase-String.isEmpty-ArrayList<String>.new-String.add-IllegalStateException.new-AndroidDistinguishedNameParser.nextAT-IllegalStateException.new
+Checks whether a socket connection is secure
+IllegalArgumentException.new-IllegalArgumentException.new-Socket.isClosed-IllegalArgumentException.new
+Returns the default socket timeout (SO_TIMEOUT) in milliseconds which is the  timeout for waiting for data
+IllegalArgumentException.new-HttpParams.getIntParameter
+Sets the default socket timeout (SO_TIMEOUT) in milliseconds which is the  timeout for waiting for data
+IllegalArgumentException.new-HttpParams.setIntParameter
+Tests if Nagle's algorithm is to be used
+IllegalArgumentException.new-HttpParams.getBooleanParameter
+Determines whether Nagle's algorithm is to be used
+IllegalArgumentException.new-HttpParams.setBooleanParameter
+Returns linger-on-close timeout
+IllegalArgumentException.new-HttpParams.getIntParameter
+Returns linger-on-close timeout
+IllegalArgumentException.new-HttpParams.setIntParameter
+Returns the timeout until a connection is etablished
+IllegalArgumentException.new-HttpParams.getIntParameter
+Sets the timeout until a connection is etablished
+IllegalArgumentException.new-HttpParams.setIntParameter
+Tests whether stale connection check is to be used
+IllegalArgumentException.new-HttpParams.getBooleanParameter
+Defines whether stale connection check is to be used
+IllegalArgumentException.new-HttpParams.setBooleanParameter
+Looks up the resource id of a given smiley
+Integer.get-Integer.intValue
+Return the number of parts
+Part.size
+Return the part at the given index
+Part.get
+Parses the text string into an internal representation
+AbstractMessageParser.parseMusicTrack-AbstractMessageParser.buildParts-String.startsWith-String.length-String.charAt-Character.isWhitespace-String.substring-String.substring-String.length-AbstractMessageParser.isWordBreak-AbstractMessageParser.isSmileyBreak-AssertionError.new-AbstractMessageParser.parseSmiley-AbstractMessageParser.parseAcronym-AbstractMessageParser.parseURL-AbstractMessageParser.parseFormatting-AbstractMessageParser.parseText-Token.get-Token.isMedia-Token.get-Token.get-Html.trimLeadingWhitespace-Token.size-Token.get-Token.get-Html.trimTrailingWhitespace-Token.size-Token.get-Token.isHtml-Token.get-Token.toHtml-String.length-Token.remove-Token.size-AbstractMessageParser.buildParts
+Builds the parts list
+Token.get-Token.isMedia-Part.size-AbstractMessageParser.lastPart-Part.isMedia-Part.new-Part.add-AbstractMessageParser.lastPart-Part.add-Token.size-Part.size-Part.get-Part.setMeText
+Returns the last part in the list
+Part.size-Part.get
+Looks for a music track (♫ is first character, everything else is track info)
+String.startsWith-String.length-String.substring-MusicTrack.new-AbstractMessageParser.addToken-String.length
+Consumes all of the text in the next word 
+StringBuilder.new-String.charAt-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-StringBuilder.append-AbstractMessageParser.isWordBreak-String.substring-StringBuilder.toString-Html.new-AbstractMessageParser.addToken
+Looks for smileys (e
+AbstractMessageParser.getResources-Resources.getSmileys-AbstractMessageParser.longestMatch-AbstractMessageParser.getCharClass-TrieNode.getText-String.length-AbstractMessageParser.getCharClass-TrieNode.getText-Smiley.new-AbstractMessageParser.addToken-TrieNode.getText-String.length
+Looks for acronyms (e
+AbstractMessageParser.getResources-Resources.getAcronyms-AbstractMessageParser.longestMatch-TrieNode.getText-TrieNode.getValue-Acronym.new-AbstractMessageParser.addToken-TrieNode.getText-String.length
+Determines if this is an allowable domain character
+Character.isLetter-Character.isDigit
+Determines if the given string is a valid domain
+AbstractMessageParser.getResources-Resources.getDomainSuffixes-AbstractMessageParser.reverse-AbstractMessageParser.matches
+Looks for a URL in two possible forms:  either a proper URL with a known scheme or a domain name optionally followed by a path, query, or query
+AbstractMessageParser.isURLBreak-String.length-String.charAt-AbstractMessageParser.isDomainChar-String.length-String.charAt-String.charAt-String.length-String.charAt-AbstractMessageParser.isDomainChar-String.substring-AbstractMessageParser.isValidDomain-String.length-String.charAt-String.charAt-Character.isDigit-String.length-String.charAt-Character.isDigit-String.length-String.charAt-AbstractMessageParser.isPunctuation-Character.isWhitespace-String.length-String.charAt-Character.isWhitespace-AbstractMessageParser.isPunctuation-String.substring-AbstractMessageParser.getResources-Resources.getSchemes-String.contains-String.length-String.charAt-Character.isWhitespace-String.substring-AbstractMessageParser.addURLToken
+Adds the appropriate token for the given URL
+AbstractMessageParser.tokenForUrl-AbstractMessageParser.addToken
+Deal with formatting characters
+String.length-String.charAt-AbstractMessageParser.isFormatChar-AbstractMessageParser.isWordBreak-LinkedHashMap<Character, Boolean>.new-String.charAt-Character.valueOf-Boolean.containsKey-Format.get-Format.new-Format.put-AbstractMessageParser.addToken-Boolean.put-Format.setMatched-Format.remove-Boolean.put-Format.new-AbstractMessageParser.addToken-Boolean.keySet-Boolean.get-Character.charValue-Format.new-Format.setMatched-AbstractMessageParser.addToken
+Determines whether the given index could be a possible word break
+AbstractMessageParser.getCharClass-AbstractMessageParser.getCharClass
+Determines whether the given index could be a possible smiley break
+String.length-String.charAt-String.charAt-AbstractMessageParser.isSmileyBreak
+Verifies that the character before the given index is end of line, whitespace, or punctuation
+AbstractMessageParser.getCharClass
+Returns the class for the character at the given index
+String.length-String.charAt-Character.isWhitespace-Character.isLetter-Character.isDigit-AbstractMessageParser.isPunctuation
+Not supported
+UnsupportedOperationException.new
+Returns a Video object if the given url is to a video
+Pattern.matcher-Matcher.matches-Matcher.group-Video.new
+(For testing purposes:) Returns a video URL with the given parts
+AbstractMessageParser.Video.getURL
+(For testing purposes:) Returns a video URL with the given parts
+String.length
+Returns a Video object if the given url is to a video
+Pattern.matcher-Matcher.matches-Matcher.group-YouTubeVideo.new
+(For testing purposes:) Returns a video URL with the given parts
+AbstractMessageParser.YouTubeVideo.getURL
+(For testing purposes:) Returns a video URL with the given parts
+String.length
+(For testing purposes:) Returns a video URL with the given parts
+String.length
+Returns a Photo object if the given url is to a photo or album
+Pattern.matcher-Matcher.matches-Matcher.group-Matcher.group-Matcher.group-Photo.new
+Returns a FlickrPhoto object if the given url is to a photo or Flickr user
+Pattern.matcher-Matcher.matches-Matcher.group-Matcher.group-Matcher.group-FlickrPhoto.new-Pattern.matcher-Matcher.matches-Matcher.group-Matcher.group-FlickrPhoto.new
+Not supported
+UnsupportedOperationException.new
+Adds the given token to the parsed output
+Token.add
+Converts the entire message into a single HTML display string
+StringBuilder.new-StringBuilder.append-Part.getTokens-Token.isHtml-StringBuilder.append-Link.getURL-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-Token.getRawText-StringBuilder.append-MusicTrack.getTrack-StringBuilder.append-StringBuilder.append-Video.getDocID-Video.getURL-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-StringBuilder.append-StringBuilder.append-YouTubeVideo.getDocID-YouTubeVideo.getURL-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-StringBuilder.append-StringBuilder.append-Photo.getUser-Photo.getAlbum-Photo.getAlbumURL-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-StringBuilder.append-StringBuilder.append-FlickrPhoto.getUrl-StringBuilder.append-StringBuilder.append-Token.getRawText-StringBuilder.append-StringBuilder.append-Token.getType-AssertionError.new-Token.getType-Token.toHtml-StringBuilder.append-Token.controlCaps-Token.setCaps-StringBuilder.append-StringBuilder.toString
+Returns the reverse of the given string
+StringBuilder.new-String.length-String.charAt-StringBuilder.append-StringBuilder.toString
+Adds the given string into the trie
+String.length-String.charAt-TrieNode.getOrCreateChild-TrieNode.setValue
+Determines whether the given string is in the given trie
+String.length-String.charAt-TrieNode.getChild-TrieNode.exists
+Returns the longest substring of the given string, starting at the given index, that exists in the trie
+AbstractMessageParser.longestMatch
+Returns the longest substring of the given string, starting at the given index, that exists in the trie, with a special tokenizing case for smileys if specified
+AbstractMessageParser.getRawText-String.length-AbstractMessageParser.getRawText-String.charAt-TrieNode.getChild-TrieNode.exists-AbstractMessageParser.isWordBreak-AbstractMessageParser.isSmileyBreak
+Convenience method for getting the Token of a Part that represents a media Token
+AbstractMessageParser.Part.isMedia-Token.get
+Adds the given token to this part
+AbstractMessageParser.Part.isMedia-AssertionError.new-Token.add
+Returns the original text of this part
+StringBuilder.new-StringBuilder.append-Token.get-Token.getRawText-StringBuilder.append-Token.size-StringBuilder.toString
+Creates an empty  instance
+ArrayList<E>.new
+Creates a resizable  instance containing the given elements
+ArrayList<E>.new-Collections.addAll
+Return byte array containing accumulated data, sized to just fit
+System.arraycopy
+Allocate a new internal buffer, if needed
+System.arraycopy
+Write some data and increment the current position
+AccessException.new-BitwiseOutputStream.possExpand
+Write data in bulk from a byte array and increment the current position
+Math.min-BitwiseOutputStream.write
+Increment the current position, implicitly writing zeros
+BitwiseOutputStream.possExpand
+Adapts  to an array of ASCII (7-bits per character) bytes
+CharSequences.forAsciiBytes-String.new-CharSequence.new
+Adapts  to an array of ASCII (7-bits per character) bytes
+CharSequences.validate-CharSequences.validate-CharSequences.forAsciiBytes-String.new-CharSequence.new
+Compares two character sequences for equality
+CharSequence.length-CharSequence.length-CharSequence.length-CharSequence.charAt-CharSequence.charAt
+Compares two character sequences with API like 
+CharSequence.length-CharSequence.length-CharSequence.charAt-Character.toLowerCase-CharSequence.charAt-Character.toLowerCase
+Notify all callbacks
+CallbackRegistry.notifyRecurseLocked-CallbackRegistry.removeRemovedCallbacks-CallbackRegistry.removeRemovedCallbacks
+Notify up to the first Long
+List<C.size-Math.min-CallbackRegistry.notifyCallbacksLocked
+Notify all callbacks using a recursive algorithm to avoid allocating on the heap
+List<C.size-CallbackRegistry.notifyRemainderLocked-CallbackRegistry.notifyCallbacksLocked
+Notify callbacks that have mRemainderRemoved bits set for remainderIndex
+List<C.size-Math.min-CallbackRegistry.notifyRemainderLocked-CallbackRegistry.notifyCallbacksLocked-CallbackRegistry.notifyFirst64Locked
+Notify callbacks from startIndex to endIndex, using bits as the bit status for whether they have been removed or not
+List<C.get-NotifierCallback<C, T, A.onNotifyCallback
+Add a callback to be notified
+List<C.lastIndexOf-CallbackRegistry.isRemovedLocked-List<C.add
+Removes callbacks from startIndex to startIndex + Long
+List<C.remove
+Remove a callback
+List<C.lastIndexOf-CallbackRegistry.setRemovalBitLocked-List<C.remove
+Makes a copy of the registered callbacks and returns it
+List<C.size-ArrayList<C>.new-List<C.size-CallbackRegistry.isRemovedLocked-List<C.get-ArrayList<C.add
+Returns true if there are no registered callbacks or false otherwise
+List<C.isEmpty-List<C.size-CallbackRegistry.isRemovedLocked
+Removes all callbacks from the list
+List<C.isEmpty-List<C.size-CallbackRegistry.setRemovalBitLocked-List<C.clear
+Read some data and increment the current position
+AccessException.new
+Read data in bulk into a byte array and increment the current position
+Math.min-BitwiseInputStream.read
+Increment the current position and ignore contained data
+AccessException.new
+Returns the file for you to read
+File.exists-File.exists-File.renameTo-File.exists-File.delete
+Returns a file for you to write
+IllegalStateException.new-File.exists-File.createNewFile-File.exists-File.delete
+Commit changes
+IllegalStateException.new-File.renameTo
+Roll back changes
+IllegalStateException.new-File.delete
+Returns a Predicate that evaluates to true iff each of its components evaluates to true
+Arrays.asList-Predicates.and
+Returns a Predicate that evaluates to true iff each of its components evaluates to true
+AndPredicate.new
+Returns a Predicate that evaluates to true iff any one of its components evaluates to true
+Arrays.asList-Predicates.or
+Returns a Predicate that evaluates to true iff any one of its components evaluates to true
+OrPredicate.new
+Returns a Predicate that evaluates to true iff the given Predicate evaluates to false
+NotPredicate<T>.new
+Instantiates a {@link java
+StreamTokenizer.new-StreamTokenizer.resetSyntax-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.wordChars-StreamTokenizer.ordinaryChar-StreamTokenizer.whitespaceChars-StreamTokenizer.whitespaceChars-StreamTokenizer.whitespaceChars-StreamTokenizer.whitespaceChars-StreamTokenizer.quoteChar-StreamTokenizer.slashStarComments-StreamTokenizer.slashSlashComments
+Converts a string to an internal type constant
+String.equals-String.equals-String.equals-String.equals-String.equals-String.equals-String.equals-String.equals-String.equals
+Parses the data in the reader
+TypedProperties.initTokenizer-Pattern.compile-StreamTokenizer.nextToken-ParseException.new-TypedProperties.interpretType-ParseException.new-StreamTokenizer.nextToken-ParseException.new-StreamTokenizer.nextToken-ParseException.new-Pattern.matcher-Matcher.matches-ParseException.new-StreamTokenizer.nextToken-ParseException.new-TypedProperties.parseValue-Object.remove-Object.getClass-Object.getClass-ParseException.new-Object.put-StreamTokenizer.nextToken-ParseException.new-Object.remove-StreamTokenizer.nextToken-ParseException.new
+Parses the next token in the StreamTokenizer as the specified type
+StreamTokenizer.nextToken-String.equals-ParseException.new-ParseException.new-ParseException.new-Double.parseDouble-Double.new-Math.abs-Double.isInfinite-Double.isNaN-ParseException.new-Float.new-ParseException.new-ParseException.new-Long.decode-ParseException.new-Byte.new-ParseException.new-Short.new-ParseException.new-Integer.new-ParseException.new-Long.new-IllegalStateException.new-ParseException.new-String.equals-String.equals-ParseException.new-IllegalStateException.new
+Loads zero or more properties from the specified Reader
+TypedProperties.parse
+Returns the value of a boolean property, or the default if the property has not been defined
+Object.get-Boolean.booleanValue-TypeException.new
+Returns the value of a byte property, or the default if the property has not been defined
+Object.get-Byte.byteValue-TypeException.new
+Returns the value of a short property, or the default if the property has not been defined
+Object.get-Short.shortValue-TypeException.new
+Returns the value of an integer property, or the default if the property has not been defined
+Object.get-Integer.intValue-TypeException.new
+Returns the value of a long property, or the default if the property has not been defined
+Object.get-Long.longValue-TypeException.new
+Returns the value of a float property, or the default if the property has not been defined
+Object.get-Float.floatValue-TypeException.new
+Returns the value of a double property, or the default if the property has not been defined
+Object.get-Double.doubleValue-TypeException.new
+Returns the value of a string property, or the default if the property has not been defined
+Object.get-TypeException.new
+Returns the value of a boolean property, or false if the property has not been defined
+TypedProperties.getBoolean
+Returns the value of a byte property, or 0 if the property has not been defined
+TypedProperties.getByte
+Returns the value of a short property, or 0 if the property has not been defined
+TypedProperties.getShort
+Returns the value of an integer property, or 0 if the property has not been defined
+TypedProperties.getInt
+Returns the value of a long property, or 0 if the property has not been defined
+TypedProperties.getLong
+Returns the value of a float property, or 0
+TypedProperties.getFloat
+Returns the value of a double property, or 0
+TypedProperties.getDouble
+Returns the value of a String property, or "" if the property has not been defined
+TypedProperties.getString
+Provides string type information about a property
+Object.get
+Flush the current buffer
+LineBreakBufferedWriter.writeBuffer-PrintWriter.flush
+Append the characters to the buffer
+LineBreakBufferedWriter.ensureCapacity-System.arraycopy
+Append the characters from the given string to the buffer
+LineBreakBufferedWriter.ensureCapacity-String.getChars
+Resize the buffer
+Arrays.copyOf
+Remove the characters up to (and excluding) index i from the buffer
+System.arraycopy
+Helper method, write the given part of the buffer, [start,length), to the output
+PrintWriter.write
+Read more data from  into internal buffer
+IOException.new-InputStream.read
+Consume number of bytes from beginning of internal buffer
+System.arraycopy-ProcFileReader.fillBuf
+Find buffer index of next token delimiter, usually space or newline
+ProcFileReader.fillBuf-ProtocolException.new
+Finish current line, skipping any remaining data
+ProcFileReader.consumeBuf-ProcFileReader.fillBuf-ProtocolException.new
+Parse and return next token as 
+ProcFileReader.nextTokenIndex-ProcFileReader.parseAndConsumeString-ProtocolException.new
+Parse and return next token as base-10 encoded 
+ProcFileReader.nextTokenIndex-ProcFileReader.parseAndConsumeLong-ProtocolException.new
+Parse and return next token as base-10 encoded , or return the given default value if no remaining tokens on current line
+ProcFileReader.nextTokenIndex-ProcFileReader.parseAndConsumeLong
+Parse and return next token as base-10 encoded 
+ProcFileReader.nextLong-NumberFormatException.new
+Get an event from the pool
+FastEventQueue.size-FastEventQueue.remove
+Return events to a pool so they can be reused
+FastEventQueue.size-FastEventQueue.add-FastEventQueue.new
+Add an event to the scheduler
+SchedulableEvent.getTimestamp-FastEventQueue.get-FastEventQueue.add-FastEventQueue.isEmpty-FastEventQueue.firstKey-FastEventQueue.new-SchedulableEvent.getTimestamp-FastEventQueue.put-SchedulableEvent.getTimestamp-Object.notify
+Check to see if any scheduled events are ready to be processed
+FastEventQueue.isEmpty-FastEventQueue.firstKey-EventScheduler.removeNextEventLocked
+Return the next available event or wait until there is an event ready to be processed
+FastEventQueue.isEmpty-System.nanoTime-FastEventQueue.firstKey-EventScheduler.removeNextEventLocked-Object.wait
