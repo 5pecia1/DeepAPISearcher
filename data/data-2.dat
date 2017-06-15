@@ -1,8 +1,4 @@
-  -    If the command prefix contains a hyphen, or the -i option is present, or the special target 
-Command.getPrefix
-'@'    If the command prefix contains an at sign and the command-line -n option is not specified, or the -s option is present, or the special target 
-Command.getPrefix
-+    If the command prefix contains a plus sign, this indicates a command line that will be executed even if -n, -q or -t is specified
+If the command prefix contains a plus sign, this indicates a command line that will be executed even if -n, -q or -t is specified
 Command.getPrefix
 Adds the given listener to this list
 System.arraycopy
