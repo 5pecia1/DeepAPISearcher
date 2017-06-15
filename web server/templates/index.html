@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Deep API Searcher</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/spinner.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
@@ -14,12 +15,12 @@
             margin: 20px;
         }
 
-       #search_form{
+        #search_form {
             margin-top: 20px;
-           margin-bottom: 20px;
-       }
+            margin-bottom: 20px;
+        }
 
-        #result-table tr td{
+        #result-table tr td {
             padding: 5px 10px 5px 10px;
         }
 
@@ -34,14 +35,14 @@
 <section>
     <form class="container" id="search_form" method="POST" action="/">
         <div class="input-group">
-        <input type="text" class="form-control" name="query" placeholder="query">
-        <span class="input-group-btn">
+            <input type="text" class="form-control" name="query" placeholder="query">
+            <span class="input-group-btn">
             <button type="submit" class="btn btn-primary">
                 search
             </button>
         </span>
 
-</div>
+        </div>
     </form>
 
     <table id="result-table" class="container table-striped">
