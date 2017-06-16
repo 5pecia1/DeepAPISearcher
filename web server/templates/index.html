@@ -38,7 +38,6 @@
 <header>
     <h1 class="container">Deep API Searcher <em><small>for Java</small></em></h1>
 </header>
-
 <section>
     <form class="container" id="search_form" method="POST" action="/">
         <div class="input-group">
@@ -52,6 +51,9 @@
         </div>
     </form>
 
+    <p class="container"><b>Input : </b></p>
+    <p class="container">&nbsp;&nbsp;&nbsp;{{ inputData }}</p>
+    <p class="container"><b>Output : </b></p>
     <table id="result-table" class="container table-striped">
         {% for data in datas %}
             <tr>

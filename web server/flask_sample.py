@@ -5,12 +5,14 @@ app = Flask(__name__)
 
 @app.route('/', methods=["POST", "GET"])
 def index():
+    inputData = ""
     datas = []
 
     if request.method == 'POST':
-        datas = [request.form['query']] * 5
+        inputData = request.form['query']
+        datas = [inputData] * 5
 
-    return render_template("index.html", datas=datas)
+    return render_template("index.html", datas=datas, inputData=inputData)
 
 if __name__ == '__main__':
     app.run(debug=True)
