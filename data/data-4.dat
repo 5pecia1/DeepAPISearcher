@@ -1,0 +1,502 @@
+Adds a new entry to this layout
+Entry.new-Entry.add
+Gets the number of entries in this layout
+Entry.size
+Gets the id of the index'th entry
+Entry.get
+Gets the x coordinate of the index'th entry
+Entry.get
+Gets the y coordinate of the index'th entry
+Entry.get
+Gets the width of the index'th entry
+Entry.get
+Gets the height of the index'th entry
+Entry.get
+Informs this  that any change regarding dockable should be reported to listener
+ButtonContentListener.get-ArrayList<ButtonContentListener>.new-ButtonContentListener.put-ButtonContent.install-ButtonContentListener.add
+Informs this  that listener no longer has to be observed
+ButtonContentListener.get-ButtonContentListener.remove-ButtonContentListener.isEmpty-ButtonContent.uninstall-ButtonContentListener.remove
+Gets all the listeners that are currently monitoring dockable
+ButtonContentListener.get-ButtonContentListener.size-ButtonContentListener.toArray
+Tells whether actions should be shown on the button of a  or not
+ButtonContentCondition.shouldShow
+Tells whether actions should filtered before showing on the button of a 
+ButtonContentCondition.shouldShow-ButtonContentCondition.shouldShow
+Tells whether an icon should be shown
+ButtonContentCondition.shouldShow
+Tells whether text should be shown
+ButtonContentCondition.shouldShow
+Calls the method  on all s that are currently using this  that that have installed dockable
+ButtonContent.get-ButtonContent.handleChange
+Called when dockable has to be observed
+Dockable.addDockableListener
+Called when dockable no longer has to be observed
+Dockable.removeDockableListener
+Fires an event on all radio buttons
+DirectedArrow.fireSelectedChanged-DirectedArrow.fireSelectedChanged-DirectedArrow.fireSelectedChanged-DirectedArrow.fireSelectedChanged-DirectedArrow.fireSelectedChanged
+Gets the first FlapDockStation in the path from dockable to the root of the tree
+Dockable.getDockParent-IllegalArgumentException.new-Dockable.getDockParent-DockStation.asDockable-FlapDockDirection.getStation
+Updates the content of this perspective by reading the contents of map
+ConvertedPlaceholderListItem.getInt-PerspectiveDockable.get-ConvertedPlaceholderListItem.getBoolean-ConvertedPlaceholderListItem.getInt-Item.new-PerspectiveDockable.setParent-PlaceholderListItemAdapter<PerspectiveDockable, Item>.new-Item.read
+Sets the default size of the window of newly added s
+IllegalArgumentException.new
+Adds a placeholder for dockable and all its children at location index to the list of dockables
+Item.new-Item.dockables-Item.add-Item.dockables-Item.remove
+Adds placeholder at location index in the list of items
+Item.list-Item.insertPlaceholder
+Adds a placeholder for dockable and all its children to the end of the list of dockables
+FlapDockPerspective.getDockableCount-FlapDockPerspective.insertPlaceholder
+Adds placeholder at the end of the list of items
+Item.list-Item.size-FlapDockPerspective.insertPlaceholder
+Adds dockable at the end of the list of children
+FlapDockPerspective.add
+Adds dockable at the end of the list of children
+FlapDockPerspective.getDockableCount-FlapDockPerspective.insert
+Adds a  to this station
+FlapDockPerspective.insert
+Adds dockable to this station
+FlapDockPerspective.insert
+Removes the index'th element of this perspective
+Item.dockables-Item.get-Item.remove-PerspectiveDockable.setParent
+Gets the current index of dockable
+Item.dockables-Item.asDockable
+Sets whether dockable should stay open even if it lost focus
+FlapDockPerspective.item
+Tells whether dockable should stay open even if it lost focus
+FlapDockPerspective.item
+Sets the preferred size of the window that shows dockable
+IllegalArgumentException.new-FlapDockPerspective.item
+Gets the preferred size of the window that shows dockable
+FlapDockPerspective.item
+Creates an instance of a 
+FlapDockStation.new
+Searches the  which shows station
+FlapDockStation.getComponent-DockUI.getDesktopPane
+Invokes the method  on all listeners that are currently registered
+FlapLayoutManagerListener.size-FlapLayoutManagerListener.toArray-FlapLayoutManagerListener.holdSwitchableChanged
+Tells whether this window is still valid, e
+Parent.isParentValid
+Sets information where a  will be dropped
+DefaultFlapWindow.repaint
+Sets the title which should be displayed
+StationChildHandle.setTitleRequest
+Gets the  which is shown on this window
+StationChildHandle.getDockable
+Gets the displayer used to show a 
+StationChildHandle.getDisplayer
+Sets the  which will be shown on this window
+DefaultFlapWindow.getDisplayerParent-DefaultFlapWindow.getDisplayer-DockableDisplayer.removeDockableDisplayerListener-DockableDisplayer.getComponent-Container.remove-StationChildHandle.destroy-FlapDockStation.getDisplayers-FlapDockStation.getTitleVersion-StationChildHandle.new-StationChildHandle.updateDisplayer-DefaultFlapWindow.getDisplayer-DockableDisplayer.addDockableDisplayerListener-DockableDisplayer.getComponent-Container.add
+Replaces the current  with a new instance
+StationChildHandle.getDisplayer-DockableDisplayer.removeDockableDisplayerListener-DockableDisplayer.getComponent-JComponent.remove-StationChildHandle.updateDisplayer-StationChildHandle.getDisplayer-DockableDisplayer.addDockableDisplayerListener-DockableDisplayer.getComponent-JComponent.add-DefaultFlapWindow.updateBounds
+Makes a guess how big the insets around the current  of this window are
+StationChildHandle.getDisplayer-DockableDisplayer.getDockableInsets-DockableDisplayer.getComponent-Component.getBounds-Parent.asComponent-Point.new-DockableDisplayer.getComponent-SwingUtilities.convertPoint-Component.getWidth-DockableDisplayer.getComponent-Component.getWidth-Component.getHeight-DockableDisplayer.getComponent-Component.getHeight
+Recalculates the size and the location of this window
+DefaultFlapWindow.getDisplayer-DockableDisplayer.getDockable-Parent.asComponent-Component.validate-FlapDockStation.getDirection-FlapDockStation.getWindowSize-FlapDockStation.getExpansionBounds-DefaultFlapWindow.getDockableInsets-Point.new-Dimension.new-Point.new-Dimension.new-Point.new-Dimension.new-Point.new-Dimension.new-SwingUtilities.convertPointToScreen-Parent.setParentLocation-Parent.setSize-Parent.asComponent-Component.validate
+Tells whether this window is still valid, e
+FlapDockStation.getComponent-SwingUtilities.getWindowAncestor-Window.getOwner
+Sets the background algorithm of this panel
+Content.setBackground
+Tells whether the given point is inside a button
+Container.getComponentCount-JComponent.getWidth-JComponent.getHeight-JComponent.contains-JComponent.contains-Container.getComponentCount-Container.getComponent-Component.getX-Component.getY-Component.contains
+Called by the owning  if the  changes
+FlapSpanStrategy.setController
+Ensures that all titles of the title-map, which was given to the constructor, are shown on this panel
+OverpaintablePanel.getContentPane-JComponent.removeAll-FlapDockStation.getDockableCount-FlapDockStation.getButton-DockTitle.getComponent-OverpaintablePanel.getContentPane-JComponent.add-FlapSpanStrategy.reset-JComponent.revalidate-Runnable.new-EventQueue.isDispatchThread-Runnable.run-EventQueue.invokeLater
+Searches an location where a  could be inserted
+FlapDockStation.getDirection-FlapDockStation.getDirection-FlapDockStation.getDockableCount-FlapDockStation.getButton-DockTitle.getComponent-Component.getY-DockTitle.getComponent-Component.getHeight-FlapDockStation.getDockableCount-FlapDockStation.getButton-DockTitle.getComponent-Component.getX-DockTitle.getComponent-Component.getWidth-FlapDockStation.getDockableCount
+Gets the number of buttons that are actually shown
+OverpaintablePanel.getContentPane-JComponent.getComponentCount
+Called if the s used by this  changed their size
+OverpaintablePanel.getContentPane-JComponent.revalidate-JComponent.revalidate
+Sets the result of 
+Station.get-Boolean.put-AbstractFlapLayoutManager.fireHoldSwitchableChanged
+Sets the location of the  on its 
+IllegalArgumentException.new
+Adds or removes the only action of this source depending on the result of 
+FlapDockStation.getCurrentFlapLayoutManager-FlapLayoutManager.isHoldSwitchable-DefaultDockActionSource.removeAll-DefaultDockActionSource.getDockActionCount-DefaultDockActionSource.add
+Tells this panel whether the background should be painted or not
+JComponent.setOpaque-JComponent.setOpaque
+Sets the panel on which clients should add their children
+IllegalArgumentException.new-OverpaintablePanel.isSolid-OverpaintablePanel.setSolid
+Sets the panel which is added to this, and which is an ancestor of the content-pane
+IllegalArgumentException.new-Container.remove-JLayeredPane.setLayer-Container.add-OverpaintablePanel.isSolid-OverpaintablePanel.setSolid
+Adds a listener to this manager
+DockStationListener.add
+Removes an earlier added listener
+DockStationListener.remove
+Invokes the method  on all registered 
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableShowingChanged
+Invokes the method  on all registered 
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableAdded
+Invokes the method  on all registered 
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableRemoved
+Invokes the method  on all registered 
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableAdding
+Invokes the method  on all registered 
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableRemoving
+Invokes the method  on all registered s
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockableSelected
+Invokes  on all registered s
+DockStationListener.size-DockStationListener.toArray-DockStationListener.dockablesRepositioned
+Checks which  have changed their state and fires events for them
+DockStationListenerManager.getStation-DockStation.getDockableCount-DockStation.getDockable-DockStation.isChildShowing-Boolean.containsKey-Boolean.get-DockStationListenerManager.fireDockableVisibilitySet-Boolean.put
+Called when the  of the  changes
+StationSpanFactoryValue.setController
+To be called if the number of children or the orientation changed
+ListSpanStrategy.isHorizontal-Span.clear-ListSpanStrategy.createSpan-ListSpanStrategy.getNumberOfDockables-Span.size-ListSpanStrategy.createSpan-Span.add-Span.remove-Span.set-Span.set
+Opens some s such that a  could be inserted at index
+Span.mutate-Span.size-Span.get-Span.mutate-Span.get-Span.mutate
+Configures the size of the index'th 
+Span.size-Span.get-Span.configureSize
+Makes all s invisible
+Span.mutate-Span.mutate
+Gets the current minimum size of the station
+Span.getSize
+Gets the size of the gap between button index-1 and button index
+Span.size-Span.get-Span.getSize
+Simulates a call to  and makes all calls to converter that would be made in a real read as well
+DockablePlaceholderList<P>.new-DockablePlaceholderList<P.read
+Converts this list into a , any remaining  or  will be converted into its placeholder using the currently installed 
+PlaceholderList.getStrategy-StrategyPlaceholderListItemConverter<P>.new-PlaceholderList.toMap
+Simulates a call to  and makes all calls to converter that would be made in a real read as well
+PerspectivePlaceholderList<P>.new-PerspectivePlaceholderList<P.read
+Converts this list into a , any remaining  or  will be converted into its placeholder using the currently installed 
+PerspectivePlaceholderListItemConverter<PlaceholderListItem<PerspectiveDockable>>.new-PlaceholderList.toMap
+Stores an additional key-value pair
+PlaceholderMetaMap.put
+Stores an additional key-value pair
+PlaceholderMetaMap.put
+Stores an additional key-value pair
+PlaceholderMetaMap.put
+Stores an additional key-value pair
+PlaceholderMetaMap.put
+Stores an additional key-value pair
+PlaceholderMetaMap.put
+Stores an additional key-value pair
+HashMap<String, Object>.new-IllegalArgumentException.new-Object.getClass-IllegalArgumentException.new-Object.put
+Removes key from this map
+Object.remove
+Gets the keys of all the data that is stored
+Object.size-Object.keySet-String.toArray
+Gets the data that is stored for key key
+PlaceholderMetaMap.get-IllegalArgumentException.new
+Gets the data that is stored for key key
+PlaceholderMetaMap.get-IllegalArgumentException.new
+Gets the data that is stored for key key
+PlaceholderMetaMap.get-IllegalArgumentException.new
+Gets the data that is stored for key key
+PlaceholderMetaMap.get-IllegalArgumentException.new
+Gets the data that is stored for key key
+PlaceholderMetaMap.get-IllegalArgumentException.new
+Gets the data that is stored for key key
+Object.get
+Tells whether some data is stored for key
+PlaceholderMetaMap.get
+Tells whether some data is stored for key
+PlaceholderMetaMap.contains
+Sets the delegate of this strategy
+PlaceholderStrategy.removeListener-PlaceholderStrategy.uninstall-PlaceholderStrategy.install-PlaceholderStrategy.addListener-HashSet<Path>.new-Path.iterator-Path.hasNext-Path.next-PlaceholderStrategy.isValidPlaceholder-Path.remove-Path.add-Path.isEmpty-RootPlaceholderStrategy.fireRemoved-Path.isEmpty-Collections.unmodifiableSet-Path.clear
+Tells whether this station accepts child as new child
+DockUtilities.acceptable
+Tells whether this station accepts child as combination with old
+DockUtilities.acceptable
+Invokes {@link DockStationListenerManager#fireDockablesRepositioned(Dockable
+DockStation.getDockableCount-AbstractDockableStation.fireDockablesRepositioned
+Invokes {@link DockStationListenerManager#fireDockablesRepositioned(Dockable
+DockStation.getDockable-DockStationListenerManager.fireDockablesRepositioned
+Creates a generic set of algorithms
+DockStationDelegate.new
+Gets the  which is responsible for keeping track of all the s of this station
+AbstractDockStation.createRootHandler
+Creates a set of algorithms which may depend on this , and which perform various tasks that are handled the same way in many implementations of 
+DockStationDelegate.new
+Can be called by  if request contains a  location that points toward item
+item.getDockable-AsideRequest.getPlaceholder-item.add-Dockable.asDockable-Dockable.asDockStation-AsideRequest.forward-item.getPlaceholderMap-AsideRequest.forward-AsideAnswer.isCanceled-AsideAnswer.getLayout-item.setPlaceholderMap
+Calculates where to add a  if the mouse is outside this station
+SplitDockStation.getDockableCount-SplitDockStation.getDockableCount-SplitDockStation.getDockable-SplitDockStation.getWidth-SplitDockStation.getHeight-SplitNode.above-SplitDockStation.getHeight-SplitDockStation.getWidth-SplitNode.above-SplitDockStation.getRoot-Root.getChild-PutInfo.new-SplitDockStation.getRoot-Root.getChild-PutInfo.new-SplitDockStation.getHeight-SplitDockStation.getWidth-SplitNode.above-SplitDockStation.getRoot-Root.getChild-PutInfo.new-SplitDockStation.getRoot-Root.getChild-PutInfo.new-SplitDockStation.getRoot-Root.getChild-SplitDockStation.getRoot-Root.getChild-Node.getLeft-SplitNode.isVisible-Node.getRight-SplitNode.isVisible-PutInfo.getPut-Node.getOrientation-Node.getLeft-PutInfo.getPut-Node.getOrientation-Node.getRight-PutInfo.getPut-Node.getOrientation-Node.getLeft-PutInfo.getPut-Node.getOrientation-Node.getRight
+Tests whether the specified divider-value is legal or not
+SplitDockStation.getRoot-Root.getHeightFactor-SplitDockStation.getRoot-Root.getWidthFactor-Double.isNaN-SplitDockStation.getDividerSize
+Gets the number of nodes stores in this property
+Node.size
+Gets the index'th node, where the node 0 is the node nearest to the root
+Node.get
+Gets the last node of this path
+Node.isEmpty-Node.size-Node.get
+Calculates which bounds the element accessed through the given path would have
+Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getLocation-SplitDockProperty.new-AbstractDockableProperty.getSuccessor-SplitDockProperty.setSuccessor
+Calculates which bounds the element accessed through this path would have
+SplitNode.getId-SplitDockPathProperty.toLocation-SplitNode.getId-SplitDockPathProperty.getLeafId-Node.getId-SplitNode.getX-SplitNode.getY-SplitNode.getWidth-SplitNode.getHeight-Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getSize-Node.getLocation-SplitDockProperty.new-SplitNode.getX-SplitNode.getY-SplitNode.getWidth-SplitNode.getHeight-SplitDockProperty.new-AbstractDockableProperty.getSuccessor-SplitDockProperty.setSuccessor
+Adds a new element to the end of the path
+Node.size-SplitDockPathProperty.insert
+Adds a new element to the path
+NullPointerException.new-IllegalArgumentException.new-Node.new-Node.add
+Converts the station of this converter into a 
+Path.new-PlaceholderMap.new-AbstractSplitPlaceholderConverter.getRoot-AbstractSplitPlaceholderConverter.handleChild
+Reads map and updates the contents of the  that is related to this converter
+AbstractSplitPlaceholderConverter.getPlaceholderStrategy-PlaceholderMap.filter-PlaceholderMap.getPlaceholders-BuildNode.new-AbstractSplitPlaceholderConverter.handleEntry-AbstractSplitPlaceholderConverter.createTree-BuildNode.collapse-AbstractSplitPlaceholderConverter.dropTree
+Creates a new path property which describes the location of this element
+SplitDockPathProperty.new-Node.createPathProperty-SplitDockStationLayout.Entry.getNodeId-SplitDockPathProperty.setLeafId
+Creates a new path pointing to child which must be a child of this node
+Entry.isVisible-Entry.isVisible-SplitDockStationLayout.Entry.createPathProperty-Entry.getNodeId-SplitDockPathProperty.add-Entry.getNodeId-SplitDockPathProperty.add-Entry.getNodeId-SplitDockPathProperty.add-Entry.getNodeId-SplitDockPathProperty.add-SplitDockStationLayout.Entry.getParent-SplitDockPathProperty.new-Node.createPathProperty
+Ensures that node is associated with the placeholder for dockable
+SplitDockAccess.getOwner-SplitDockStation.getPlaceholderStrategy-PlaceholderStrategy.getPlaceholderFor-SplitPlaceholderSet.set
+Ensures that node is associated with placeholder  but no other node has placeholder
+ArrayList<SplitNode>.new-SplitDockAccess.getOwner-SplitDockStation.getRoot-SplitNode.removePlaceholder-SplitNode.getPlaceholderMap-PlaceholderMap.removeAll-SplitNode.isOfUse-SplitNode.add-SplitNodeVisitor.new-Root.visit-SplitNode.addPlaceholder-SplitDockAccess.isTreeAutoCleanupEnabled-SplitNode.remove-SplitNode.delete
+Removes any placeholder from placeholderMap that is stored in another node than node
+HashSet<Path>.new-SplitDockAccess.getOwner-SplitDockStation.getPlaceholderStrategy-SplitDockAccess.getOwner-SplitDockStation.getRoot-Leaf.getDockable-SplitNode.getPlaceholders-Path.add-PlaceholderStrategy.getPlaceholderFor-Path.add-Dockable.asDockStation-DockStation.getDockableCount-DockStation.getDockable-SplitNodeVisitor.new-Root.visit-PlaceholderMap.removeAll
+Called if a child of this node changed
+SplitNode.treeChanged
+Gets the station this node belongs to
+SplitDockAccess.getOwner
+Stores an additional placeholder in this node
+HashSet<Path>.new-Path.add
+Tells whether this node is associated with at least one placeholder
+Path.isEmpty
+Tells whether this node contains placeholder
+Path.contains
+Removes a placeholder from this node
+Path.remove
+Sets information about the placeholders of a  that was  child of this node
+PlaceholderMap.setPlaceholderStrategy-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.getPlaceholderStrategy-PlaceholderMap.setPlaceholderStrategy-SplitNode.getAccess-SplitDockAccess.getPlaceholderSet-SplitPlaceholderSet.removeDoublePlaceholders
+Moves the current  to destination, overriding its old value
+SplitNode.setPlaceholderMap
+Replaces this node with node
+IllegalArgumentException.new-SplitNode.getParent-SplitNode.getChildLocation-SplitNode.setChild
+Removes this node from its parent, if there is a parent
+SplitNode.getPlaceholderMap-PlaceholderMap.setPlaceholderStrategy-SplitNode.getParent-SplitNode.getChildLocation-SplitNode.setChild-SplitNode.hasPlaceholders-Node.getLeft-Node.getLeft-Node.getRight-Node.getParent-SplitNode.getChildLocation-SplitNode.setChild-Root.setChild
+Splits this node into two nodes, a new parent  is created and inserted
+SplitNode.split
+Splits this node into two nodes, a new parent  is created and inserted
+SplitDockPathProperty.getNode-Node.getLocation-Node.getLocation-Node.getLocation-Node.getLocation-SplitDockPathProperty.getLastNode-Node.getId-SplitNode.getParent-SplitNode.getChildLocation-SplitNode.createNode-Node.setLeft-Node.setRight-Node.setOrientation-Node.getSize-Node.setDivider-SplitNode.createNode-Node.setOrientation-Node.setLeft-Node.setRight-Node.getSize-Node.setDivider-SplitNode.setChild
+Creates a new 
+SplitDockAccess.createNode
+Sets the parent of this node
+SplitNode.getChildLocation-SplitNode.setChild
+Schedules a call to  of the  node
+EventQueue.isDispatchThread-SplitNode.getRoot-Root.ensureIdUnique-SplitNode.getRoot-Root.ensureIdUnique-Runnable.new-EventQueue.invokeLater
+Recursively visits all children of this  and ensures that no node has the same unique id
+SplitNode.getTotalChildrenCount-SplitNode.ensureIdUnique
+Counts the total number of children of this node, the total number of children is the total number of nodes and leafs in the tree below this node, excluding this node
+SplitNode.getMaxChildrenCount-SplitNode.getChild-SplitNode.getTotalChildrenCount
+Updates the bounds of this node
+SplitNode.setBounds
+Searches and returns the first  which contains placeholder
+SplitNode.hasPlaceholder-SplitNode.getMaxChildrenCount-SplitNode.getChild-SplitNode.getPlaceholderNode
+Gets the size of this node in pixel
+SplitNode.getRoot-Root.getWidthFactor-Root.getHeightFactor-Dimension.new
+Gets the size and location of this node in pixel where the point 0/0 is equal to the point 0/0 on the owner-station
+SplitNode.getRoot-Root.getWidthFactor-Root.getHeightFactor-Rectangle.new-Root.getBaseBounds-Math.max-Math.min-Math.max-Math.min-Math.max-Math.min-Math.max-Math.min
+Creates a leaf for dockable
+SplitDockAccess.getOwner-SplitDockStation.getController-DockController.getAcceptance-Dockable.accept-SplitDockStation.accept-DockAcceptance.accept-SplitNode.createLeaf
+Creates a new node using the contents of key
+Dockable.isDockable-Node.evolve-Dockable.getDockables-SplitDockAccess.getOwner-SplitDockStation.getController-DockController.getAcceptance-Dockable.accept-Dockable.accept-SplitDropTreeException.new-DockAcceptance.accept-SplitDropTreeException.new-SplitDockAccess.getOwner-SplitDockStation.getCombiner-NodeCombinerSource.new-Combiner.prepare-Combiner.combine-Dockable.asDockStation-SplitDockAccess.getOwner-SplitDropTreeException.new-Dockable.put-Dockable.accept-DockStation.accept-SplitDockAccess.getOwner-SplitDropTreeException.new-DockAcceptance.accept-SplitDropTreeException.new-DockStation.drop-DockStation.setFrontDockable-Dockable.put-Dockable.asDockStation-DockStation.setFrontDockable-Dockable.accept-SplitDockStation.accept-SplitDropTreeException.new-DockAcceptance.accept-SplitDropTreeException.new-Dockable.put-Leaf.evolve-Leaf.setPlaceholderMap-Dockable.getPlaceholders-Placeholder.setPlaceholders-Dockable.getPlaceholderMap-Placeholder.setPlaceholderMap
+Calculates how much of the rectangle given by the property lies inside this node and how much of this node lies in the rectangle
+SplitDockProperty.getX-Math.max-SplitDockProperty.getY-Math.max-SplitDockProperty.getX-SplitDockProperty.getWidth-Math.min-SplitDockProperty.getY-SplitDockProperty.getHeight-Math.min-SplitDockProperty.getWidth-SplitDockProperty.getHeight-SplitDockProperty.getWidth-SplitDockProperty.getHeight-Math.max
+Calculates on which side of the node the point kx/ky lies
+SplitNode.above-SplitNode.above-SplitNode.above
+Converts the current grid into a tree
+DockableSplitDockTree.new-AbstractSplitDockGrid.fillTree
+Sets the child of this root
+SplitNode.setParent-SplitNode.delete-SplitNode.setParent-Root.treeChanged-SplitNode.ensureIdUniqueAsync-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.revalidate-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.repaint-SplitNode.getAccess-SplitDockAccess.repositioned
+Gets the factor which has to be multiplied with relative x coordinates and widths to get their size in pixel
+Root.getBaseBounds-Rectangle.getWidth
+Gets the factor which has to be multiplied with a relative y coordinate or height to get their size in pixel
+Root.getBaseBounds-Rectangle.getHeight
+Gets the location and size of the area which can be occupied by the children
+SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.getBasePane-JComponent.getInsets-JComponent.getWidth-JComponent.getHeight-Rectangle.new
+Gets the preferred operation when dragging the  drop to the location x/y
+Root.getWidthFactor-Root.getHeightFactor-Root.getPut
+Tells whether the location x/y is in the override zone
+Root.getWidthFactor-Root.getHeightFactor-Root.isInOverrideZone
+Unpacks any existing  at location x,y,width,height
+AbstractSplitDockGrid.nodeAt-ArrayList<D>.new-AbstractSplitDockGrid.unpack-List<D.add-List<D.size-AbstractSplitDockGrid.array-List<D.toArray
+Gets all the dockables that were {@link #addDockable(double, double, double, double, Object
+AbstractSplitDockGrid.nodeAt-AbstractSplitDockGrid.array-System.arraycopy
+Adds dockable to the grid
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-AbstractSplitDockGrid.isUnpack-AbstractSplitDockGrid.unpack-AbstractSplitDockGrid.nodeAt-AbstractSplitDockGrid.array-System.arraycopy-AbstractSplitDockGrid.array-System.arraycopy
+Adds placeholders to the grid
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-AbstractSplitDockGrid.isUnpack-AbstractSplitDockGrid.unpack-AbstractSplitDockGrid.nodeAt-System.arraycopy-System.arraycopy
+Sets the  map for the items at the given location
+IllegalArgumentException.new
+Marks dockable as selected in the stack of elements that are on position x, y, width, height
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-AbstractSplitDockGrid.isUnpack-AbstractSplitDockGrid.unpack-IllegalArgumentException.new-IllegalArgumentException.new
+Adds a vertical dividing line
+Line.new-Math.min-Math.max-Line.add
+Adds a horizonal dividing line
+Line.new-Math.min-Math.max-Line.add
+Fills the contents of this grid into tree
+AbstractSplitDockGrid.tree-Node<D.put-SplitDockTree<D.root
+Gets all the nodes of this grid
+Collections.unmodifiableList
+Transforms the grid into a tree and returns the root
+ArrayList<Node<D>>.new-Node<D.isEmpty-Node<D.size-Node<D.size-Node<D.get-Node<D.get-AbstractSplitDockGrid.diff-Node<D.remove-Node<D.remove-AbstractSplitDockGrid.combine-Node<D.add-Node<D.get
+Creates a combination of a and b
+Math.min-Math.min-Math.max-Math.max-Node<D>.new-Math.abs-Math.abs-AbstractSplitDockGrid.bestFittingLine-AbstractSplitDockGrid.bestFittingLine
+Tells whether the two nodes could be merged or not
+Math.min-Math.min-Math.max-Math.max-AbstractSplitDockGrid.penalty
+Searches the line that divides the rectangle x, y, width, height best
+Math.min-Math.max-Math.min-Math.abs-Math.min-Math.max-Math.min-Math.abs
+Used by  to add a penalty if a line hits a rectangle
+Math.min-Math.max-Math.min-Math.min-Math.max-Math.min
+Writes the contents of this node into tree
+Node<D.put-Node<D.put-SplitDockTree<D.vertical-Node<D.put-Node<D.put-SplitDockTree<D.horizontal-SplitDockTree<D.put
+Mutates the s such that info shows up
+PutInfo.getPut-PutInfo.willHaveNoEffect-PutInfo.getPut-PutInfo.getPut-PutInfo.getNode-PutInfo.getNode-SplitSpanStrategy.getSpans-PutInfo.getPut-SplitSpanStrategy.putToPosition-Span.mutate-PutInfo.getPut-SplitSpanStrategy.getSpans-SplitSpanStrategy.putToPosition-PutInfo.getDivider-PutInfo.getNode-SplitNode.getParent-SplitDockStation.getRoot-SplitNode.getParent-SplitNode.getSize-SplitNode.getSize-SplitNode.getSize-SplitNode.getSize-Span.configureSize-Span.mutate
+Tells the index of the  at side put
+IllegalArgumentException.new
+Gets the s that are used when put is active
+PutInfo.getNode-Leaf.getSpans-SplitNode.getParent-SplitNode.getParent-Root.getSpans-Root.getSpans
+Immediately resets all s to have a size of 0
+SplitSpanStrategy.getSpans-Span.set
+Sets the  which is used by the 
+StationSpanFactoryValue.setController
+Creates four s, one for each side of leaf
+StationSpanFactoryValue.get-SplitSpanStrategy.createSpan
+Creates a new  within bounds, using spans to create some insets
+SpanSplitNode.getSpans-Rectangle.new-Span.getSize-Span.getSize-Span.getSize-Span.getSize
+Gets some  that works as backup property if the referenced placeholder is not found
+SplitDockPlaceholderProperty.toSplitLocation
+Gets a  that works as backup property if the referenced placeholder is not found
+SplitDockPathProperty.toLocation-SplitNode.getX-SplitNode.getY-SplitNode.getWidth-SplitNode.getHeight-SplitDockProperty.new-AbstractDockableProperty.getSuccessor-SplitDockProperty.setSuccessor
+Sets the element of this leaf
+Leaf.setDockable
+Sets the element of this leaf
+StationChildHandle.getDockable-SplitNode.getAccess-SplitDockAccess.getPlaceholderSet-SplitPlaceholderSet.set-StationChildHandle.getDockable-Dockable.asDockStation-IllegalStateException.new-DockStation.getPlaceholders-SplitNode.setPlaceholderMap-SplitNode.getAccess-SplitDockAccess.removeHandle-SplitNode.getAccess-SplitDockAccess.newHandle-SplitNode.getAccess-SplitDockAccess.getPlaceholderSet-SplitPlaceholderSet.set-SplitNode.getAccess-SplitDockAccess.addHandle-SplitNode.treeChanged
+Gets the  which is shown on the displayer of this leaf
+StationChildHandle.getDockable
+Gets the displayer of this leaf
+StationChildHandle.getDisplayer
+Disconnects this leaf from its 
+Leaf.getDockable-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.getPlaceholderStrategy-Leaf.updatePlaceholders-Dockable.asDockStation-DockStation.getPlaceholders-SplitNode.setPlaceholderMap-SplitNode.hasPlaceholders-SplitNode.delete-SplitNode.getId-SplitNode.createPlaceholder-SplitNode.getPlaceholders-Placeholder.setPlaceholders-SplitNode.movePlaceholderMap-SplitNode.replace
+Resets the boundaries of the  of this , using the current s as well
+Leaf.getDisplayer-SplitNode.getAccess-SplitDockAccess.getFullScreenDockable-StationChildHandle.getDisplayer-SplitNode.getBounds-SplitNode.getAccess-SplitDockAccess.getSpanStrategy-SplitSpanStrategy.modifyBounds-DockableDisplayer.getComponent-Component.setBounds-JComponent.revalidate
+Asks the  for its current  and removes the size of the title from bounds
+Leaf.getDisplayer-Rectangle.new-DockableDisplayer.getTitle-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitle-DockTitle.getComponent-Component.getWidth-DockableDisplayer.getTitle-DockTitle.getComponent-Component.getWidth-DockableDisplayer.getTitle-DockTitle.getComponent-Component.getHeight-DockableDisplayer.getTitle-DockTitle.getComponent-Component.getHeight
+Tells whether the position of the mouse x/y would result in a drag and drop operation where  is appropriate
+SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.getSideSnapSize
+Tells whether the position of the mouse x/y would result in a drag and drop operation where  is appropriate
+Leaf.getDisplayer-DockableDisplayer.getTitle-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation-DockableDisplayer.getTitleLocation
+Assuming the mouse at x/y is within bounds, this method calculates which one of the non-combining s describe the situation best
+SplitNode.above-SplitNode.above-PutInfo.new-SplitNode.getAccess-SplitDockAccess.validatePutInfo-PutInfo.new-SplitNode.getAccess-SplitDockAccess.validatePutInfo-SplitNode.above-PutInfo.new-SplitNode.getAccess-SplitDockAccess.validatePutInfo-PutInfo.new-SplitNode.getAccess-SplitDockAccess.validatePutInfo
+Converts the current grid into a tree
+PerspectiveSplitDockTree.new-AbstractSplitDockGrid.fillTree
+Creates an array around dockable
+SplitDockTree.array
+Sets dockable as root, and returns a key to the root
+SplitDockTree.array-SplitDockTree.put
+Sets key as the root of the tree
+IllegalArgumentException.new-Key.getTree-IllegalArgumentException.new-IllegalArgumentException.new
+Creates a key for the leaf dockable
+SplitDockTree.array
+Creates a key for the set dockables
+SplitDockTree.put
+Creates a key for a placeholder leaf
+SplitDockTree.put
+Creates a key for the set of dockables or the set of placeholders
+IllegalArgumentException.new-IllegalArgumentException.new-IllegalArgumentException.new-Set<D.add-IllegalArgumentException.new-Leaf.new
+Adds two elements horizontally
+SplitDockTree.array-SplitDockTree.put-SplitDockTree.array-SplitDockTree.put-SplitDockTree.horizontal
+Adds two elements horizontally
+SplitDockTree.array-SplitDockTree.put-SplitDockTree.array-SplitDockTree.put-SplitDockTree.horizontal
+Adds two elements horizontally
+SplitDockTree.horizontal
+Adds two elements horizontally
+SplitDockTree.horizontal
+Adds two elements horizontally
+SplitDockTree.horizontal
+Adds two elements horizontally
+Node.new
+Adds two elements vertically
+SplitDockTree.array-SplitDockTree.put-SplitDockTree.array-SplitDockTree.put-SplitDockTree.vertical
+Adds two elements vertically
+SplitDockTree.array-SplitDockTree.put-SplitDockTree.array-SplitDockTree.put-SplitDockTree.vertical
+Adds two elements vertically
+SplitDockTree.vertical
+Adds two elements vertically
+SplitDockTree.vertical
+Adds two elements vertically
+SplitDockTree.vertical
+Adds two elements vertically
+Node.new
+Tells whether key represents a leaf or not
+Key.asLeaf
+Tells whether key represents a node or not
+Key.asNode
+Gets a list of all s that are known to this tree
+Set<D.size-SplitDockTree.array-Set<D.toArray
+Gets the elements that are represented by the leaf key
+SplitDockTree.isDockable-IllegalArgumentException.new-Key.asLeaf
+Gets the element that is selected in this leaf
+SplitDockTree.isDockable-IllegalArgumentException.new-Key.asLeaf
+Tells whether the node key represents a horizontal or a vertical node
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Gets the left element of the node key
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Gets the right element of the node key
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Gets the top element of the node key
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Gets the bottom element of the node key
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Gets the divider of the node key
+SplitDockTree.isNode-IllegalArgumentException.new-Key.asNode
+Creates a new  for station
+Handler.new
+AWT event listener
+AWTEvent.getID-AWTEvent.getID-MouseEvent.getSource-MouseEvent.getSource-MouseEvent.getComponent-MouseEvent.getPoint-SwingUtilities.convertPoint-SplitDockStation.getBounds-Rectangle.contains-DefaultSplitDividerStrategy.Handler.setCursor-DefaultSplitDividerStrategy.Handler.checkMousePositionAsync
+Disposes all resources that are used by this handler
+DefaultSplitDividerStrategy.Handler.setCursor-Component.removeMouseListener-Component.removeMouseMotionListener-Throwable.printStackTrace-Toolkit.getDefaultToolkit-Toolkit.removeAWTEventListener-DefaultSplitDividerStrategy.Handler.setController-SplitDockStation.removeDockHierarchyListener
+Changes the cursor of 
+Component.setCursor
+Repaints parts of the 
+Component.repaint
+Gets the node whose divider contains x, y
+SplitDockStation.getRoot-Root.getDividerNode
+Asynchronously checks the current position of the mouse and updates the cursor if necessary
+SplitDockStation.getController-MouseInfo.getPointerInfo-PointerInfo.getLocation-SwingUtilities.convertPointFromScreen-DefaultSplitDividerStrategy.Handler.getDividerNode-DefaultSplitDividerStrategy.Handler.mouseExited-DefaultSplitDividerStrategy.Handler.mouseExited-Runnable.new-SwingUtilities.invokeLater
+Called if the divider of node needs to be changed
+Divideable.setDivider
+Paints a line at the current location of the divider
+SplitDockStation.isResizingEnabled-SplitDockStation.isDisabled-SplitDockStation.getPaint-DefaultStationPaintValue.drawDivider
+Adds a listener to this perspective
+IllegalArgumentException.new-EntryListener.add
+Calls {@link EntryListener#removed(SplitDockPerspective
+SplitDockPerspective.listeners-EntryListener.removed
+Calls {@link EntryListener#added(SplitDockPerspective
+SplitDockPerspective.listeners-EntryListener.added
+Combines several dockables to one dockable
+StackDockPerspective.new
+Creates the location information for child that directly describes the path through the tree to the element
+SplitDockPerspective.getLeaf-SplitDockPathProperty.new-Leaf.getNodeId-SplitDockPathProperty.setLeafId-Leaf.getParent-Entry.asNode-Node.getChildA-Node.getDivider-Node.getOrientation-Node.getDivider-Node.getOrientation-Node.getNodeId-SplitDockPathProperty.insert-Node.getParent-Entry.asNode
+Searches and returns the leaf that shows child
+SplitDockPerspective.getRoot-Root.getChild-SplitDockPerspective.find
+Adds a placeholder to destination and makes sure at the same time that  placeholder is not used by any other node
+SplitDockPerspective.getRoot-Entry.isAnchestor-IllegalArgumentException.new-SplitDockPerspective.clearPlaceholder-Entry.getPlaceholders-Path.add
+Tells whether anchestor is an anchestor of this entry
+Entry.getParent
+Gets the owner of this node or leaf
+Entry.getPerspective
+Removes this and all children from this  and collapses the tree
+SplitDockPerspective.Entry.getParent-Node.getChildA-Node.getChildA-Node.setChildB-Node.getChildB-Node.setChildA-Node.getParent-Node.setChildA-Node.setChildB-Node.getChildA-Node.setChildB-Node.setChildA-Root.setChild-Root.setChild
+Replaces this with next
+SplitDockPerspective.Entry.getParent-Node.getChildA-Node.setChildB-Node.setChildA-Root.setChild
+Sets the child of this root
+Entry.asLeaf-Entry.asNode-IllegalArgumentException.new-Entry.setParent-SplitDockPerspective.fireRemoved-Entry.setParent-SplitDockPerspective.fireAdded
+Sets the left or top child of this node
+Entry.asLeaf-Entry.asNode-IllegalArgumentException.new-SplitDockPerspective.Entry.isAnchestor-IllegalArgumentException.new-SplitDockPerspective.Entry.getPerspective-Entry.setParent-SplitDockPerspective.fireRemoved-Entry.setParent-SplitDockPerspective.fireAdded
+Sets the right or bottom child of this node
+Entry.asLeaf-Entry.asNode-IllegalArgumentException.new-SplitDockPerspective.Entry.isAnchestor-IllegalArgumentException.new-SplitDockPerspective.Entry.getPerspective-Entry.setParent-SplitDockPerspective.fireRemoved-Entry.setParent-SplitDockPerspective.fireAdded
+Exchanges the element that is represented by this perspective
+SplitDockPerspective.Entry.getPerspective-SplitDockPerspective.listeners-EntryListener.modified
+Sets the dockable of this entry to null and inserts the placeholder of the element
+SplitDockPerspective.Entry.getPerspective-IllegalStateException.new-PerspectiveDockable.getPlaceholder-SplitDockPerspective.addPlaceholder-PerspectiveDockable.asStation-PerspectiveDockable.asStation-PerspectiveStation.getPlaceholders-SplitDockPerspective.Entry.setPlaceholderMap-PlaceholderMap.getPlaceholders-Key.getPlaceholders-SplitDockPerspective.addPlaceholder-SplitDockPerspective.Leaf.setDockable-SplitDockPerspective.Entry.getPlaceholderMap-SplitDockPerspective.Entry.getPlaceholders-Path.isEmpty-SplitDockPerspective.Entry.delete
+Sets the left child of  this node
+SplitNode.setParent-Node.clearVisibility-SplitNode.setParent-SplitNode.treeChanged-SplitNode.ensureIdUniqueAsync-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.revalidate-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.repaint-SplitNode.getAccess-SplitDockAccess.repositioned
+Sets the right child of this node
+SplitNode.setParent-Node.clearVisibility-SplitNode.setParent-SplitNode.treeChanged-SplitNode.ensureIdUniqueAsync-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.revalidate-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.repaint-SplitNode.getAccess-SplitDockAccess.repositioned
+Changes the orientation of this node
+NullPointerException.new-SplitNode.getAccess-SplitDockAccess.getOwner-SplitDockStation.revalidate
+If this  describes the current layout, then nothing will happen if it is applied
+SplitNode.getParent-Node.getOrientation-Node.getRight-Node.getLeft-Leaf.getDockable
+Creates or re-creates the s used by this 
+SplitNode.getAccess-SplitDockAccess.getSpanStrategy-SplitSpanStrategy.createSpans

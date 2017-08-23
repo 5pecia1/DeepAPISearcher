@@ -95,7 +95,8 @@ if __name__ == "__main__":
     END_PAGE = 100
 
     count = 0
-    start_star = 30000
+    #start_star = 30000
+    start_star = 37
 
     while start_star >= 1:
         page = 1
@@ -119,7 +120,7 @@ if __name__ == "__main__":
                 print("repo url : ", repo_url)
                 splited = repo_url.split("/")
                 fileName = splited[-2] + "_" + splited[-1]
-                os.system('cd ' + SAVE_PATH + '; git clone --bare ' + repo_url + ".git " + fileName)
+                os.system('cd ' + SAVE_PATH + '; git clone ' + repo_url + ".git " + fileName)
 
                 count += 1
                 print("count : ", count)
